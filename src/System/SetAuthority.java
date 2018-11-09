@@ -1,0 +1,212 @@
+package System;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.sql.SQLException;
+
+/**
+ * @Author: Meredith
+ * @CreateDate: 2018-11-08 09:20
+ * @Project: ShipManageSystem
+ * @Package: System
+ * @Description: 设置权限
+ **/
+public class SetAuthority extends SystemGUI
+{
+    public String rs[] = new String[100];
+    private JTextField userText = new JTextField();
+    private JLabel userLable = new JLabel("用户名");
+    private JButton confirmButton = new JButton("确定");
+    private JLabel text = new JLabel("用户权限管理");
+    private JCheckBox charge = new JCheckBox("收费权");
+    private JCheckBox supervisory = new JCheckBox("监督权");
+    private JCheckBox admini = new JCheckBox("管理员");
+    private JComboBox list0 = new JComboBox(rs);
+    private JButton flashButton = new JButton("刷新");
+
+
+    public void setAuthority(JPanel panel)
+    {
+        Font text1_font = new Font("宋体", Font.BOLD, 28);
+        text.setFont(text1_font);
+        panel.setLayout(null);
+        text.setBounds(300, 300, 180, 80);
+        panel.add(text);
+
+        Font font1 = new Font("宋体", Font.BOLD, 18);
+        userLable.setFont(font1);
+        userLable.setBounds(60, 370, 80, 30);
+        panel.add(userLable);
+
+        //初始化下拉列表
+        db.sqlLines = "Select 用户ID from 系统用户表";
+        db.pre();
+        db.exeSelect();
+        for (int i = 0; i < db.result.length; i++)
+        {
+            rs[i] = db.result[i][1];
+        }
+        JComboBox list = new JComboBox(rs);
+        list0 = list;
+        list0.setBounds(130, 370, 130, 30);
+        panel.add(list0);
+        list0.setSelectedIndex(-1);
+        list0.addItemListener(new listHandler());
+
+        charge.setBounds(300, 370, 70, 30);
+        panel.add(charge);
+
+        supervisory.setBounds(400, 370, 70, 30);
+        panel.add(supervisory);
+
+        admini.setBounds(500, 370, 70, 30);
+        panel.add(admini);
+
+        confirmButton.setFont(font1);
+        confirmButton.setBounds(600, 370, 100, 30);
+        panel.add(confirmButton);
+        confirmButton.addActionListener(new setAuthorityHandler());
+
+        //flashButton.setBounds(600, 420, 100, 30);
+        //panel.AddBasicInfo(flashButton);
+        //flashButton.addActionListener(new flashHandler());
+
+    }
+
+
+
+    class listHandler implements ItemListener
+    {
+        @Override
+        public void itemStateChanged(ItemEvent e)
+        {
+            if (e.getStateChange() == ItemEvent.SELECTED)
+            {
+                charge.setSelected(false);
+                supervisory.setSelected(false);
+                admini.setSelected(false);
+                String ID = null;
+                int t;
+                t = list0.getSelectedIndex();
+                ID = list0.getItemAt(t).toString();
+                db.sqlLines = "select 权限 from 系统用户表 where 用户ID=?";
+                db.pre();
+                try
+                {
+                    db.preparedStatement.setString(1,ID);
+                } catch (SQLException e1)
+                {
+                    e1.printStackTrace();
+                }
+                db.exeSelect();//执行SQL语句
+                rs[1] = db.result[0][1];
+
+                if (db.result[0][1].equals("1"))
+                {
+                    charge.setSelected(true);
+                }
+                if (db.result[0][1].equals("2"))
+                {
+                    supervisory.setSelected(true);
+                }
+                if (db.result[0][1].equals("3"))
+                {
+                    charge.setSelected(true);
+                    supervisory.setSelected(true);
+                }
+                if (db.result[0][1].equals("4"))
+                {
+                    admini.setSelected(true);
+                }
+                if (db.result[0][1].equals("6"))
+                {
+                    supervisory.setSelected(true);
+                    admini.setSelected(true);
+                }
+                if (db.result[0][1].equals("7"))
+                {
+                    charge.setSelected(true);
+                    supervisory.setSelected(true);
+                    admini.setSelected(true);
+                }
+            }
+
+        }
+    }
+
+    public void refresh()
+    {
+        db.sqlLines = "Select 用户ID from 系统用户表";
+        db.pre();
+        db.exeSelect();
+        String newrs[]=new String[100];
+        for (int i = 0; i < db.result.length; i++)
+        {
+            newrs[i] = db.result[i][1];
+        }
+        list0.removeAllItems();
+        for (String temp : newrs)
+        {
+            list0.addItem(temp);
+        }
+        list0.setSelectedIndex(-1);
+    }
+    //class flashHandler implements ActionListener
+    //{
+    //    @Override
+    //    public void actionPerformed(ActionEvent e)
+    //    {
+    //        flash();
+    //    }
+    //}
+
+    class setAuthorityHandler implements ActionListener
+    {
+        @Override
+        public void actionPerformed(ActionEvent e)
+        {
+            String ID = list0.getSelectedItem().toString();
+            boolean isCharge = charge.isSelected();//1
+            boolean isSup = supervisory.isSelected();//2
+            boolean isAdmini = admini.isSelected();//4
+            int Autho = 0;
+            if (isCharge == true)
+            {
+                Autho += 1;
+            }
+            if (isSup == true)
+            {
+                Autho += 2;
+            }
+            if (isAdmini == true)
+            {
+                Autho += 4;
+            }
+            String strAutho = Autho + "";
+            //SQL语句
+            db.sqlLines = "update 系统用户表 set 权限=? where 用户ID=?";
+            db.pre();
+            try
+            {
+                db.preparedStatement.setString(1, strAutho);
+                db.preparedStatement.setString(2,ID);
+            } catch (SQLException e1)
+            {
+                e1.printStackTrace();
+            }
+            db.exeSql();//执行SQL语句
+            if (db.effectedLines > 0)
+            {
+                JOptionPane.showMessageDialog(null, "更新权限成功", "", JOptionPane.INFORMATION_MESSAGE);
+            } else
+            {
+                JOptionPane.showMessageDialog(null, "更新权限失败", "", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+
+}
