@@ -6,7 +6,6 @@ new FormModel {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
 			name: "frame1"
 			"visible": true
-			"defaultCloseOperation": 3
 			"background": new java.awt.Color( 0, 0, 0, 255 )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
 				"$columnSpecs": "15, 56, 0, 118, 0, 0, 68, 147, 0, 70, 0, 132, 0"

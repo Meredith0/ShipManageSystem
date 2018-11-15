@@ -4,38 +4,22 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81cacd43-6027-4b20-a9ef-81ddb4f1ee35" name="Default" comment="11-12 SQL反注入修改">
-      <change afterPath="$PROJECT_DIR$/src/BasicData/AddData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BasicData/AddData.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BasicData/SelectData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BasicData/SelectData.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1/storage_v2/_src_/database/Chuan_Zhi_Zi_Liao_Shu_Ju_Ku.L0dM2Q/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1/storage_v2/_src_/database/Chuan_Zhi_Zi_Liao_Shu_Ju_Ku.L0dM2Q/schema/dbo.sYMBAA.meta" afterDir="false" />
+    <list default="true" id="81cacd43-6027-4b20-a9ef-81ddb4f1ee35" name="Default" comment="11-15">
+      <change afterPath="$PROJECT_DIR$/src/BasicData/DeleteData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BasicData/DeleteData.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BasicData/Panel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BasicData/Panel.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jfrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jfrom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jfrom.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/Jfrom.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$loginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$loginHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$signinHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$signinHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/loginGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/loginGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/MD5.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser$AddUserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser$AddUserHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd$DeleteUserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd$DeleteUserHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd$UpdatePasswdHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd$UpdatePasswdHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$listHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$listHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$setAuthorityHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$setAuthorityHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/testGUI.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/SQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/com/SQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicData/AddBasicInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicData/BasicDateGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/MD5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/AddUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/SetAuthority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/SetAuthority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/testGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/RunSystemGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicData/AddData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/AddData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicData/AddData.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/AddData.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicData/SelectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/SelectData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicData/SelectData.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/SelectData.jfd" afterDir="false" />
     </list>
     <list id="6f09a833-229f-4b56-9184-f8f55dac651b" name="11-12 SQL反注入修改" comment="11-12 SQL反注入修改&#10;&#10;(cherry picked from commit 2bba9d0b2c4b4ff97d3241c3f0031fea3441c6f5)">
       <changelist_data name="Meredith0" email="1612733540@qq.com" date="1541781793000" />
@@ -119,16 +103,16 @@
         <counts>
           <entry key="dummy" value="106" />
           <entry key="ft" value="34" />
-          <entry key="java" value="14628" />
+          <entry key="java" value="15265" />
           <entry key="md" value="10" />
-          <entry key="txt" value="90" />
+          <entry key="txt" value="104" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14628" />
+          <entry key="JAVA" value="15265" />
           <entry key="Markdown" value="10" />
-          <entry key="PLAIN_TEXT" value="196" />
+          <entry key="PLAIN_TEXT" value="210" />
           <entry key="VTL" value="34" />
         </counts>
       </usages-collector>
@@ -137,10 +121,10 @@
           <entry key="class" value="10" />
           <entry key="form" value="2" />
           <entry key="groovy" value="1" />
-          <entry key="java" value="139" />
-          <entry key="jfd" value="14" />
+          <entry key="java" value="154" />
+          <entry key="jfd" value="22" />
           <entry key="jpg" value="1" />
-          <entry key="md" value="26" />
+          <entry key="md" value="28" />
           <entry key="sql" value="2" />
           <entry key="xml" value="2" />
           <entry key="系统用户表" value="1" />
@@ -153,9 +137,9 @@
           <entry key="Database Element" value="4" />
           <entry key="GUI_DESIGNER_FORM" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="139" />
-          <entry key="JFormDesigner_form" value="14" />
-          <entry key="Markdown" value="26" />
+          <entry key="JAVA" value="154" />
+          <entry key="JFormDesigner_form" value="22" />
+          <entry key="Markdown" value="28" />
           <entry key="Scratch" value="3" />
           <entry key="XML" value="2" />
         </counts>
@@ -166,93 +150,20 @@
     <favorites_list name="ShipManageSystem" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8354662">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/BasicData/SelectData.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1722">
-                  <caret line="114" column="11" lean-forward="true" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#450#451#0" expanded="true" />
-                    <element signature="e#482#483#0" expanded="true" />
-                    <element signature="method#initComponents#0;class#SelectData#0" />
-                    <marker date="1542285660106" expanded="true" signature="3638:8944" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                    <marker date="1542285660106" expanded="true" signature="8956:9433" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/System/AddUser.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="258">
-                  <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#DeleteUser_ChangePasswd#0;class#DeleteUser_ChangePasswd#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-215">
-                  <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <marker date="1542284662011" expanded="false" signature="2974:20484" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                    <marker date="1542284662011" expanded="true" signature="20496:22307" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SECOND">
-                  <first_editor relative-caret-position="620">
-                    <caret line="31" selection-start-line="31" selection-end-line="31" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor>
+                <caret line="31" selection-start-line="31" selection-end-line="31" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -289,10 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test_GUI_1.java" />
-        <option value="$PROJECT_DIR$/src/test_form.form" />
-        <option value="$PROJECT_DIR$/src/test_form.java" />
-        <option value="$PROJECT_DIR$/src/backgrounds.java" />
         <option value="$PROJECT_DIR$/src/MyMD5.java" />
         <option value="$PROJECT_DIR$/src/com/test1.java" />
         <option value="$PROJECT_DIR$/src/SQL.java" />
@@ -323,23 +230,27 @@
         <option value="$PROJECT_DIR$/src/BasicInfo/add.java" />
         <option value="$PROJECT_DIR$/src/BasicInfo/AddBasicInfo.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/Login/Login.java" />
         <option value="$PROJECT_DIR$/src/System/SystemGUI.java" />
         <option value="$PROJECT_DIR$/src/Login/LoginGUI.java" />
         <option value="$PROJECT_DIR$/src/BasicData/AddBasicInfo.java" />
         <option value="$PROJECT_DIR$/Jfrom.jfd" />
-        <option value="$PROJECT_DIR$/src/BasicData/AddData.jfd" />
         <option value="$PROJECT_DIR$/src/BasicData/BasicDateGUI.java" />
-        <option value="$PROJECT_DIR$/src/BasicData/SelectData.jfd" />
-        <option value="$PROJECT_DIR$/src/com/SQL.java" />
         <option value="$PROJECT_DIR$/src/BasicData/AddData.java" />
         <option value="$PROJECT_DIR$/src/System/SetAuthority.java" />
-        <option value="$PROJECT_DIR$/src/BasicData/SelectData.java" />
-        <option value="$PROJECT_DIR$/src/System/AddUser.java" />
         <option value="$PROJECT_DIR$/src/System/RunSystemGUI.java" />
-        <option value="$PROJECT_DIR$/src/com/MD5.java" />
-        <option value="$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java" />
         <option value="$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java" />
+        <option value="$PROJECT_DIR$/src/System/AddUser.java" />
+        <option value="$PROJECT_DIR$/src/com/SQL.java" />
+        <option value="$PROJECT_DIR$/src/com/MD5.java" />
+        <option value="$PROJECT_DIR$/src/Login/Login.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/SelectData.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/DeleteData.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/Panel.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/AddData.jfd" />
+        <option value="$PROJECT_DIR$/src/BasicData/DeleteData.jfd" />
+        <option value="$PROJECT_DIR$/src/BasicData/SelectData.jfd" />
+        <option value="$PROJECT_DIR$/src/BasicData/Panel.jfd" />
       </list>
     </option>
   </component>
@@ -637,12 +548,6 @@
               <item name="ShipManageSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ShipManageSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BasicData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShipManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShipManageSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -694,7 +599,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.RunBasicDateGUI">
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -746,7 +651,6 @@
     <configuration name="RunBasicDateGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicData.RunBasicDateGUI" />
       <module name="ShipManageSystem" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="BasicData.*" />
@@ -803,9 +707,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunBasicDateGUI" />
         <item itemvalue="Application.RunSystemGUI" />
         <item itemvalue="Application.MD5" />
-        <item itemvalue="Application.RunBasicDateGUI" />
         <item itemvalue="Application.AddData" />
         <item itemvalue="Application.AddBasicInfo" />
       </list>
@@ -873,7 +777,7 @@
       <workItem from="1542074396627" duration="1255000" />
       <workItem from="1542161830499" duration="16941000" />
       <workItem from="1542240003889" duration="6457000" />
-      <workItem from="1542276936973" duration="9240000" />
+      <workItem from="1542276936973" duration="13693000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1538035711958</created>
@@ -938,11 +842,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541996584450</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="11-15 4-2 打表完成">
+      <created>1542286351170</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542286351170</updated>
+    </task>
+    <task id="LOCAL-00011" summary="11-15">
+      <created>1542286798297</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542286798298</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199644000" />
+    <option name="totallyTimeSpent" value="204097000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -962,7 +880,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.4082774" side_tool="true" weight="0.15831557" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.5917226" visible="true" weight="0.12526652" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.5917226" visible="true" weight="0.15458423" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32887402" />
       <window_info anchor="bottom" id="Inspection Results" order="1" weight="0.1935123" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.6359275" weight="0.27740493" />
@@ -1045,7 +963,9 @@
     <MESSAGE value="11-8 完成用户权限管理" />
     <MESSAGE value="11-10 完成4-1, 录入船只基本资料的GUI" />
     <MESSAGE value="11-12 SQL反注入修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="11-12 SQL反注入修改" />
+    <MESSAGE value="11-15 4-2 打表完成" />
+    <MESSAGE value="11-15" />
+    <option name="LAST_COMMIT_MESSAGE" value="11-15" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1086,34 +1006,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.logging/java/util/logging/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="1710" selection-start-line="1710" selection-end-line="1710" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Tasks/JAVA/sqljdbc4-2.0.jar/sqljdbc4-2.0.jar!/com/microsoft/sqlserver/jdbc/SQLServerStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="1210" selection-start-line="1210" selection-end-line="1210" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Tasks/JAVA/sqljdbc4-2.0.jar/sqljdbc4-2.0.jar!/com/microsoft/sqlserver/jdbc/SQLServerConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="1100" selection-start-line="1100" selection-end-line="1100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Tasks/JAVA/sqljdbc4-2.0.jar/sqljdbc4-2.0.jar!/com/microsoft/sqlserver/jdbc/TDSCommand.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Documents/Tasks/JAVA/sqljdbc4-2.0.jar/sqljdbc4-2.0.jar!/com/microsoft/sqlserver/jdbc/SQLServerResultSet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1248,13 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Jfrom.jfd">
       <provider selected="true" editor-type-id="JFormDesigner">
         <state paletteWidth="164" propertiesWidth="193" />
@@ -1269,6 +1154,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1279,11 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state paletteWidth="161" structureHeight="223" />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.desktop/javax/swing/JComboBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1292,55 +1175,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BasicData/AddBasicInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/BasicData/SelectData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state paletteWidth="186" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="620">
-            <caret line="31" selection-start-line="31" selection-end-line="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/SelectData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1722">
-          <caret line="114" column="11" lean-forward="true" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="method#initComponents#0;class#SelectData#0" />
-            <marker date="1542285660106" expanded="true" signature="3638:8944" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1542285660106" expanded="true" signature="8956:9433" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/SQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1542284662011" expanded="false" signature="2974:20484" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1542284662011" expanded="true" signature="20496:22307" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/RunSystemGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1352,30 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/MD5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/AddUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/SystemGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="565">
@@ -1383,9 +1193,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/AddUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1682">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/SQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="70" column="69" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/SetAuthority.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
+        <state relative-caret-position="-276">
           <caret line="170" column="34" lean-forward="true" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1396,12 +1237,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="60">
+          <caret line="96" column="46" lean-forward="true" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#DeleteUser_ChangePasswd#0;class#DeleteUser_ChangePasswd#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/DeleteData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+          <folding>
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <marker date="1542291090294" expanded="false" signature="1148:3355" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542291090294" expanded="false" signature="3367:3637" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/SelectData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="152" column="9" lean-forward="true" selection-start-line="146" selection-start-column="6" selection-end-line="152" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1542291090268" expanded="true" signature="5420:10560" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542291090268" expanded="true" signature="10572:11049" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1542291090240" expanded="false" signature="2974:20408" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542291090240" expanded="true" signature="20420:22231" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state paletteWidth="161" structureHeight="223" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/SelectData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state paletteWidth="186" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/DeleteData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <marker date="1542291190116" expanded="false" signature="773:3930" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542291190116" expanded="false" signature="3942:4237" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/Panel.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor>
+            <caret line="31" selection-start-line="31" selection-end-line="31" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

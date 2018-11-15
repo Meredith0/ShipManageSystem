@@ -11,11 +11,7 @@ public class RunBasicDateGUI
 {
     public static void main(String[] args)
     {
-       // AddData addData = new AddData();
-
-
-        SelectData selectData=new SelectData();
-        selectData.addCheckBoxItems();
+        new Panel();
 
     }
 }

@@ -133,7 +133,6 @@ public class AddData extends JFrame
         //======== frame1 ========
         {
             frame1.setVisible(true);
-            frame1.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
             frame1.setBackground(Color.black);
             Container frame1ContentPane = frame1.getContentPane();
             frame1ContentPane.setLayout(null);

@@ -11,7 +11,6 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
-import java.beans.PropertyChangeEvent;
 import java.sql.SQLException;
 import java.util.Vector;
 
@@ -48,7 +47,7 @@ public class SelectData extends JFrame
          * @return void
          * @date: 2018/11/15 20:21
          */
-        db.sqlLines = "select 船名,船舶种类,船体材料,机型,船籍港,造船地点,登记号码,营运证号,入户时间,迁出时间,建成日期,总长,型宽,型深,总吨,净吨,功率,载重吨,航行区域 from " +
+        db.sqlLines = "select 序号,船名,船舶种类,船体材料,机型,船籍港,造船地点,登记号码,营运证号,入户时间,迁出时间,建成日期,总长,型宽,型深,总吨,净吨,功率,载重吨,航行区域 from " +
                 "船舶所有权登记证书 where 船名=? or 船舶种类=? or 登记号码=? or 营运证号=?";
         db.pre();
         try
@@ -72,6 +71,7 @@ public class SelectData extends JFrame
         //将列名插入到Vector
         Vector columnNames;
         columnNames = new Vector();
+        columnNames.add("序号");
         columnNames.add("船名");
         columnNames.add("船舶种类");
         columnNames.add("船体材料");
@@ -113,22 +113,45 @@ public class SelectData extends JFrame
          * @return void
          * @date: 2018/11/15 20:22
          */
-        db.sqlLines = "update 船舶所有权登记证书 set ";
+        db.sqlLines = "update 船舶所有权登记证书 set 船名=?,船舶种类=?,船体材料=?,机型=?,船籍港=?,造船地点=?,登记号码=?,营运证号=?,入户时间=?,迁出时间=?,建成日期=?,总长=?,型宽=?,型深=?,总吨=?,净吨=?," +
+                "功率=?,载重吨=?,航行区域=? where 序号=?";
         db.pre();
+        try
+        {
+            db.preparedStatement.setString(1,table1.getValueAt(0,1).toString());
+            db.preparedStatement.setString(2,table1.getValueAt(0,2).toString());
+            db.preparedStatement.setString(3,table1.getValueAt(0,3).toString());
+            db.preparedStatement.setString(4,table1.getValueAt(0,4).toString());
+            db.preparedStatement.setString(5,table1.getValueAt(0,5).toString());
+            db.preparedStatement.setString(6,table1.getValueAt(0,6).toString());
+            db.preparedStatement.setString(7,table1.getValueAt(0,7).toString());
+            db.preparedStatement.setString(8,table1.getValueAt(0,8).toString());
+            db.preparedStatement.setString(9,table1.getValueAt(0,9).toString());
+            db.preparedStatement.setString(10,table1.getValueAt(0,10).toString());
+            db.preparedStatement.setString(11,table1.getValueAt(0,11).toString());
+            db.preparedStatement.setString(12,table1.getValueAt(0,12).toString());
+            db.preparedStatement.setString(13,table1.getValueAt(0,13).toString());
+            db.preparedStatement.setString(14,table1.getValueAt(0,14).toString());
+            db.preparedStatement.setString(15,table1.getValueAt(0,15).toString());
+            db.preparedStatement.setString(16,table1.getValueAt(0,16).toString());
+            db.preparedStatement.setString(17,table1.getValueAt(0,17).toString());
+            db.preparedStatement.setString(18,table1.getValueAt(0,18).toString());
+            db.preparedStatement.setString(19,table1.getValueAt(0,19).toString());
+            db.preparedStatement.setString(20,table1.getValueAt(0,0).toString());
 
+        } catch (SQLException e1)
+        {
+            e1.printStackTrace();
+        }
         db.exeSql();
         if (db.effectedLines > 0)
         {
-            JOptionPane.showMessageDialog(null, "录入数据成功", "", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "修改数据成功", "", JOptionPane.INFORMATION_MESSAGE);
         } else
         {
-            JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "修改数据失败", "", JOptionPane.ERROR_MESSAGE);
         }
 
-    }
-
-    private void scrollPane1PropertyChange(PropertyChangeEvent e) {
-        // TODO add your code here
     }
 
     private void initComponents()
@@ -149,7 +172,6 @@ public class SelectData extends JFrame
         //======== frame1 ========
         {
             frame1.setVisible(true);
-            frame1.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
             Container frame1ContentPane = frame1.getContentPane();
             frame1ContentPane.setLayout(null);
 
@@ -193,7 +215,6 @@ public class SelectData extends JFrame
 
             //======== scrollPane1 ========
             {
-                scrollPane1.addPropertyChangeListener(e -> scrollPane1PropertyChange(e));
 
                 //---- table1 ----
                 table1.setModel(new DefaultTableModel(
