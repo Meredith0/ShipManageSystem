@@ -11,17 +11,25 @@ import java.sql.*;
  **/
 public class SQL
 {
-    public String sqlLines;
-    public static String result[][] = new String[100][100];
-    public int effectedLines = 0;
+    public String sqlLines;//sql语句
+    public static String result[][] = new String[100][100];//返回的结果
+    public int effectedLines = 0;//影响行数
+    public int row=0;//行数
+    public int col=1;//列数
+
     public ResultSet rs = null;
     public PreparedStatement preparedStatement = null;
     Connection connection = null;
-    public int row=0;//行数
-    public int col=1;//列数
+
     public void pre()
     {
-        String url = "jdbc:sqlserver://localhost:1433;databaseName=船只资料数据库;user=user01;password=123456";
+        /**
+         * @description: 预编译 以及连接数据库
+         * @param []
+         * @return void
+         * @date: 2018/11/15 20:54
+         */
+        String url = "jdbc:sqlserver://localhost:1433;databaseName=船只资料数据库;user=user01;password=123456";//登陆字符串
         try
         {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -36,9 +44,14 @@ public class SQL
         }
     }
 
-
     public void exeSelect()
     {
+        /**
+         * @description: 用于执行select语句
+         * @param []
+         * @return void
+         * @date: 2018/11/15 20:54
+         */
         try
         {
             col=1;
@@ -53,6 +66,7 @@ public class SQL
                     result[t][t1] = null;
             }
 
+            //将结果集转换为二维数组
             while (rs.next())
             {
                 for (int i = 1; i <= row; i++)
@@ -73,6 +87,13 @@ public class SQL
 
     public void exeSql()
     {
+
+        /**
+         * @description: 用于执行不返回结果集的语句
+         * @param []
+         * @return void
+         * @date: 2018/11/15 20:55
+         */
         try
         {
             effectedLines = preparedStatement.executeUpdate(); //执行sql
@@ -87,6 +108,12 @@ public class SQL
 
     private static void closeStatAndConn(Statement stat, Connection conn)
     {
+        /**
+         * @description: 关闭stmt和连接
+         * @param [stat, conn]
+         * @return void
+         * @date: 2018/11/15 20:55
+         */
         if (null != stat)
         {
             try
@@ -109,9 +136,14 @@ public class SQL
         }
     }
 
-
     private static void closeStatAndConnAndResultSet(Statement stat, Connection conn, ResultSet rs)
     {
+        /**
+         * @description: 关闭ResultSet对象,关闭statement对象,关闭连接
+         * @param [stat, conn, rs]
+         * @return void
+         * @date: 2018/11/15 20:55
+         */
         if (null != rs)
         {
             try

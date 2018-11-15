@@ -1,20 +1,7 @@
-package com;/*
- * Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
- * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
- * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
- * Vestibulum commodo. Ut rhoncus gravida arcu.
- */
-
-//package src;
-
+package com;
 import java.security.MessageDigest;
 import java.util.Random;
 
-/**
- * 散列加密之32位哈希值的MD5算法，调用JDK里的API
- * ps：准确来说散列加密不是加密算法，因为它是不可逆的（只能加密，不能解密）
- */
 public class MD5
 {
     //MD5WithSalt(input, type)
@@ -23,8 +10,8 @@ public class MD5
     private static char[] hex = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     /**
-     * @Author: DavidHuang
-     * @Time: 2018/5/11 14:55
+     * @Author: Meredith
+     * @Time: 2018/9/11 14:55
      * @return:
      * @params: [inputStr] 输入明文
      * @Descrption: 不加盐MD5
@@ -150,5 +137,4 @@ public class MD5
         }
         return sb.toString();
     }
-
 }

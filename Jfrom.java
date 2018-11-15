@@ -1,5 +1,3 @@
-import java.awt.*;
-import javax.swing.*;
 /*
  * Created by JFormDesigner on Wed Nov 07 12:23:20 CST 2018
  */
