@@ -17,11 +17,11 @@ public class SQL
     public ResultSet rs = null;
     public PreparedStatement preparedStatement = null;
     Connection connection = null;
-
+    public int row=0;//行数
+    public int col=1;//列数
     public void pre()
     {
         String url = "jdbc:sqlserver://localhost:1433;databaseName=船只资料数据库;user=user01;password=123456";
-
         try
         {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -35,27 +35,31 @@ public class SQL
             e.printStackTrace();
         }
     }
+
+
     public void exeSelect()
     {
         try
         {
+            col=1;
+            row=0;
             rs = preparedStatement.executeQuery(); //执行sql
             //获取结果
-            int count = rs.getMetaData().getColumnCount();
-            //遍历行
-            int j = 0;
+            row = rs.getMetaData().getColumnCount();//获取行数
+            //清空数组
             for (int t = 0; t < result.length - 1; t++)
             {
-                for (int t1 = 0; t1 < t; t1++)
+                for (int t1 = 0; t1<result[t].length; t1++)
                     result[t][t1] = null;
             }
-            for (int i = 1; i < count + 1; i++)
+
+            while (rs.next())
             {
-                while (rs.next())
+                for (int i = 1; i <= row; i++)
                 {
-                    result[j][i] = rs.getString(i);
-                    j++;
+                    result[i][col] = rs.getString(i);
                 }
+                col++;
             }
         } catch (Exception e)
         {
@@ -64,6 +68,7 @@ public class SQL
         {
             closeStatAndConnAndResultSet(preparedStatement, connection, rs);
         }
+
     }
 
     public void exeSql()
@@ -80,7 +85,7 @@ public class SQL
         }
     }
 
-    public static void closeStatAndConn(Statement stat, Connection conn)
+    private static void closeStatAndConn(Statement stat, Connection conn)
     {
         if (null != stat)
         {
@@ -105,7 +110,7 @@ public class SQL
     }
 
 
-    public static void closeStatAndConnAndResultSet(Statement stat, Connection conn, ResultSet rs)
+    private static void closeStatAndConnAndResultSet(Statement stat, Connection conn, ResultSet rs)
     {
         if (null != rs)
         {

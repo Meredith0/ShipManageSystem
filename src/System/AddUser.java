@@ -1,5 +1,7 @@
 package System;
 
+import com.MD5;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -23,8 +25,6 @@ public class AddUser extends SystemGUI
     JLabel adduserLable = new JLabel("增加用户");
     JLabel userLable = new JLabel("用户名");
     JLabel passwordLabel = new JLabel("密码");
-    JRadioButton isAdmin;
-    JRadioButton notAdmini;
     JLabel nameLable = new JLabel("员工姓名");
     JLabel phoneLable = new JLabel("联系电话");
 
@@ -76,13 +76,16 @@ public class AddUser extends SystemGUI
         addButton.setFont(font1);
         panel.add(addButton);
         addButton.addActionListener(new AddUserHandler());
-
-
     }
-
 
     class AddUserHandler implements ActionListener
     {
+        /**
+         * @param
+         * @return
+         * @description: 增加用户
+         * @date: 2018/10/27 10:22
+         */
         @Override
         public void actionPerformed(ActionEvent e)
         {
@@ -90,19 +93,19 @@ public class AddUser extends SystemGUI
             String password = new String(passwordText.getPassword());
             String name = nameText.getText();
             String phone = phoneText.getText();
-            //SQL语句
-            //db.sqlLines = "insert into 系统用户表(用户ID,密码,员工姓名,联系电话) values('" + ID + "','" + password + "','" + name +
-            //        "','" + phone + "')";
-            //db.exeSql();//执行SQL语句
+            db.sqlLines = "insert into 系统用户表(用户ID,密码,权限,员工姓名,联系电话) values(?,?,?,?,?)";
+            //MD5加密
+            MD5 md5 = new MD5();
+            password = md5.MD5WithoutSalt(password);
 
-            db.sqlLines = "insert into 系统用户表(用户ID,密码,员工姓名,联系电话) values(?,?,?,?)";
             db.pre();
             try
             {
                 db.preparedStatement.setString(1, ID);
                 db.preparedStatement.setString(2, password);
-                db.preparedStatement.setString(3, name);
-                db.preparedStatement.setString(4, phone);
+                db.preparedStatement.setString(3, "0");//默认权限为0
+                db.preparedStatement.setString(4, name);
+                db.preparedStatement.setString(5, phone);
             } catch (SQLException e1)
             {
                 e1.printStackTrace();

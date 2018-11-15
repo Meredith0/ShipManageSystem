@@ -46,9 +46,9 @@ public class SetAuthority extends SystemGUI
         db.sqlLines = "Select 用户ID from 系统用户表";
         db.pre();
         db.exeSelect();
-        for (int i = 0; i < db.result.length; i++)
+        for (int i = 0; i < db.col; i++)
         {
-            rs[i] = db.result[i][1];
+            rs[i] = db.result[1][i];
         }
         JComboBox list = new JComboBox(rs);
         list0 = list;
@@ -71,16 +71,17 @@ public class SetAuthority extends SystemGUI
         panel.add(confirmButton);
         confirmButton.addActionListener(new setAuthorityHandler());
 
-        //flashButton.setBounds(600, 420, 100, 30);
-        //panel.AddBasicInfo(flashButton);
-        //flashButton.addActionListener(new flashHandler());
-
     }
-
 
 
     class listHandler implements ItemListener
     {
+        /**
+         * @description: 通过JCheckBox显示权限
+         * @param
+         * @return
+         * @date: 2018/11/15 20:32 进行了一次修改
+         */
         @Override
         public void itemStateChanged(ItemEvent e)
         {
@@ -97,37 +98,41 @@ public class SetAuthority extends SystemGUI
                 db.pre();
                 try
                 {
-                    db.preparedStatement.setString(1,ID);
+                    db.preparedStatement.setString(1, ID);
                 } catch (SQLException e1)
                 {
                     e1.printStackTrace();
                 }
                 db.exeSelect();//执行SQL语句
-                rs[1] = db.result[0][1];
-
-                if (db.result[0][1].equals("1"))
+                rs[1] = db.result[1][1];
+                if ("1".equals(db.result[1][1]))
                 {
                     charge.setSelected(true);
                 }
-                if (db.result[0][1].equals("2"))
+                if ("2".equals(db.result[1][1]))
                 {
                     supervisory.setSelected(true);
                 }
-                if (db.result[0][1].equals("3"))
+                if ("3".equals(db.result[1][1]))
                 {
                     charge.setSelected(true);
                     supervisory.setSelected(true);
                 }
-                if (db.result[0][1].equals("4"))
+                if ("4".equals(db.result[1][1]))
                 {
                     admini.setSelected(true);
                 }
-                if (db.result[0][1].equals("6"))
+                if ("5".equals(db.result[1][1]))
+                {
+                    charge.setSelected(true);
+                    supervisory.setSelected(true);
+                }
+                if ("6".equals(db.result[1][1]))
                 {
                     supervisory.setSelected(true);
                     admini.setSelected(true);
                 }
-                if (db.result[0][1].equals("7"))
+                if ("7".equals(db.result[1][1]))
                 {
                     charge.setSelected(true);
                     supervisory.setSelected(true);
@@ -140,32 +145,31 @@ public class SetAuthority extends SystemGUI
 
     public void refresh()
     {
+        /**
+         * @description: 刷新下拉列表
+         * @param []
+         * @return void
+         * @date: 2018/11/15 20:33
+         */
         db.sqlLines = "Select 用户ID from 系统用户表";
         db.pre();
         db.exeSelect();
-        String newrs[]=new String[100];
-        for (int i = 0; i < db.result.length; i++)
-        {
-            newrs[i] = db.result[i][1];
-        }
         list0.removeAllItems();
-        for (String temp : newrs)
+        for (int i = 0; i < db.col; i++)
         {
-            list0.addItem(temp);
+            list0.addItem(db.result[1][i]);
         }
-        list0.setSelectedIndex(-1);
+        list0.setSelectedIndex(-1);//设默认的选择为空
     }
-    //class flashHandler implements ActionListener
-    //{
-    //    @Override
-    //    public void actionPerformed(ActionEvent e)
-    //    {
-    //        flash();
-    //    }
-    //}
 
     class setAuthorityHandler implements ActionListener
     {
+        /**
+         * @description: 修改权限
+         * @param
+         * @return
+         * @date: 2018/11/15 20:34
+         */
         @Override
         public void actionPerformed(ActionEvent e)
         {
@@ -193,7 +197,7 @@ public class SetAuthority extends SystemGUI
             try
             {
                 db.preparedStatement.setString(1, strAutho);
-                db.preparedStatement.setString(2,ID);
+                db.preparedStatement.setString(2, ID);
             } catch (SQLException e1)
             {
                 e1.printStackTrace();

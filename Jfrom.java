@@ -1,3 +1,5 @@
+import java.awt.*;
+import javax.swing.*;
 /*
  * Created by JFormDesigner on Wed Nov 07 12:23:20 CST 2018
  */
@@ -220,7 +222,7 @@ public class Jfrom extends JPanel {
             this2.add(buildDate);
             buildDate.setBounds(518, 71, 60, 17);
             this2.add(bulidDate);
-            bulidDate.setBounds(609, 65, 125, 30);
+            bulidDate.setBounds(610, 65, 125, 30);
 
             //---- label23 ----
             label23.setText("\u603b\u957f");

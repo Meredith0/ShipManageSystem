@@ -1,4 +1,4 @@
-/*
+package com;/*
  * Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
  * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
  * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
@@ -15,22 +15,12 @@ import java.util.Random;
  * 散列加密之32位哈希值的MD5算法，调用JDK里的API
  * ps：准确来说散列加密不是加密算法，因为它是不可逆的（只能加密，不能解密）
  */
-class MD5
+public class MD5
 {
     //MD5WithSalt(input, type)
     //input是输入的明文;type是处理类型，0表示注册存hash值到库时，1表示登录验证时
 
     private static char[] hex = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-
-    public static void main(String[] args)
-    {
-        String input = "17357653";
-        System.out.println("MD5加密" + "\n"
-                + "明文：" + input + "\n"
-                + "无盐密文：" + MD5WithoutSalt(input));
-        System.out.println("带盐密文：" + MD5WithSalt(input, 0));
-        //System.out.println("带盐密文：" + MD5WithSalt(input, 1));
-    }
 
     /**
      * @Author: DavidHuang

@@ -4,15 +4,20 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81cacd43-6027-4b20-a9ef-81ddb4f1ee35" name="Default" comment="11-10 完成4-1, 录入船只基本资料的GUI">
+    <list default="true" id="81cacd43-6027-4b20-a9ef-81ddb4f1ee35" name="Default" comment="11-12 SQL反注入修改">
+      <change afterPath="$PROJECT_DIR$/src/BasicData/AddData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BasicData/AddData.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BasicData/SelectData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BasicData/SelectData.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1/storage_v2/_src_/database/Chuan_Zhi_Zi_Liao_Shu_Ju_Ku.L0dM2Q/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1/storage_v2/_src_/database/Chuan_Zhi_Zi_Liao_Shu_Ju_Ku.L0dM2Q/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/BasicInfo/add$confirmHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/BasicInfo/add.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/BasicInfo/testGUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jfrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jfrom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jfrom.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/Jfrom.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$loginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$loginHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$signinHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$signinHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/loginGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/loginGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/runGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/runGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/MD5.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser$AddUserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser$AddUserHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd$DeleteUserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd$DeleteUserHandler.class" afterDir="false" />
@@ -21,15 +26,19 @@
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$listHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$listHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$setAuthorityHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$setAuthorityHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/systemGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/systemGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/testGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/System/testGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/LoginGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/LoginGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/testGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/SQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/com/SQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicData/AddBasicInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicData/BasicDateGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/MD5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/AddUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/SetAuthority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/SetAuthority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/SystemGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/SystemGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/testGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/RunSystemGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SQL.java" afterDir="false" />
+    </list>
+    <list id="6f09a833-229f-4b56-9184-f8f55dac651b" name="11-12 SQL反注入修改" comment="11-12 SQL反注入修改&#10;&#10;(cherry picked from commit 2bba9d0b2c4b4ff97d3241c3f0031fea3441c6f5)">
+      <changelist_data name="Meredith0" email="1612733540@qq.com" date="1541781793000" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,14 +93,6 @@
         <item name="船只资料数据库: database" type="bdf80c8a:MssqlImplModel$Database" />
         <item name="dbo: schema" type="3adcb6a6:MssqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="系统用户表: table" type="a00791b9:MssqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="船只资料数据库@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="船只资料数据库: database" type="bdf80c8a:MssqlImplModel$Database" />
-        <item name="dbo: schema" type="3adcb6a6:MssqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="船舶所有权登记证书: table" type="a00791b9:MssqlImplModel$Table" />
       </path>
     </expand>
@@ -101,33 +102,33 @@
     <session id="1313638422">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="36" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.10" value="7" />
-          <entry key="project.open.time.11" value="5" />
+          <entry key="project.open.time.11" value="7" />
           <entry key="project.open.time.12" value="7" />
-          <entry key="project.open.time.13" value="2" />
-          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="6" />
           <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="37" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="84" />
+          <entry key="dummy" value="106" />
           <entry key="ft" value="34" />
-          <entry key="java" value="11554" />
+          <entry key="java" value="14628" />
           <entry key="md" value="10" />
-          <entry key="txt" value="75" />
+          <entry key="txt" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11554" />
+          <entry key="JAVA" value="14628" />
           <entry key="Markdown" value="10" />
-          <entry key="PLAIN_TEXT" value="159" />
+          <entry key="PLAIN_TEXT" value="196" />
           <entry key="VTL" value="34" />
         </counts>
       </usages-collector>
@@ -136,25 +137,25 @@
           <entry key="class" value="10" />
           <entry key="form" value="2" />
           <entry key="groovy" value="1" />
-          <entry key="java" value="110" />
-          <entry key="jfd" value="4" />
+          <entry key="java" value="139" />
+          <entry key="jfd" value="14" />
           <entry key="jpg" value="1" />
-          <entry key="md" value="22" />
+          <entry key="md" value="26" />
           <entry key="sql" value="2" />
           <entry key="xml" value="2" />
           <entry key="系统用户表" value="1" />
-          <entry key="船舶所有权登记证书" value="1" />
+          <entry key="船舶所有权登记证书" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="10" />
-          <entry key="Database Element" value="2" />
+          <entry key="Database Element" value="4" />
           <entry key="GUI_DESIGNER_FORM" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="110" />
-          <entry key="JFormDesigner_form" value="4" />
-          <entry key="Markdown" value="22" />
+          <entry key="JAVA" value="139" />
+          <entry key="JFormDesigner_form" value="14" />
+          <entry key="Markdown" value="26" />
           <entry key="Scratch" value="3" />
           <entry key="XML" value="2" />
         </counts>
@@ -165,14 +166,14 @@
     <favorites_list name="ShipManageSystem" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.747191">
+    <splitter split-orientation="horizontal" split-proportion="0.8354662">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/System/SystemGUI.java">
+            <entry file="file://$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="484">
-                  <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+                <state relative-caret-position="440">
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -181,19 +182,18 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Login/runGUI.java">
+            <entry file="file://$PROJECT_DIR$/src/BasicData/SelectData.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/SQL.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2647">
-                  <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
+                <state relative-caret-position="1722">
+                  <caret line="114" column="11" lean-forward="true" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#450#451#0" expanded="true" />
+                    <element signature="e#482#483#0" expanded="true" />
+                    <element signature="method#initComponents#0;class#SelectData#0" />
+                    <marker date="1542285660106" expanded="true" signature="3638:8944" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                    <marker date="1542285660106" expanded="true" signature="8956:9433" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -201,34 +201,34 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/System/AddUser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="560">
-                  <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+                <state relative-caret-position="258">
+                  <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="220">
+                  <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="method#DeleteUser_ChangePasswd#0;class#DeleteUser_ChangePasswd#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/System/SetAuthority.java">
+            <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="66">
-                  <caret line="186" column="27" lean-forward="true" selection-start-line="186" selection-start-column="27" selection-end-line="186" selection-end-column="27" />
+                <state relative-caret-position="-215">
+                  <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/System/testGUI.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="13" selection-start-line="13" selection-end-line="13" />
-                  <folding>
-                    <element signature="e#228#229#0" expanded="true" />
+                    <marker date="1542284662011" expanded="false" signature="2974:20484" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                    <marker date="1542284662011" expanded="true" signature="20496:22307" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
                   </folding>
                 </state>
               </provider>
@@ -320,19 +320,26 @@
         <option value="$PROJECT_DIR$/src/Login/loginGUI.java" />
         <option value="$PROJECT_DIR$/src/BasicInfo/testGUI.java" />
         <option value="$PROJECT_DIR$/Jfrom.java" />
-        <option value="$PROJECT_DIR$/Jfrom.jfd" />
         <option value="$PROJECT_DIR$/src/BasicInfo/add.java" />
         <option value="$PROJECT_DIR$/src/BasicInfo/AddBasicInfo.java" />
-        <option value="$PROJECT_DIR$/src/BasicData/BasicDateGUI.java" />
-        <option value="$PROJECT_DIR$/src/BasicData/AddBasicInfo.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Login/Login.java" />
-        <option value="$PROJECT_DIR$/src/System/AddUser.java" />
-        <option value="$PROJECT_DIR$/src/System/SetAuthority.java" />
-        <option value="$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java" />
         <option value="$PROJECT_DIR$/src/System/SystemGUI.java" />
         <option value="$PROJECT_DIR$/src/Login/LoginGUI.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/AddBasicInfo.java" />
+        <option value="$PROJECT_DIR$/Jfrom.jfd" />
+        <option value="$PROJECT_DIR$/src/BasicData/AddData.jfd" />
+        <option value="$PROJECT_DIR$/src/BasicData/BasicDateGUI.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/SelectData.jfd" />
         <option value="$PROJECT_DIR$/src/com/SQL.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/AddData.java" />
+        <option value="$PROJECT_DIR$/src/System/SetAuthority.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/SelectData.java" />
+        <option value="$PROJECT_DIR$/src/System/AddUser.java" />
+        <option value="$PROJECT_DIR$/src/System/RunSystemGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/MD5.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java" />
+        <option value="$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java" />
       </list>
     </option>
   </component>
@@ -349,8 +356,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1116" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -612,6 +619,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -653,10 +661,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="SearchEverywhereHistoryKey" value="own&#9;PSI&#9;JAVA://java.security.acl.Owner&#10;system&#9;PSI&#9;JAVA://java.lang.System" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="214" />
@@ -664,15 +672,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541066326650" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="SQL Server (Microsoft)" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javaChap7Test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -686,15 +694,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.testGUI">
+  <component name="RunManager">
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicDateGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BasicData.BasicDateGUI" />
+    <configuration name="AddBasicInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BasicData.AddBasicInfo" />
+      <module name="ShipManageSystem" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BasicData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BasicData.AddData" />
       <module name="ShipManageSystem" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -708,20 +730,40 @@
       </method>
     </configuration>
     <configuration name="MD5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MD5" />
-      <module name="ShipManageSystem" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SQL (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.SQL" />
+      <option name="MAIN_CLASS_NAME" value="com.MD5" />
       <module name="ShipManageSystem" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunBasicDateGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BasicData.RunBasicDateGUI" />
+      <module name="ShipManageSystem" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BasicData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunSystemGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="System.RunSystemGUI" />
+      <module name="ShipManageSystem" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="System.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -743,28 +785,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="System.testGUI" />
-      <module name="ShipManageSystem" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="System.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test_sql" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test_sql" />
-      <module name="ShipManageSystem" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
@@ -775,19 +795,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.runGUI" />
-      <item itemvalue="Application.test_sql" />
-      <item itemvalue="Application.testGUI" />
+      <item itemvalue="Application.RunSystemGUI" />
+      <item itemvalue="Application.RunBasicDateGUI" />
+      <item itemvalue="Application.AddBasicInfo" />
+      <item itemvalue="Application.AddData" />
       <item itemvalue="Application.MD5" />
-      <item itemvalue="Application.BasicDateGUI" />
-      <item itemvalue="Application.SQL (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.testGUI" />
-        <item itemvalue="Application.SQL (1)" />
-        <item itemvalue="Application.BasicDateGUI" />
+        <item itemvalue="Application.RunSystemGUI" />
         <item itemvalue="Application.MD5" />
-        <item itemvalue="Application.test_sql" />
+        <item itemvalue="Application.RunBasicDateGUI" />
+        <item itemvalue="Application.AddData" />
+        <item itemvalue="Application.AddBasicInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -849,7 +869,11 @@
       <workItem from="1541771454651" duration="9262000" />
       <workItem from="1541914472299" duration="334000" />
       <workItem from="1541951061585" duration="202000" />
-      <workItem from="1541989021631" duration="5006000" />
+      <workItem from="1541989021631" duration="6811000" />
+      <workItem from="1542074396627" duration="1255000" />
+      <workItem from="1542161830499" duration="16941000" />
+      <workItem from="1542240003889" duration="6457000" />
+      <workItem from="1542276936973" duration="9240000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1538035711958</created>
@@ -907,11 +931,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541779881322</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="11-12 SQL反注入修改">
+      <created>1541996584450</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1541996584450</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163946000" />
+    <option name="totallyTimeSpent" value="199644000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -931,28 +962,30 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.4082774" side_tool="true" weight="0.15831557" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.5917226" visible="true" weight="0.14605543" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.5917226" visible="true" weight="0.12526652" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32887402" />
       <window_info anchor="bottom" id="Inspection Results" order="1" weight="0.1935123" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.6359275" weight="0.27740493" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.3651386" side_tool="true" weight="0.29418343" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.14988814" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3411633" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.26398212" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.6348614" visible="true" weight="0.2885906" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.26330534" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="7" sideWeight="0.6348614" weight="0.18344519" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.31543624" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.6348614" weight="0.1756152" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.6348614" weight="0.17449665" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.6337953" weight="0.2254902" />
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32885906" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="15" />
+      <window_info anchor="bottom" id="JFormDesigner Error Log" order="16" weight="0.2360179" />
+      <window_info anchor="bottom" id="JFormDesigner Bindings" order="17" weight="0.32997763" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.50137365" side_tool="true" weight="0.21002132" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.2675906" />
+      <window_info anchor="right" id="Database" order="4" weight="0.18603411" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32969153" />
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -1011,7 +1044,8 @@
     <MESSAGE value="11-6 删除用户功能完成, 并完善了增加用户功能" />
     <MESSAGE value="11-8 完成用户权限管理" />
     <MESSAGE value="11-10 完成4-1, 录入船只基本资料的GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="11-10 完成4-1, 录入船只基本资料的GUI" />
+    <MESSAGE value="11-12 SQL反注入修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="11-12 SQL反注入修改" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1052,34 +1086,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="514" selection-start-line="514" selection-end-line="514" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/Tasks/JAVA/sqljdbc4-2.0.jar/sqljdbc4-2.0.jar!/com/microsoft/sqlserver/jdbc/SQLServerDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.logging/java/util/logging/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="431" selection-start-line="431" selection-end-line="431" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.logging/java/util/logging/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1196,20 +1202,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MD5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.desktop/javax/swing/JComboBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="201" column="10" lean-forward="true" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.sql/java/sql/ResultSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1232,91 +1224,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jfrom.jfd">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state paletteWidth="164" propertiesWidth="193" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jfrom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3514">
-          <caret line="131" column="34" lean-forward="true" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5b4c657a-2878-4e33-a06c-3761aa5530b1/database/船只资料数据库/schema/dbo/table/船舶所有权登记证书">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5b4c657a-2878-4e33-a06c-3761aa5530b1/console_1.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/AddBasicInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="394" column="33" lean-forward="true" selection-start-line="394" selection-start-column="33" selection-end-line="394" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="620">
-            <caret line="31" selection-start-line="31" selection-end-line="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.sql/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="246" column="29" selection-start-line="246" selection-start-column="29" selection-end-line="246" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/AddUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/BasicDateGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/SystemGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1334,40 +1248,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/SetAuthority.java">
+    <entry file="file://$PROJECT_DIR$/src/Login/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="186" column="27" lean-forward="true" selection-start-line="186" selection-start-column="27" selection-end-line="186" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Jfrom.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state paletteWidth="164" propertiesWidth="193" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/testGUI.java">
+    <entry file="file://$PROJECT_DIR$/Jfrom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="440">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5b4c657a-2878-4e33-a06c-3761aa5530b1/database/船只资料数据库/schema/dbo/table/船舶所有权登记证书">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state paletteWidth="161" structureHeight="223" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.desktop/javax/swing/JComboBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="226" column="11" selection-start-line="226" selection-start-column="11" selection-end-line="226" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/AddBasicInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/BasicData/SelectData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state paletteWidth="186" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="620">
+            <caret line="31" selection-start-line="31" selection-end-line="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/SelectData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1722">
+          <caret line="114" column="11" lean-forward="true" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
           <folding>
-            <element signature="e#228#229#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="method#initComponents#0;class#SelectData#0" />
+            <marker date="1542285660106" expanded="true" signature="3638:8944" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542285660106" expanded="true" signature="8956:9433" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2647">
-          <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
+        <state relative-caret-position="400">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-215">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1542284662011" expanded="false" signature="2974:20484" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542284662011" expanded="true" signature="20496:22307" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/RunSystemGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/AddUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/SystemGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/SetAuthority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="170" column="34" lean-forward="true" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setAuthority#0;class#SetAuthority#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#DeleteUser_ChangePasswd#0;class#DeleteUser_ChangePasswd#0" />
+          </folding>
         </state>
       </provider>
     </entry>

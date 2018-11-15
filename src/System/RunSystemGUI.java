@@ -7,7 +7,7 @@ package System;
  * @Description: 用于测试
  **/
 
-public class testGUI
+public class RunSystemGUI
 {
     public static void main(String[] args)
     {

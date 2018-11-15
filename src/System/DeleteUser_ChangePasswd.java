@@ -1,5 +1,7 @@
 package System;
 
+import com.MD5;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -60,37 +62,51 @@ public class DeleteUser_ChangePasswd extends SystemGUI
 
     class UpdatePasswdHandler implements ActionListener
     {
+        /**
+         * @param
+         * @return
+         * @description: 修改密码
+         * @date: 2018/10/27 14:29
+         */
         @Override
         public void actionPerformed(ActionEvent e)
         {
             String ID = userText.getText();
             String password = new String(passwordText.getPassword());
-
+            //MD5加密
+            MD5 md5 = new MD5();
+            password = md5.MD5WithoutSalt(password);
             //SQL语句
             db.sqlLines = "update 系统用户表 set 密码=? where 用户ID=?";
             db.pre();
             try
             {
-                db.preparedStatement.setString(1,password);
-                db.preparedStatement.setString(2,ID);
+                db.preparedStatement.setString(1, password);
+                db.preparedStatement.setString(2, ID);
             } catch (SQLException e1)
             {
                 e1.printStackTrace();
             }
 
             db.exeSql();//执行SQL语句
-            if (db.effectedLines >0)
+            if (db.effectedLines > 0)
             {
                 JOptionPane.showMessageDialog(null, "修改密码成功", "", JOptionPane.INFORMATION_MESSAGE);
-            }
-            else
+            } else
             {
                 JOptionPane.showMessageDialog(null, "修改密码失败", "", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
+
     class DeleteUserHandler implements ActionListener
     {
+        /**
+         * @param
+         * @return
+         * @description: 删除用户
+         * @date: 2018/10/28 20:31
+         */
         @Override
         public void actionPerformed(ActionEvent e)
         {
@@ -100,22 +116,23 @@ public class DeleteUser_ChangePasswd extends SystemGUI
             //SQL语句
             db.sqlLines = "delete from 系统用户表 where 用户ID=? and 密码=?";
             db.pre();
+            MD5 md5 = new MD5();
+            password = md5.MD5WithoutSalt(password);
             try
             {
                 db.preparedStatement.setString(1, ID);
-                db.preparedStatement.setString(2,password);
+                db.preparedStatement.setString(2, password);
             } catch (SQLException e1)
             {
                 e1.printStackTrace();
             }
             db.exeSql();//执行SQL语句
 
-            if (db.effectedLines >0)
+            if (db.effectedLines > 0)
             {
                 JOptionPane.showMessageDialog(null, "删除用户成功", "", JOptionPane.INFORMATION_MESSAGE);
                 sA.refresh();
-            }
-            else
+            } else
             {
                 JOptionPane.showMessageDialog(null, "删除用户失败", "", JOptionPane.ERROR_MESSAGE);
             }

@@ -1,0 +1,378 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "frame1"
+			"visible": true
+			"defaultCloseOperation": 3
+			"background": new java.awt.Color( 0, 0, 0, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "15, 56, 0, 118, 0, 0, 68, 147, 0, 70, 0, 132, 0"
+				"$rowSpecs": "60, 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 38, 33, 0"
+				"$hGap": 5
+				"$vGap": 5
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "addData"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "            船主基本资料"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridwidth": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label26"
+					"text": "                              船只基本资料"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridwidth": 5
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "船主姓名"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 1
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 3
+					"gridy": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "船只名称"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 1
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField6"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label16"
+					"text": "建成时间"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 1
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField16"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridwidth": 2
+					"gridy": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "身份证"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField3"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 3
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "船舶类型"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField7"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label17"
+					"text": "总长"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField17"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 2
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "联系电话"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField4"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 3
+					"gridy": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "船体材料"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField8"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label18"
+					"text": "型宽"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField18"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 3
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "详细住址"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 4
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField5"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 3
+					"gridy": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "机型"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 4
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField9"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label19"
+					"text": "型深"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 4
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField19"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 4
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "船籍港"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 5
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField10"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 5
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label20"
+					"text": "总吨"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 5
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField20"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 5
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": "建造厂"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 6
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField11"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 6
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label21"
+					"text": "净吨"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 6
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField21"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 6
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": "船舶登记号"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 7
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField12"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 7
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label22"
+					"text": "主机功率"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 7
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField22"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 7
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"text": "营运证号"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 8
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField13"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 8
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label23"
+					"text": "载重吨(AB级)"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 8
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField23"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 8
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label14"
+					"text": "入户时间"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 9
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField14"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 9
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label24"
+					"text": "航行区域"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 9
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField24"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 9
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label15"
+					"text": "迁出时间"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+					"gridy": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField15"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 10
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label25"
+					"text": "备注"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridy": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField25"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 10
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "确定"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 10
+					"gridy": 12
+					"gridwidth": 3
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 790
+				"height": 480
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 795, 510 )
+		} )
+	}
+}
