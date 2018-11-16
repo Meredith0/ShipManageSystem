@@ -2,7 +2,7 @@
  * Created by JFormDesigner on Thu Nov 15 22:26:34 CST 2018
  */
 
-package CertificatesData;
+package InspectionCtf;
 
 import com.SQL;
 
