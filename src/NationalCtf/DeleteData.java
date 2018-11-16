@@ -1,8 +1,8 @@
 /*
- * Created by JFormDesigner on Fri Nov 16 15:29:42 CST 2018
+ * Created by JFormDesigner on Fri Nov 16 19:34:53 CST 2018
  */
 
-package InspectionCtf;
+package NationalCtf;
 
 import com.SQL;
 
@@ -14,23 +14,20 @@ import java.sql.SQLException;
 /**
  * @author Meredith
  */
-public class DeleteData extends JFrame
-{
+public class DeleteData extends JFrame {
     SQL db = new SQL();
-    public DeleteData()
-    {
+    public DeleteData() {
         initComponents();
     }
 
-    private void button1ActionPerformed(ActionEvent e)
-    {
+    private void button1ActionPerformed(ActionEvent e) {
         /**
-         * @description: 删除船只检验证资料
+         * @description: 删除船舶国籍证书
          * @param [e]
          * @return void
          * @date: 2018/11/16 15:33
          */
-        db.sqlLines = "delete from 船只检验证书 where 船名=? and 船检登记号=?";
+        db.sqlLines = "delete from 船舶国籍证书 where 船名=? and 船检登记号=?";
         db.pre();
         try
         {
@@ -54,7 +51,7 @@ public class DeleteData extends JFrame
         try
         {
             db.preparedStatement.setString(1, textField1.getText());
-            db.preparedStatement.setString(2, "船只检验证书");
+            db.preparedStatement.setString(2, "船舶国籍证书");
         } catch (SQLException e1)
         {
             e1.printStackTrace();
@@ -62,8 +59,7 @@ public class DeleteData extends JFrame
         db.exeSql();
     }
 
-    private void initComponents()
-    {
+    private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         this2 = new JFrame();
         label1 = new JLabel();

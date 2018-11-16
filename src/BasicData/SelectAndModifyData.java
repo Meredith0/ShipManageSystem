@@ -35,7 +35,7 @@ public class SelectAndModifyData extends JFrame
     public void addCheckBoxItems()
     {
         comboBox1.addItem("船只名称");
-        comboBox1.addItem("船检登记号");
+        comboBox1.addItem("船舶登记号");
         comboBox1.addItem("船舶类型");
         comboBox1.addItem("船舶营运证号");
     }
@@ -48,8 +48,8 @@ public class SelectAndModifyData extends JFrame
          * @return void
          * @date: 2018/11/15 20:21
          */
-        db.sqlLines = "select 序号,船名,船舶种类,船体材料,机型,船籍港,造船地点,登记号码,营运证号,入户时间,迁出时间,建成日期,总长,型宽,型深,总吨,净吨,功率,载重吨,航行区域 from " +
-                "船舶所有权登记证书 where 船名=? or 船舶种类=? or 登记号码=? or 营运证号=?";
+        db.sqlLines = "select 序号,船名,船舶种类,船体材料,机型,船籍港,造船地点,船舶登记号,营运证号,入户时间,迁出时间,建成日期,总长,型宽,型深,总吨,净吨,功率,载重吨,航行区域 from " +
+                "船舶所有权登记证书 where 船名=? or 船舶种类=? or 船舶登记号=? or 营运证号=?";
         db.pre();
         try
         {
@@ -79,7 +79,7 @@ public class SelectAndModifyData extends JFrame
         columnNames.add("机型");
         columnNames.add("船籍港");
         columnNames.add("造船地点");
-        columnNames.add("登记号码");
+        columnNames.add("船舶登记号");
         columnNames.add("营运证号");
         columnNames.add("入户时间");
         columnNames.add("迁出时间");
@@ -114,7 +114,8 @@ public class SelectAndModifyData extends JFrame
          * @return void
          * @date: 2018/11/15 20:22
          */
-        db.sqlLines = "update 船舶所有权登记证书 set 船名=?,船舶种类=?,船体材料=?,机型=?,船籍港=?,造船地点=?,登记号码=?,营运证号=?,入户时间=?,迁出时间=?,建成日期=?,总长=?,型宽=?,型深=?,总吨=?,净吨=?," +
+        db.sqlLines = "update 船舶所有权登记证书 set 船名=?,船舶种类=?,船体材料=?,机型=?,船籍港=?,造船地点=?,船舶登记号=?,营运证号=?,入户时间=?,迁出时间=?,建成日期=?," +
+                "总长=?,型宽=?,型深=?,总吨=?,净吨=?," +
                 "功率=?,载重吨=?,航行区域=? where 序号=?";
         db.pre();
         try

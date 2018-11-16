@@ -5,7 +5,7 @@ new FormModel {
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
 			"$columnSpecs": "61, 111, 152, 66, 110, 166, 41"
-			"$rowSpecs": "0, 33, 32, 30, 8, 30, 30, 30, 30, 30, 30, 36, 36"
+			"$rowSpecs": "0, 33, 32, 30, 8, 30, 30, 30, 30, 30, 30, 36, 30, 30, 31, 30, 46"
 			"$hGap": 5
 			"$vGap": 5
 			"$alignLeft": true
@@ -185,18 +185,13 @@ new FormModel {
 				"gridy": 9
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
-				name: "label13"
-				"text": "船只检验情况记录"
-				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+				name: "label20"
+				"text": "        船只检验情况记录"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 7, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-				"gridx": 4
-				"gridy": 9
-			} )
-			add( new FormComponent( "javax.swing.JTextField" ) {
-				name: "textField10"
-			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-				"gridx": 5
-				"gridy": 9
+				"gridx": 1
+				"gridy": 11
+				"gridwidth": 2
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button1"
@@ -204,12 +199,91 @@ new FormModel {
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-				"gridx": 3
+				"gridx": 5
 				"gridy": 11
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "办理日期"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 12
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField13"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 2
+				"gridy": 12
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "办理人"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 13
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField14"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 2
+				"gridy": 13
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label19"
+				"text": "证书编号"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 4
+				"gridy": 13
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField17"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 5
+				"gridy": 13
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+				"text": "证书有效期至"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 14
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField15"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 2
+				"gridy": 14
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label18"
+				"text": "业务办理情况"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 15
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField16"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 2
+				"gridy": 15
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "添加记录"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 5
+				"gridy": 15
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 5 )
-			"size": new java.awt.Dimension( 860, 510 )
+			"size": new java.awt.Dimension( 860, 665 )
 		} )
 	}
 }
