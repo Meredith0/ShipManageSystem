@@ -1,8 +1,8 @@
 /*
- * Created by JFormDesigner on Thu Nov 15 22:02:09 CST 2018
+ * Created by JFormDesigner on Fri Nov 16 15:35:47 CST 2018
  */
 
-package BasicData;
+package CertificatesData;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,12 +13,6 @@ import java.awt.event.ActionEvent;
  */
 public class Panel extends JFrame
 {
-    /**
-     * @description: 用于调用三个组件
-     * @param
-     * @return
-     * @date: 2018/11/15 22:22
-     */
     public Panel()
     {
         initComponents();
@@ -27,19 +21,16 @@ public class Panel extends JFrame
     private void button1ActionPerformed(ActionEvent e)
     {
         new AddData();
-
     }
 
     private void button3ActionPerformed(ActionEvent e)
     {
-        SelectAndModifyData selectAndModifyData = new SelectAndModifyData();
-        selectAndModifyData.addCheckBoxItems();
+        new SelectAndModifyData();
     }
 
     private void button2ActionPerformed(ActionEvent e)
     {
         new DeleteData();
-
     }
 
     private void returnUpperPanelHandler(ActionEvent e)
@@ -67,14 +58,14 @@ public class Panel extends JFrame
         ((GridBagLayout)contentPane.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
 
         //---- label1 ----
-        label1.setText("     \u8239\u53ea\u57fa\u672c\u8d44\u6599\u7ba1\u7406\u6a21\u5757");
+        label1.setText("     \u8239\u53ea\u68c0\u9a8c\u8bc1\u4e66\u7ba1\u7406\u6a21\u5757");
         label1.setFont(label1.getFont().deriveFont(label1.getFont().getSize() + 10f));
         contentPane.add(label1, new GridBagConstraints(1, 0, 4, 1, 0.0, 0.0,
             GridBagConstraints.CENTER, GridBagConstraints.BOTH,
             new Insets(0, 0, 5, 5), 0, 0));
 
         //---- button1 ----
-        button1.setText("\u65b0\u589e\u8239\u53ea");
+        button1.setText("\u65b0\u589e\u68c0\u9a8c\u8bc1\u4e66");
         button1.setFont(button1.getFont().deriveFont(button1.getFont().getSize() + 5f));
         button1.addActionListener(e -> button1ActionPerformed(e));
         contentPane.add(button1, new GridBagConstraints(1, 2, 2, 2, 0.0, 0.0,

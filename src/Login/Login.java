@@ -1,5 +1,6 @@
 package Login;
 
+import com.MD5;
 import com.SQL;
 
 import javax.swing.*;
@@ -68,6 +69,8 @@ public class Login extends LoginGUI
             SQL login = new SQL();
             String ID = userText.getText();
             String password = new String(passwordText.getPassword());
+            MD5 md5 = new MD5();
+            password = md5.MD5WithoutSalt(password);
             login.sqlLines = "select 用户ID,密码 from 系统用户表 where 用户ID=?"+" and 密码=?";
             login.pre();
             try
@@ -79,7 +82,7 @@ public class Login extends LoginGUI
                 e1.printStackTrace();
             }
             login.exeSelect();//执行SQL语句
-            if (login.result[0][1] == null)
+            if (login.result[1][1] == null)
             {
                 JOptionPane.showMessageDialog(null, "密码错误,请重新输入", "密码错误", JOptionPane.ERROR_MESSAGE);
             } else

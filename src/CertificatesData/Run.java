@@ -1,17 +1,16 @@
-package BasicData;
+package CertificatesData;
 
 /**
  * @Author: Meredith
- * @CreateDate: 2018-11-09 22:05
+ * @CreateDate: 2018-11-15 22:32
  * @Project: ShipManageSystem
- * @Package: BasicData
- * @Description: 用于测试
+ * @Package: CertificatesData
+ * @Description:
  **/
-public class RunBasicDateGUI
+public class Run
 {
     public static void main(String[] args)
     {
         new Panel();
-
     }
 }

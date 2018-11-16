@@ -1,161 +1,28 @@
 /*
- * Created by JFormDesigner on Wed Nov 14 19:58:13 CST 2018
+ * Created by JFormDesigner on Fri Nov 16 15:04:14 CST 2018
  */
 
 package BasicData;
 
-import com.SQL;
-
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ItemEvent;
-import java.sql.SQLException;
-import java.util.Vector;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.table.*;
 
 /**
  * @author Meredith
  */
-public class SelectData extends JFrame
-{
-    SQL db = new SQL();
+public class SelectData  {
 
-    public SelectData()
-    {
-        initComponents();
-    }
-
-    private void comboBox1ItemStateChanged(ItemEvent e)
-    {
+    private void button1ActionPerformed(ActionEvent e) {
         // TODO add your code here
     }
 
-    public void addCheckBoxItems()
-    {
-        comboBox1.addItem("船只名称");
-        comboBox1.addItem("船检登记号");
-        comboBox1.addItem("船舶类型");
-        comboBox1.addItem("船舶营运证号");
-    }
-
-    private void button1ActionPerformed(ActionEvent e)
-    {
-        /**
-         * @description: 按船只名称、船检登记号、船舶类型、船舶营运证号等进行查询相关船只的基本资料
-         * @param [e]
-         * @return void
-         * @date: 2018/11/15 20:21
-         */
-        db.sqlLines = "select 序号,船名,船舶种类,船体材料,机型,船籍港,造船地点,登记号码,营运证号,入户时间,迁出时间,建成日期,总长,型宽,型深,总吨,净吨,功率,载重吨,航行区域 from " +
-                "船舶所有权登记证书 where 船名=? or 船舶种类=? or 登记号码=? or 营运证号=?";
-        db.pre();
-        try
-        {
-            db.preparedStatement.setString(1, textField1.getText());
-            db.preparedStatement.setString(2, textField1.getText());
-            db.preparedStatement.setString(3, textField1.getText());
-            db.preparedStatement.setString(4, textField1.getText());
-        } catch (SQLException e1)
-        {
-            e1.printStackTrace();
-        }
-        db.exeSelect();
-
-        /**
-         * @description: 把数据库结果集db.result[][]转成Vector<Vector>, 打表
-         * @param [e]
-         * @return void
-         * @date: 2018/11/15 20:35
-         */
-        //将列名插入到Vector
-        Vector columnNames;
-        columnNames = new Vector();
-        columnNames.add("序号");
-        columnNames.add("船名");
-        columnNames.add("船舶种类");
-        columnNames.add("船体材料");
-        columnNames.add("机型");
-        columnNames.add("船籍港");
-        columnNames.add("造船地点");
-        columnNames.add("登记号码");
-        columnNames.add("营运证号");
-        columnNames.add("入户时间");
-        columnNames.add("迁出时间");
-        columnNames.add("建成日期");
-        columnNames.add("总长");
-        columnNames.add("型宽");
-        columnNames.add("型深");
-        columnNames.add("总吨");
-        columnNames.add("净吨");
-        columnNames.add("功率");
-        columnNames.add("载重吨");
-        columnNames.add("航行区域");
-
-        //二维容器
-        Vector rowData = new Vector();
-        Vector row = new Vector();
-        for (int i = 1; i < db.col; i++)//遍历列
-        {
-            for (int j = 1; j <= db.row; j++)//遍历行
-            {
-                row.add(db.result[j][i]);
-            }
-            rowData.add(row);//将行添加到Vector
-        }
-        table1.setModel(new DefaultTableModel(rowData, columnNames));//打表
-    }
-
     private void button2ActionPerformed(ActionEvent e) {
-        /**
-         * @description: 由Jtable的数据更新数据库
-         * @param [e]
-         * @return void
-         * @date: 2018/11/15 20:22
-         */
-        db.sqlLines = "update 船舶所有权登记证书 set 船名=?,船舶种类=?,船体材料=?,机型=?,船籍港=?,造船地点=?,登记号码=?,营运证号=?,入户时间=?,迁出时间=?,建成日期=?,总长=?,型宽=?,型深=?,总吨=?,净吨=?," +
-                "功率=?,载重吨=?,航行区域=? where 序号=?";
-        db.pre();
-        try
-        {
-            db.preparedStatement.setString(1,table1.getValueAt(0,1).toString());
-            db.preparedStatement.setString(2,table1.getValueAt(0,2).toString());
-            db.preparedStatement.setString(3,table1.getValueAt(0,3).toString());
-            db.preparedStatement.setString(4,table1.getValueAt(0,4).toString());
-            db.preparedStatement.setString(5,table1.getValueAt(0,5).toString());
-            db.preparedStatement.setString(6,table1.getValueAt(0,6).toString());
-            db.preparedStatement.setString(7,table1.getValueAt(0,7).toString());
-            db.preparedStatement.setString(8,table1.getValueAt(0,8).toString());
-            db.preparedStatement.setString(9,table1.getValueAt(0,9).toString());
-            db.preparedStatement.setString(10,table1.getValueAt(0,10).toString());
-            db.preparedStatement.setString(11,table1.getValueAt(0,11).toString());
-            db.preparedStatement.setString(12,table1.getValueAt(0,12).toString());
-            db.preparedStatement.setString(13,table1.getValueAt(0,13).toString());
-            db.preparedStatement.setString(14,table1.getValueAt(0,14).toString());
-            db.preparedStatement.setString(15,table1.getValueAt(0,15).toString());
-            db.preparedStatement.setString(16,table1.getValueAt(0,16).toString());
-            db.preparedStatement.setString(17,table1.getValueAt(0,17).toString());
-            db.preparedStatement.setString(18,table1.getValueAt(0,18).toString());
-            db.preparedStatement.setString(19,table1.getValueAt(0,19).toString());
-            db.preparedStatement.setString(20,table1.getValueAt(0,0).toString());
-
-        } catch (SQLException e1)
-        {
-            e1.printStackTrace();
-        }
-        db.exeSql();
-        if (db.effectedLines > 0)
-        {
-            JOptionPane.showMessageDialog(null, "修改数据成功", "", JOptionPane.INFORMATION_MESSAGE);
-        } else
-        {
-            JOptionPane.showMessageDialog(null, "修改数据失败", "", JOptionPane.ERROR_MESSAGE);
-        }
-
+        // TODO add your code here
     }
 
-    private void initComponents()
-    {
+    private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         frame1 = new JFrame();
         panel1 = new JPanel();
