@@ -20,9 +20,17 @@ public class Warning extends JFrame
 {
     SQL db = new SQL();
 
+    public static void main(String[] args)
+    {
+        Warning warning = new Warning();
+        warning.initComponents();
+        warning.setWarning();
+
+    }
     public void setWarning()
     {
-        db.sqlLines = "select 证书有效期至,船名,证书名 from 各证书有效期";
+        //select那些未过期的证书
+        db.sqlLines = "select 证书有效期至,船名,证书名 from 各证书有效期 where 证书有效期至 > CONVERT(varchar,GETDATE(),23)";
         db.pre();
         db.exeSelect();
         Calendar cal = Calendar.getInstance();
@@ -31,7 +39,7 @@ public class Warning extends JFrame
         String now = sdf.format(Calendar.getInstance().getTime());
 
         Date date = null;
-        String text="";
+        String text="                 Warning\n";
         {
             for (int j = 1; j < db.row; j++)//遍历行
             {
@@ -47,7 +55,7 @@ public class Warning extends JFrame
                 String dbDate = sdf.format(cal.getTime());
                 if (now.compareTo(dbDate) > 0)
                 {
-                    text += "船只[" + db.result[2][j] + "]的证书[" + db.result[3][j] + "]即将过期\n";
+                    text += "船只 [" + db.result[2][j] + "] 的证书 [" + db.result[3][j] + "] 将于一个月内过期\n";
                 }
             }
         }

@@ -193,6 +193,54 @@ public class SelectAndModifyData extends JFrame
 
     }
 
+    private void button3ActionPerformed(ActionEvent e) {
+        /**
+         * @description: 查询[国籍证书处理历史表]
+         * @param [e]
+         * @return void
+         * @date: 2018/11/17 10:24
+         */
+
+        db.sqlLines = "select * from 国籍证书处理历史表 where 船名=? ";
+        db.pre();
+        try
+        {
+            db.preparedStatement.setString(1, textField2.getText());
+        } catch (SQLException e1)
+        {
+            e1.printStackTrace();
+        }
+        db.exeSelect();
+        /**
+         * @description: 把数据库结果集db.result[][]转成Vector<Vector>, 打表
+         * @param [e]
+         * @return void
+         * @date: 2018/11/16 18:43
+         */
+        //将列名插入到Vector
+        Vector columnNames;
+        columnNames = new Vector();
+        columnNames.add("序号");
+        columnNames.add("船名");
+        columnNames.add("证书编号");
+        columnNames.add("办理日期");
+        columnNames.add("办理人");
+        columnNames.add("证书有效期至");
+        columnNames.add("业务办理情况");
+        //二维容器
+        Vector rowData = new Vector();
+        Vector row = new Vector();
+        for (int i = 1; i < db.col; i++)//遍历列
+        {
+            for (int j = 1; j <= db.row; j++)//遍历行
+            {
+                row.add(db.result[j][i]);
+            }
+            rowData.add(row);//将行添加到Vector
+        }
+        table1.setModel(new DefaultTableModel(rowData, columnNames));//打表
+    }
+
     private void initComponents()
     {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
@@ -203,6 +251,9 @@ public class SelectAndModifyData extends JFrame
         comboBox1 = new JComboBox();
         textField1 = new JTextField();
         button1 = new JButton();
+        label4 = new JLabel();
+        textField2 = new JTextField();
+        button3 = new JButton();
         scrollPane1 = new JScrollPane();
         table1 = new JTable();
         button2 = new JButton();
@@ -217,37 +268,54 @@ public class SelectAndModifyData extends JFrame
             //======== panel1 ========
             {
                 panel1.setLayout(new GridBagLayout());
-                ((GridBagLayout) panel1.getLayout()).columnWidths = new int[]{0, 83, 99, 0, 0};
-                ((GridBagLayout) panel1.getLayout()).rowHeights = new int[]{28, 47, 45, 34, 41, 0, 0, 36, 0};
-                ((GridBagLayout) panel1.getLayout()).columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 1.0E-4};
-                ((GridBagLayout) panel1.getLayout()).rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
+                ((GridBagLayout)panel1.getLayout()).columnWidths = new int[] {0, 83, 99, 0, 0};
+                ((GridBagLayout)panel1.getLayout()).rowHeights = new int[] {28, 47, 45, 34, 41, 0, 40, 41, 37, 0};
+                ((GridBagLayout)panel1.getLayout()).columnWeights = new double[] {0.0, 0.0, 0.0, 0.0, 1.0E-4};
+                ((GridBagLayout)panel1.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
 
                 //---- label1 ----
                 label1.setText("    \u67e5\u8be2\u56fd\u7c4d\u914d\u5458\u8bc1\u4e66");
                 label1.setFont(label1.getFont().deriveFont(label1.getFont().getSize() + 5f));
                 panel1.add(label1, new GridBagConstraints(1, 1, 2, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
 
                 //---- label2 ----
                 label2.setText("    \u67e5\u8be2\u65b9\u5f0f");
                 label2.setFont(label2.getFont().deriveFont(label2.getFont().getSize() + 3f));
                 panel1.add(label2, new GridBagConstraints(1, 2, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
                 panel1.add(comboBox1, new GridBagConstraints(2, 2, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
                 panel1.add(textField1, new GridBagConstraints(2, 3, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
 
                 //---- button1 ----
                 button1.setText("\u786e\u5b9a");
                 button1.addActionListener(e -> button1ActionPerformed(e));
                 panel1.add(button1, new GridBagConstraints(2, 4, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+
+                //---- label4 ----
+                label4.setText("      \u8239\u540d");
+                label4.setFont(label4.getFont().deriveFont(label4.getFont().getSize() + 4f));
+                panel1.add(label4, new GridBagConstraints(1, 7, 1, 1, 0.0, 0.0,
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+                panel1.add(textField2, new GridBagConstraints(2, 7, 1, 1, 0.0, 0.0,
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+
+                //---- button3 ----
+                button3.setText("\u67e5\u8be2\u5386\u53f2\u8868");
+                button3.addActionListener(e -> button3ActionPerformed(e));
+                panel1.add(button3, new GridBagConstraints(2, 8, 1, 1, 0.0, 0.0,
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 0, 5), 0, 0));
             }
             this2ContentPane.add(panel1);
             panel1.setBounds(0, 0, 245, 385);
@@ -257,11 +325,11 @@ public class SelectAndModifyData extends JFrame
 
                 //---- table1 ----
                 table1.setModel(new DefaultTableModel(
-                        new Object[][]{
-                        },
-                        new String[]{
-                                null, null, null, null, null, null, null, null, null, null, null, null, null
-                        }
+                    new Object[][] {
+                    },
+                    new String[] {
+                        null, null, null, null, null, null, null, null, null, null, null, null, null
+                    }
                 ));
                 scrollPane1.setViewportView(table1);
             }
@@ -275,15 +343,14 @@ public class SelectAndModifyData extends JFrame
             button2.setBounds(870, 320, 98, 40);
 
             //---- label3 ----
-            label3.setText("\u67e5\u8be2\u8d44\u6599\u540e\u53ef\u5bf9\u5176\u8fdb\u884c\u4fee\u6539");
+            label3.setText("\u4fee\u6539\u56fd\u7c4d\u914d\u5458\u8bc1\u4e66");
             label3.setFont(label3.getFont().deriveFont(label3.getFont().getSize() + 5f));
             this2ContentPane.add(label3);
-            label3.setBounds(760, 275, 220, 42);
+            label3.setBounds(835, 275, 145, 42);
 
             { // compute preferred size
                 Dimension preferredSize = new Dimension();
-                for (int i = 0; i < this2ContentPane.getComponentCount(); i++)
-                {
+                for(int i = 0; i < this2ContentPane.getComponentCount(); i++) {
                     Rectangle bounds = this2ContentPane.getComponent(i).getBounds();
                     preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
                     preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
@@ -308,6 +375,9 @@ public class SelectAndModifyData extends JFrame
     private JComboBox comboBox1;
     private JTextField textField1;
     private JButton button1;
+    private JLabel label4;
+    private JTextField textField2;
+    private JButton button3;
     private JScrollPane scrollPane1;
     private JTable table1;
     private JButton button2;

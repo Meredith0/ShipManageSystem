@@ -8,7 +8,7 @@ new FormModel {
 			"visible": true
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
 				"$columnSpecs": "0, 78, 94, 0"
-				"$rowSpecs": "23, 42, 40, 29, 36, 0, 0, 36"
+				"$rowSpecs": "23, 42, 40, 29, 36, 0, 35, 36, 37"
 				"$hGap": 5
 				"$vGap": 5
 				"$alignLeft": true
@@ -51,6 +51,28 @@ new FormModel {
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 					"gridx": 2
 					"gridy": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "      船名"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 7
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 2
+					"gridy": 7
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "查询历史表"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 2
+					"gridy": 8
 				} )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 				"width": 245
@@ -136,12 +158,12 @@ new FormModel {
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label3"
-				"text": "查询资料后可对其进行修改"
+				"text": "修改国籍配员证书"
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 760
+				"x": 835
 				"y": 275
-				"width": 220
+				"width": 145
 				"height": 42
 			} )
 		}, new FormLayoutConstraints( null ) {

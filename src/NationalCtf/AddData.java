@@ -100,12 +100,12 @@ public class AddData extends JFrame
 
     private void button2ActionPerformed(ActionEvent e) {
         /**
-         * @description: 录入数据到表 [配员证书处理历史表]
+         * @description: 录入数据到表 [国籍证书处理历史表]
          * @param [e]
          * @return void
          * @date: 2018/11/16 20:31
          */
-        db.sqlLines = "insert into 配员证书处理历史表(船名,证书编号,办理日期,办理人,证书有效期至,业务办理情况) values(?,?,?,?,?,?)";
+        db.sqlLines = "insert into 国籍证书处理历史表(船名,证书编号,办理日期,办理人,证书有效期至,业务办理情况) values(?,?,?,?,?,?)";
         db.pre();
         try
         {
@@ -171,7 +171,7 @@ public class AddData extends JFrame
         Container contentPane = getContentPane();
         contentPane.setLayout(new GridBagLayout());
         ((GridBagLayout)contentPane.getLayout()).columnWidths = new int[] {66, 116, 157, 71, 115, 171, 41, 0};
-        ((GridBagLayout)contentPane.getLayout()).rowHeights = new int[] {0, 38, 37, 35, 13, 35, 35, 35, 35, 59, 52, 35, 35, 35, 37, 54, 0};
+        ((GridBagLayout)contentPane.getLayout()).rowHeights = new int[] {0, 38, 37, 35, 13, 35, 35, 35, 35, 59, 52, 35, 35, 35, 37, 43, 0};
         ((GridBagLayout)contentPane.getLayout()).columnWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
         ((GridBagLayout)contentPane.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
 

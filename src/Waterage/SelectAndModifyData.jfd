@@ -4,11 +4,11 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
-			name: "this"
+			name: "this2"
 			"visible": true
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
 				"$columnSpecs": "0, 78, 94, 0"
-				"$rowSpecs": "23, 42, 40, 29, 36, 54, 30, 36"
+				"$rowSpecs": "23, 42, 40, 29, 36, 0, 35, 36, 37"
 				"$hGap": 5
 				"$vGap": 5
 				"$alignLeft": true
@@ -17,11 +17,12 @@ new FormModel {
 				name: "panel1"
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label1"
-					"text": "查询检验证书"
+					"text": "    查询水运费缴纳记录"
 					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-					"gridx": 2
+					"gridx": 1
 					"gridy": 1
+					"gridwidth": 2
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label2"
@@ -51,29 +52,6 @@ new FormModel {
 					"gridx": 2
 					"gridy": 4
 				} )
-				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label4"
-					"text": "       船名"
-					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
-				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-					"gridx": 1
-					"gridy": 6
-				} )
-				add( new FormComponent( "javax.swing.JTextField" ) {
-					name: "textField2"
-				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-					"gridx": 2
-					"gridy": 6
-				} )
-				add( new FormComponent( "javax.swing.JButton" ) {
-					name: "button3"
-					"text": "查询历史表"
-					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
-					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
-				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-					"gridx": 2
-					"gridy": 7
-				} )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 				"width": 245
 				"height": 385
@@ -89,7 +67,7 @@ new FormModel {
 						add( null )
 						add( null )
 						add( null )
-						add( null )
+					}, new java.util.Vector {
 						add( null )
 						add( null )
 						add( null )
@@ -103,35 +81,7 @@ new FormModel {
 						add( null )
 						add( null )
 						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
 					}, new java.util.Vector {
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-					}, new java.util.Vector {
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
 						add( null )
 						add( null )
 						add( null )
@@ -141,8 +91,8 @@ new FormModel {
 					} )
 				} )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 240
-				"width": 891
+				"x": 250
+				"width": 490
 				"height": 200
 				"y": 0
 			} )
@@ -151,24 +101,24 @@ new FormModel {
 				"text": "确认修改"
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 870
-				"y": 320
+				"x": 595
+				"y": 305
 				"width": 98
 				"height": 40
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label3"
-				"text": "修改检验证书"
+				"text": "修改水运费缴纳记录"
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 865
-				"y": 275
-				"width": 115
+				"x": 535
+				"y": 245
+				"width": 175
 				"height": 42
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 1150, 465 )
+			"size": new java.awt.Dimension( 755, 465 )
+			"location": new java.awt.Point( 5, 10 )
 		} )
 	}
 }
