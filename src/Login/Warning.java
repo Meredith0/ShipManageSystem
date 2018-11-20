@@ -27,36 +27,41 @@ public class Warning extends JFrame
         warning.setWarning();
 
     }
+
     public void setWarning()
     {
         //select那些未过期的证书
-        db.sqlLines = "select 证书有效期至,船名,证书名 from 各证书有效期 where 证书有效期至 > CONVERT(varchar,GETDATE(),23)";
+        db.sqlLines = "select 证书有效期至,船名,证书名 from 各证书有效期";
         db.pre();
         db.exeSelect();
         Calendar cal = Calendar.getInstance();
-        //获取当前日期
+        //获取当前日期 并加一个月
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        String now = sdf.format(Calendar.getInstance().getTime());
+        Calendar nowCal=Calendar.getInstance();
+        nowCal.getTime();
+        nowCal.add(Calendar.MONTH,+1);
+        String now = sdf.format(nowCal.getTime());
 
         Date date = null;
-        String text="                 Warning\n";
+        String text = "                 Warning\n";
         {
             for (int j = 1; j < db.row; j++)//遍历行
             {
-                try
-                {
-                    date = sdf.parse(db.result[1][j]);
-                } catch (ParseException e)
-                {
-                     e.printStackTrace();
-                }
-                cal.setTime(date);
-                cal.add(Calendar.MONTH, -1);
-                String dbDate = sdf.format(cal.getTime());
-                if (now.compareTo(dbDate) > 0)
-                {
-                    text += "船只 [" + db.result[2][j] + "] 的证书 [" + db.result[3][j] + "] 将于一个月内过期\n";
-                }
+                //如果当前日期加1个月小于过期日
+                    try
+                    {
+                        date = sdf.parse(db.result[1][j]);
+                    } catch (ParseException e)
+                    {
+                        e.printStackTrace();
+                    }
+                    cal.setTime(date);
+                    String dbDate = sdf.format(cal.getTime());
+                    if (now.compareTo(dbDate) <= 0)
+                    {
+                        text += "船只 [" + db.result[2][j] + "] 的证书 [" + db.result[3][j] + "] 将于一个月内过期\n";
+                    }
+
             }
         }
         textPane1.setText(text);
@@ -85,7 +90,8 @@ public class Warning extends JFrame
 
         { // compute preferred size
             Dimension preferredSize = new Dimension();
-            for(int i = 0; i < contentPane.getComponentCount(); i++) {
+            for (int i = 0; i < contentPane.getComponentCount(); i++)
+            {
                 Rectangle bounds = contentPane.getComponent(i).getBounds();
                 preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
                 preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
