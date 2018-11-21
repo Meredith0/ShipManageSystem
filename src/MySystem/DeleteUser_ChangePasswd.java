@@ -1,4 +1,4 @@
-package System;
+package MySystem;
 
 import com.MD5;
 
@@ -12,7 +12,7 @@ import java.sql.SQLException;
  * @Author: Meredith
  * @CreateDate: 2018-11-06 22:03
  * @Project: ShipManageSystem
- * @Package: System
+ * @Package: MySystem
  * @Description: 删除用户
  **/
 public class DeleteUser_ChangePasswd extends SystemGUI

@@ -4,6 +4,8 @@
 
 package BasicData;
 
+import Login.MainPanel;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -44,7 +46,9 @@ public class Panel extends JFrame
 
     private void returnUpperPanelHandler(ActionEvent e)
     {
-        // TODO 返回上一层菜单
+        //返回上一层菜单
+        this.dispose();
+        new MainPanel();
     }
 
     private void initComponents()
@@ -58,7 +62,7 @@ public class Panel extends JFrame
 
         //======== this ========
         setVisible(true);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         Container contentPane = getContentPane();
         contentPane.setLayout(new GridBagLayout());
         ((GridBagLayout)contentPane.getLayout()).columnWidths = new int[] {83, 84, 80, 83, 83, 76, 0};

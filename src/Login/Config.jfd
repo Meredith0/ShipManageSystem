@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "58, 23, 9, 0, 49, 74, 35, 0, 0"
+			"$rowSpecs": "0, 0, 0, 0, 50, 0, 0"
+			"$hGap": 5
+			"$vGap": 5
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "this"
+			"visible": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "配置服务器信息"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridwidth": 9
+				"gridy": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "IP"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 3
+				"gridwidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 4
+				"gridy": 3
+				"gridwidth": 2
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 355, 255 )
+		} )
+	}
+}

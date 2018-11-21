@@ -4,6 +4,8 @@
 
 package InspectionCtf;
 
+import Login.MainPanel;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -35,7 +37,9 @@ public class Panel extends JFrame
 
     private void returnUpperPanelHandler(ActionEvent e)
     {
-        // TODO 返回上一层菜单
+        this.dispose();
+        new MainPanel();
+
     }
 
     private void initComponents()

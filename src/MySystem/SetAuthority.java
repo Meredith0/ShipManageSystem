@@ -1,4 +1,4 @@
-package System;
+package MySystem;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,7 +12,7 @@ import java.sql.SQLException;
  * @Author: Meredith
  * @CreateDate: 2018-11-08 09:20
  * @Project: ShipManageSystem
- * @Package: System
+ * @Package: MySystem
  * @Description: 设置权限
  **/
 public class SetAuthority extends SystemGUI

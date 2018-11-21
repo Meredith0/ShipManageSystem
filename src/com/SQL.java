@@ -29,6 +29,7 @@ public class SQL
          * @return void
          * @date: 2018/11/15 20:54
          */
+
         String url = "jdbc:sqlserver://localhost:1433;databaseName=船只资料;user=user01;password=123456";//登陆字符串
         try
         {

@@ -13,8 +13,8 @@ new FormModel {
 		} ) {
 			name: "this"
 			"visible": true
-			"defaultCloseOperation": 3
 			"$locationPolicy": 1
+			"defaultCloseOperation": 2
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
 				"text": "     船只基本资料管理模块"

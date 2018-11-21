@@ -5,10 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81cacd43-6027-4b20-a9ef-81ddb4f1ee35" name="Default" comment="FFFFFFFFFinshhhhhhhhh">
+      <change afterPath="$PROJECT_DIR$/src/Login/AboutUs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/AboutUs.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/ChangePasswd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/ChangePasswd.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/Config.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/LoginPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/LoginPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/MainPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/MainPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/RUN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/Warning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Warning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waterage/SelectAndModifyData.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/Waterage/SelectAndModifyData.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$loginHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login$signinHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/loginGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/Login/runGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser$AddUserHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/addUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd$DeleteUserHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd$UpdatePasswdHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/deleteUser_changePasswd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$listHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority$setAuthorityHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/setAuthority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/System/systemGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/SQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShipManageSystem/com/SQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicData/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicData/Panel.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/Panel.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InspectionCtf/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InspectionCtf/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/LoginGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/Warning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/Warning.jfd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/runGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NationalCtf/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NationalCtf/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySystem/AddUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySystem/DeleteUser_ChangePasswd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/RunSystemGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySystem/RunSystemGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/SetAuthority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySystem/SetAuthority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/SystemGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySystem/SystemGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Waterage/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Waterage/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SQL.java" afterDir="false" />
     </list>
     <list id="6f09a833-229f-4b56-9184-f8f55dac651b" name="11-12 SQL反注入修改" comment="11-12 SQL反注入修改&#10;&#10;(cherry picked from commit 2bba9d0b2c4b4ff97d3241c3f0031fea3441c6f5)">
       <changelist_data name="Meredith0" email="1612733540@qq.com" date="1541781793000" />
@@ -86,32 +125,32 @@
     <session id="1313638422">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="48" />
-          <entry key="project.open.time.10" value="7" />
-          <entry key="project.open.time.11" value="9" />
-          <entry key="project.open.time.12" value="10" />
+          <entry key="project.closed" value="51" />
+          <entry key="project.open.time.10" value="8" />
+          <entry key="project.open.time.11" value="10" />
+          <entry key="project.open.time.12" value="11" />
           <entry key="project.open.time.13" value="4" />
-          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="7" />
-          <entry key="project.opened" value="51" />
+          <entry key="project.opened" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="137" />
           <entry key="ft" value="34" />
-          <entry key="java" value="18621" />
+          <entry key="java" value="20699" />
           <entry key="md" value="22" />
           <entry key="txt" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18621" />
+          <entry key="JAVA" value="20699" />
           <entry key="Markdown" value="22" />
           <entry key="PLAIN_TEXT" value="313" />
           <entry key="VTL" value="34" />
@@ -122,12 +161,13 @@
           <entry key="class" value="10" />
           <entry key="form" value="2" />
           <entry key="groovy" value="1" />
-          <entry key="java" value="281" />
-          <entry key="jfd" value="75" />
+          <entry key="java" value="337" />
+          <entry key="jfd" value="98" />
           <entry key="jpg" value="1" />
           <entry key="md" value="44" />
+          <entry key="png" value="1" />
           <entry key="sql" value="2" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="3" />
           <entry key="检修证明" value="1" />
           <entry key="系统用户表" value="1" />
           <entry key="船舶所有权登记证书" value="3" />
@@ -138,12 +178,12 @@
           <entry key="CLASS" value="10" />
           <entry key="Database Element" value="5" />
           <entry key="GUI_DESIGNER_FORM" value="2" />
-          <entry key="Image" value="1" />
-          <entry key="JAVA" value="281" />
-          <entry key="JFormDesigner_form" value="75" />
+          <entry key="Image" value="2" />
+          <entry key="JAVA" value="337" />
+          <entry key="JFormDesigner_form" value="98" />
           <entry key="Markdown" value="44" />
           <entry key="Scratch" value="3" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -152,46 +192,20 @@
     <favorites_list name="ShipManageSystem" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8175717">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.jfd">
-              <provider selected="true" editor-type-id="JFormDesigner" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Login/Warning.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="123">
-                  <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-                  <folding>
-                    <marker date="1542684533828" expanded="false" signature="1860:3326" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                    <marker date="1542684533828" expanded="false" signature="3338:3560" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SECOND">
-                  <first_editor relative-caret-position="300">
-                    <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="300">
+                <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,41 +242,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BasicData/DeleteData.jfd" />
-        <option value="$PROJECT_DIR$/src/BasicData/SelectData.jfd" />
-        <option value="$PROJECT_DIR$/src/BasicData/Panel.jfd" />
-        <option value="$PROJECT_DIR$/src/BasicData/Panel.java" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/test.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/AddData.jfd" />
-        <option value="$PROJECT_DIR$/src/BasicData/RunBasicDateGUI.java" />
-        <option value="$PROJECT_DIR$/src/BasicData/Run.java" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/AddData.java" />
-        <option value="$PROJECT_DIR$/src/BasicData/SelectAndModifyData.jfd" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/SelectAndModifyData.jfd" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/SelectAndModifyData.java" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/DeleteData.jfd" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/DeleteData.java" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/Panel.jfd" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/Panel.java" />
-        <option value="$PROJECT_DIR$/src/CertificatesData/Run.java" />
-        <option value="$PROJECT_DIR$/src/NationalCtf/Panel.jfd" />
-        <option value="$PROJECT_DIR$/src/BasicData/AddData.java" />
-        <option value="$PROJECT_DIR$/src/BasicData/AddData.jfd" />
         <option value="$PROJECT_DIR$/src/BasicData/SelectAndModifyData.java" />
         <option value="$PROJECT_DIR$/src/NationalCtf/DeleteData.jfd" />
-        <option value="$PROJECT_DIR$/src/NationalCtf/Panel.java" />
         <option value="$PROJECT_DIR$/src/NationalCtf/Run.java" />
         <option value="$PROJECT_DIR$/src/InspectionCtf/DeleteData.java" />
         <option value="$PROJECT_DIR$/src/NationalCtf/DeleteData.java" />
         <option value="$PROJECT_DIR$/src/InspectionCtf/AddData.jfd" />
         <option value="$PROJECT_DIR$/src/InspectionCtf/AddData.java" />
-        <option value="$PROJECT_DIR$/src/Login/MainPanel.java" />
-        <option value="$PROJECT_DIR$/src/Login/MainPanel.jfd" />
         <option value="$PROJECT_DIR$/src/Login/MainFrame.jfd" />
         <option value="$PROJECT_DIR$/src/Login/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/SQL.java" />
-        <option value="$PROJECT_DIR$/src/Login/Login.java" />
         <option value="$PROJECT_DIR$/src/NationalCtf/AddData.java" />
         <option value="$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.jfd" />
         <option value="$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.jfd" />
@@ -273,12 +261,38 @@
         <option value="$PROJECT_DIR$/src/Waterage/DeleteData.jfd" />
         <option value="$PROJECT_DIR$/src/Waterage/DeleteData.java" />
         <option value="$PROJECT_DIR$/src/Waterage/Panel.jfd" />
-        <option value="$PROJECT_DIR$/src/Waterage/Panel.java" />
         <option value="$PROJECT_DIR$/src/Waterage/Run.java" />
         <option value="$PROJECT_DIR$/src/Waterage/AddData.java" />
         <option value="$PROJECT_DIR$/src/Waterage/SelectAndModifyData.jfd" />
         <option value="$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java" />
         <option value="$PROJECT_DIR$/src/Login/Warning.java" />
+        <option value="$PROJECT_DIR$/src/Login/Login.java" />
+        <option value="$PROJECT_DIR$/src/Login/test_GUI.java" />
+        <option value="$PROJECT_DIR$/src/Login/Management.java" />
+        <option value="$PROJECT_DIR$/src/System/RunSystemGUI.java" />
+        <option value="$PROJECT_DIR$/src/BasicData/Panel.jfd" />
+        <option value="$PROJECT_DIR$/src/Login/GUI.java" />
+        <option value="$PROJECT_DIR$/src/Login/Signup.java" />
+        <option value="$PROJECT_DIR$/src/Login/ChangePassword.java" />
+        <option value="$PROJECT_DIR$/src/Login/RUN.java" />
+        <option value="$PROJECT_DIR$/src/Login/ChangePasswd.jfd" />
+        <option value="$PROJECT_DIR$/src/Login/config.jfd" />
+        <option value="$PROJECT_DIR$/src/Login/config.java" />
+        <option value="$PROJECT_DIR$/src/com/SQL.java" />
+        <option value="$PROJECT_DIR$/src/Login/ChangePasswd.java" />
+        <option value="$PROJECT_DIR$/src/Login/LoginPanel.jfd" />
+        <option value="$PROJECT_DIR$/src/Login/AboutUs.jfd" />
+        <option value="$PROJECT_DIR$/src/Login/MainPanel.jfd" />
+        <option value="$PROJECT_DIR$/src/Login/Config.jfd" />
+        <option value="$PROJECT_DIR$/src/BasicData/Panel.java" />
+        <option value="$PROJECT_DIR$/src/InspectionCtf/Panel.java" />
+        <option value="$PROJECT_DIR$/src/NationalCtf/Panel.java" />
+        <option value="$PROJECT_DIR$/src/Waterage/Panel.java" />
+        <option value="$PROJECT_DIR$/src/MySystem/SystemGUI.java" />
+        <option value="$PROJECT_DIR$/src/Login/MainPanel.java" />
+        <option value="$PROJECT_DIR$/src/Login/LoginPanel.java" />
+        <option value="$PROJECT_DIR$/src/Login/Config.java" />
+        <option value="$PROJECT_DIR$/src/Login/AboutUs.java" />
       </list>
     </option>
   </component>
@@ -558,6 +572,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -574,31 +589,16 @@
               <item name="ShipManageSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ShipManageSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BasicData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShipManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShipManageSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShipManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShipManageSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShipManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShipManageSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="NationalCtf" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -615,11 +615,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../javaChap7Test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_Intellij IDEA\ShipManageSystem\src\Login" />
+      <recent name="D:\_Intellij IDEA\ShipManageSystem\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -633,20 +639,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Warning">
+  <component name="RunManager" selected="Application.RUN">
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NationalCtf.Run" />
+    <configuration name="MainPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Login.MainPanel" />
       <module name="ShipManageSystem" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="NationalCtf.*" />
+          <option name="PATTERN" value="Login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -654,27 +660,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InspectionCtf.Run" />
+    <configuration name="RUN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Login.RUN" />
       <module name="ShipManageSystem" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="InspectionCtf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Waterage.Run" />
-      <module name="ShipManageSystem" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Waterage.*" />
+          <option name="PATTERN" value="Login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -689,6 +681,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="BasicData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunSystemGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MySystem.RunSystemGUI" />
+      <module name="ShipManageSystem" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MySystem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -734,19 +740,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.runGUI" />
-      <item itemvalue="Application.Run (1)" />
       <item itemvalue="Application.Warning" />
-      <item itemvalue="Application.Run (2)" />
-      <item itemvalue="Application.Run (3)" />
       <item itemvalue="Application.Run (4)" />
+      <item itemvalue="Application.RunSystemGUI" />
+      <item itemvalue="Application.MainPanel" />
+      <item itemvalue="Application.RUN" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Warning" />
+        <item itemvalue="Application.RUN" />
+        <item itemvalue="Application.MainPanel" />
+        <item itemvalue="Application.RunSystemGUI" />
         <item itemvalue="Application.Run (4)" />
-        <item itemvalue="Application.Run (1)" />
-        <item itemvalue="Application.Run (3)" />
-        <item itemvalue="Application.Run (2)" />
+        <item itemvalue="Application.Warning" />
       </list>
     </recent_temporary>
   </component>
@@ -822,7 +828,11 @@
       <workItem from="1542436722618" duration="1882000" />
       <workItem from="1542446412799" duration="780000" />
       <workItem from="1542642513874" duration="183000" />
-      <workItem from="1542682421310" duration="2112000" />
+      <workItem from="1542682421310" duration="2744000" />
+      <workItem from="1542708851512" duration="979000" />
+      <workItem from="1542765772438" duration="4861000" />
+      <workItem from="1542781390951" duration="2292000" />
+      <workItem from="1542783799799" duration="11227000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1538035711958</created>
@@ -936,11 +946,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542424325462</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="FFFFFFFFFinshhhhhhhhh">
+      <created>1542684544812</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1542684544812</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248781000" />
+    <option name="totallyTimeSpent" value="268772000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -952,15 +969,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.4082774" side_tool="true" weight="0.15831557" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.5917226" visible="true" weight="0.12982005" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.5917226" visible="true" weight="0.11247335" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32887402" />
       <window_info anchor="bottom" id="Inspection Results" order="1" weight="0.1935123" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.6359275" weight="0.27740493" />
@@ -968,7 +984,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.2673378" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.26286355" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.6348614" visible="true" weight="0.24229692" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.6348614" visible="true" weight="0.15436241" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.31543624" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -977,13 +993,13 @@
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32885906" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="15" />
-      <window_info anchor="bottom" id="JFormDesigner Error Log" order="16" weight="0.2360179" />
+      <window_info anchor="bottom" id="JFormDesigner Error Log" order="16" visible="true" weight="0.2360179" />
       <window_info anchor="bottom" id="JFormDesigner Bindings" order="17" weight="0.32997763" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.50137365" side_tool="true" weight="0.21002132" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.18603411" />
+      <window_info anchor="right" id="Database" order="4" weight="0.18573265" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32969153" />
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -1099,222 +1115,11 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/System/RunSystemGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/SystemGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/SetAuthority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="170" column="34" lean-forward="true" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/DeleteUser_ChangePasswd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="96" column="46" lean-forward="true" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.desktop/javax/swing/JOptionPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/AddUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="93" column="45" lean-forward="true" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5b4c657a-2878-4e33-a06c-3761aa5530b1/database/船只资料数据库/schema/dbo/table/检修证明">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/DeleteData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/Panel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/Panel.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/Panel.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/DeleteData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/SelectData.java" />
-    <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state paletteWidth="161" structureHeight="223" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="77" column="8" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="236" column="9" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/Panel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/DeleteData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NationalCtf/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/DeleteData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <marker date="1542369638327" expanded="true" signature="1610:4753" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1542369638327" expanded="false" signature="4765:5123" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicData/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/AddData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login/Warning.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/MD5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1379">
-          <caret line="80" column="13" lean-forward="true" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/AddData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="106" column="44" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="196" selection-start-line="196" selection-end-line="196" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NationalCtf/AddData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NationalCtf/DeleteData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="58" column="20" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="58" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Waterage/DeleteData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NationalCtf/Panel.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Waterage/Panel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Waterage/Panel.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NationalCtf/DeleteData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Waterage/DeleteData.jfd">
       <provider selected="true" editor-type-id="JFormDesigner" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Waterage/AddData.jfd">
       <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NationalCtf/Panel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Waterage/Run.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1342,9 +1147,149 @@
         <state paletteWidth="186" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2740">
+          <caret line="146" column="44" selection-start-line="146" selection-start-column="44" selection-end-line="146" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Waterage/SelectAndModifyData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state propertiesWidth="260" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources.local.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/Warning.java" />
+    <entry file="file://$PROJECT_DIR$/src/Login/Login.java" />
+    <entry file="file://$PROJECT_DIR$/src/Login/test_GUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/Login/Management.java" />
+    <entry file="file://$PROJECT_DIR$/src/BasicData/DeleteData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/DeleteData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/DeleteData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <marker date="1542369638327" expanded="true" signature="1610:4753" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542369638327" expanded="false" signature="4765:5123" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySystem/RunSystemGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/Panel.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.desktop/java/awt/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/ChangePassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/AddData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <marker date="1542360731201" expanded="false" signature="2975:20409" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542360731201" expanded="false" signature="20421:22232" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/AddData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/Signup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/AddData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <marker date="1542371690633" expanded="false" signature="4297:17309" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542371690633" expanded="false" signature="17321:18621" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/RUN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <marker date="1542421649932" expanded="false" signature="9041:15101" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542421649932" expanded="false" signature="15121:15718" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BasicData/SelectAndModifyData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
+        <state relative-caret-position="2484">
           <caret line="148" column="33" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
           <folding>
             <marker date="1542360800757" expanded="false" signature="5464:10604" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -1353,32 +1298,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java">
+    <entry file="file://$PROJECT_DIR$/src/BasicData/DeleteData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2740">
-          <caret line="146" column="44" selection-start-line="146" selection-start-column="44" selection-end-line="146" selection-end-column="44" />
+        <state relative-caret-position="100">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <marker date="1542447149035" expanded="false" signature="4947:9908" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1542447149035" expanded="false" signature="9920:10396" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <marker date="1542291090294" expanded="true" signature="1148:3355" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542291090294" expanded="false" signature="3367:3637" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.java">
+    <entry file="file://$PROJECT_DIR$/src/Login/Snipaste_2018-11-21_17-03-47.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/SQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        <state relative-caret-position="80">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/ChangePasswd.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/AboutUs.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/Config.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/LoginPanel.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySystem/SystemGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Waterage/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
           <folding>
-            <marker date="1542421526360" expanded="false" signature="7955:14029" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1542421526360" expanded="false" signature="14041:14608" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1542796888916" expanded="false" signature="743:4261" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542796888916" expanded="false" signature="4273:4594" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Waterage/SelectAndModifyData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state propertiesWidth="260" />
+    <entry file="file://$PROJECT_DIR$/src/MySystem/SetAuthority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="91" column="42" lean-forward="true" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+        </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NationalCtf/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding>
+            <marker date="1542796888827" expanded="false" signature="768:4313" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542796888827" expanded="false" signature="4325:4646" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding>
+            <marker date="1542796888887" expanded="false" signature="771:3940" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542796888887" expanded="false" signature="3952:4247" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicData/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding>
+            <marker date="1542796822101" expanded="false" signature="982:4142" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542796822101" expanded="false" signature="4154:4449" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/MainPanel.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -1390,23 +1404,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/SQL.java">
+    <entry file="file://$PROJECT_DIR$/src/Login/MainPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="295">
+          <caret line="108" column="37" lean-forward="true" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1542797131648" expanded="false" signature="6091:16430" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542797131648" expanded="false" signature="16442:17404" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login/Warning.java">
+    <entry file="file://$PROJECT_DIR$/src/Login/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="300">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <marker date="1542684533828" expanded="false" signature="1860:3326" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1542684533828" expanded="false" signature="3338:3560" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1542797131622" expanded="true" signature="403:2334" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542797131622" expanded="false" signature="2346:2587" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/ChangePasswd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="56" column="37" selection-end-line="155" />
+          <folding>
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <marker date="1542796162190" expanded="true" signature="2000:5637" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542796162190" expanded="true" signature="5649:6067" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/AboutUs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <marker date="1542797131669" expanded="false" signature="300:2675" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542797131669" expanded="false" signature="2687:3007" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/LoginPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding>
+            <marker date="1542797131320" expanded="true" signature="2868:5814" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542797131320" expanded="true" signature="5826:6172" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
@@ -1468,7 +1521,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

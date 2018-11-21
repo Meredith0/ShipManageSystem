@@ -1,0 +1,79 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"visible": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "数据库课程设计"
+				"font": new java.awt.Font( "黑体", 0, 35 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 455
+				"height": 75
+				"x": 0
+				"y": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "船只资料管理系统"
+				"horizontalAlignment": 0
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 9, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 65
+				"width": 450
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "曾锋楷  张远亮"
+				"horizontalAlignment": 0
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 7, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 130
+				"width": 455
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "指导老师: 白伟华"
+				"horizontalAlignment": 0
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 455
+				"height": 35
+				"x": 0
+				"y": 170
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "源代码:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 210
+				"y": 220
+				"height": 17
+			} )
+			add( new FormComponent( "javax.swing.JTextArea" ) {
+				name: "textArea1"
+				"text": "https://github.com/Meredith0/ShipManageSystem"
+				"editable": false
+				"font": new java.awt.Font( "Monaco", 0, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 60
+				"y": 240
+				"width": 350
+				"height": 24
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 460, 320 )
+		} )
+	}
+}

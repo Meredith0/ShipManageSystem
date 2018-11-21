@@ -1,0 +1,227 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "38, 0, 50, 50, 32, 0, 0, 50, 50, 0, 0, 0, 50, 50, 43"
+			"$rowSpecs": "20, 74, 0, 30, 30, 0, 30, 30, 0, 30, 30, 0, 30, 40, 24, 0"
+			"$hGap": 5
+			"$vGap": 5
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "this"
+			"visible": true
+			"title": "船只资料管理系统"
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "欢迎您"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 2
+			} )
+			add( new FormComponent( "javax.swing.JTextPane" ) {
+				name: "textPane3"
+				"editable": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "工作编号"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 6
+				"gridwidth": 2
+			} )
+			add( new FormComponent( "javax.swing.JTextPane" ) {
+				name: "textPane4"
+				"editable": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 8
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "权限"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 10
+				"gridwidth": 2
+			} )
+			add( new FormComponent( "javax.swing.JTextPane" ) {
+				name: "textPane2"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				"editable": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 12
+				"gridwidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "船只资料管理系统"
+				"font": new java.awt.Font( "黑体", 0, 32 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+				"gridwidth": 15
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "系统管理(管理员)"
+				"font": new java.awt.Font( "黑体", 0, 17 )
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 2
+				"gridy": 3
+				"gridwidth": 2
+				"gridheight": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button8"
+				"text": "资料查询"
+				"font": new java.awt.Font( "黑体", 0, 17 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 7
+				"gridy": 3
+				"gridwidth": 2
+				"gridheight": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "基本资料管理"
+				"font": new java.awt.Font( "黑体", 0, 17 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 12
+				"gridy": 3
+				"gridwidth": 2
+				"gridheight": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": "营运证书管理"
+				"font": new java.awt.Font( "黑体", 0, 17 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 2
+				"gridy": 6
+				"gridwidth": 2
+				"gridheight": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "检验证书管理"
+				"font": new java.awt.Font( "黑体", 0, 17 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 7
+				"gridy": 6
+				"gridwidth": 2
+				"gridheight": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": "安检证书管理"
+				"font": new java.awt.Font( "黑体", 0, 17 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 12
+				"gridy": 6
+				"gridwidth": 2
+				"gridheight": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button7"
+				"text": "国籍配员证书管理"
+				"font": new java.awt.Font( "黑体", 0, 17 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 2
+				"gridy": 9
+				"gridwidth": 2
+				"gridheight": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button9"
+				"text": "缴纳航道费情况管理"
+				"font": new java.awt.Font( "黑体", 0, 17 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button9ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 7
+				"gridy": 9
+				"gridwidth": 2
+				"gridheight": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button10"
+				"text": "缴纳水运费情况管理"
+				"font": new java.awt.Font( "黑体", 0, 16 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button10ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 12
+				"gridy": 9
+				"gridwidth": 2
+				"gridheight": 2
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textPane1"
+					"editable": false
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 13
+				"gridy": 13
+				"gridwidth": 2
+				"gridheight": 3
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "文件"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "修改密码"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "退出系统"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "重新登陆"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "编辑"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem5"
+						"text": "配置服务器信息"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem5ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "关于"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": "关于我们"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem4ActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 825, 600 )
+		} )
+	}
+}

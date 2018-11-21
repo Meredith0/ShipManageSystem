@@ -1,4 +1,4 @@
-package System;
+package MySystem;
 
 import com.SQL;
 
@@ -22,7 +22,7 @@ public class SystemGUI
         // 创建 JFrame 实例
 
         Frame2.setSize(800, 600);
-        Frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Frame2.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 
         //登陆层容器
         systemPanel.setSize(480,320);
