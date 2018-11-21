@@ -9,6 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="sqljdbc4-2.0" level="project" />
     <orderEntry type="library" name="MigLayout" level="project" />
-    <orderEntry type="library" name="JGoodies Forms" level="project" />
+    <orderEntry type="library" exported="" name="JGoodies Forms" level="project" />
   </component>
 </module>

@@ -64,8 +64,7 @@ public class ChangePasswd extends LoginPanel
             } else
             {
                 JOptionPane.showMessageDialog(null, "密码错误,请重新输入", "错误", JOptionPane.ERROR_MESSAGE);
-                //记录新密码
-                Passwd = newPasswd;
+
             }
         }
 

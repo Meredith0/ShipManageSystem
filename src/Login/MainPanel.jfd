@@ -4,8 +4,8 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
-			"$columnSpecs": "38, 0, 50, 50, 32, 0, 0, 50, 50, 0, 0, 0, 50, 50, 43"
-			"$rowSpecs": "20, 74, 0, 30, 30, 0, 30, 30, 0, 30, 30, 0, 30, 40, 24, 0"
+			"$columnSpecs": "38, 0, 50, 115, 52, 0, 0, 50, 50, 10, 10, 25, 50, 50, 35"
+			"$rowSpecs": "0, 0, 20, 74, 0, 30, 30, 0, 30, 30, 0, 30, 30, 0, 18, 15, 0, 38"
 			"$hGap": 5
 			"$vGap": 5
 			"$alignTop": true
@@ -21,12 +21,14 @@ new FormModel {
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 2
+				"gridy": 2
 			} )
 			add( new FormComponent( "javax.swing.JTextPane" ) {
 				name: "textPane3"
 				"editable": false
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 3
+				"gridy": 2
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label3"
@@ -35,12 +37,14 @@ new FormModel {
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 6
 				"gridwidth": 2
+				"gridy": 2
 			} )
 			add( new FormComponent( "javax.swing.JTextPane" ) {
 				name: "textPane4"
 				"editable": false
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 8
+				"gridy": 2
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label4"
@@ -49,22 +53,24 @@ new FormModel {
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 10
 				"gridwidth": 2
+				"gridy": 2
 			} )
 			add( new FormComponent( "javax.swing.JTextPane" ) {
 				name: "textPane2"
-				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
 				"editable": false
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 12
 				"gridwidth": 3
+				"gridy": 2
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
 				"text": "船只资料管理系统"
 				"font": new java.awt.Font( "黑体", 0, 32 )
 				"horizontalAlignment": 0
+				"background": new java.awt.Color( 8, 93, 149, 255 )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-				"gridy": 1
+				"gridy": 3
 				"gridwidth": 15
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
@@ -75,7 +81,7 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 2
-				"gridy": 3
+				"gridy": 5
 				"gridwidth": 2
 				"gridheight": 2
 			} )
@@ -86,7 +92,7 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 7
-				"gridy": 3
+				"gridy": 5
 				"gridwidth": 2
 				"gridheight": 2
 			} )
@@ -97,7 +103,7 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 12
-				"gridy": 3
+				"gridy": 5
 				"gridwidth": 2
 				"gridheight": 2
 			} )
@@ -108,7 +114,7 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 2
-				"gridy": 6
+				"gridy": 8
 				"gridwidth": 2
 				"gridheight": 2
 			} )
@@ -119,7 +125,7 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 7
-				"gridy": 6
+				"gridy": 8
 				"gridwidth": 2
 				"gridheight": 2
 			} )
@@ -130,7 +136,7 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 12
-				"gridy": 6
+				"gridy": 8
 				"gridwidth": 2
 				"gridheight": 2
 			} )
@@ -141,7 +147,7 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 2
-				"gridy": 9
+				"gridy": 11
 				"gridwidth": 2
 				"gridheight": 2
 			} )
@@ -152,7 +158,7 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button9ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 7
-				"gridy": 9
+				"gridy": 11
 				"gridwidth": 2
 				"gridheight": 2
 			} )
@@ -163,7 +169,7 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button10ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 12
-				"gridy": 9
+				"gridy": 11
 				"gridwidth": 2
 				"gridheight": 2
 			} )
@@ -174,9 +180,9 @@ new FormModel {
 					"editable": false
 				} )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-				"gridx": 13
-				"gridy": 13
-				"gridwidth": 2
+				"gridx": 12
+				"gridy": 15
+				"gridwidth": 3
 				"gridheight": 3
 			} )
 			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
@@ -221,7 +227,7 @@ new FormModel {
 			}
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 825, 600 )
+			"size": new java.awt.Dimension( 805, 630 )
 		} )
 	}
 }
