@@ -6,32 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="81cacd43-6027-4b20-a9ef-81ddb4f1ee35" name="Default" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1/storage_v2/_src_/database/Chuan_Zhi_Zi_Liao_Shu_Ju_Ku.L0dM2Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1/storage_v2/_src_/database/Chuan_Zhi_Zi_Liao_Shu_Ju_Ku.L0dM2Q/schema/dbo.sYMBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b4c657a-2878-4e33-a06c-3761aa5530b1/storage_v2/_src_/database/Chuan_Zhi_Zi_Liao_Shu_Ju_Ku.L0dM2Q/schema/dbo.sYMBAA.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShipManageSystem/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicData/Run.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicData/SelectAndModifyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicData/SelectAndModifyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InspectionCtf/Run.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/RUN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RUN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NationalCtf/Run.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waterage/Run.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java" afterDir="false" />
     </list>
     <list id="6f09a833-229f-4b56-9184-f8f55dac651b" name="11-12 SQL反注入修改" comment="11-12 SQL反注入修改&#10;&#10;(cherry picked from commit 2bba9d0b2c4b4ff97d3241c3f0031fea3441c6f5)">
       <changelist_data name="Meredith0" email="1612733540@qq.com" date="1541781793000" />
@@ -75,8 +50,8 @@
     <session id="1313638422">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="58" />
-          <entry key="project.open.time.10" value="8" />
+          <entry key="project.closed" value="59" />
+          <entry key="project.open.time.10" value="9" />
           <entry key="project.open.time.11" value="11" />
           <entry key="project.open.time.12" value="11" />
           <entry key="project.open.time.13" value="4" />
@@ -86,7 +61,7 @@
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="9" />
           <entry key="project.open.time.9" value="8" />
-          <entry key="project.opened" value="61" />
+          <entry key="project.opened" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -150,7 +125,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2980">
+            <state relative-caret-position="2960">
               <caret line="157" column="87" selection-start-line="157" selection-start-column="87" selection-end-line="157" selection-end-column="87" />
               <folding>
                 <marker date="1542892657007" expanded="false" signature="8247:14321" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -163,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1929">
-              <caret line="151" column="9" lean-forward="true" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
+            <state relative-caret-position="2840">
+              <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
               <folding>
                 <marker date="1542892527867" expanded="true" signature="5176:10216" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
                 <marker date="1542892527867" expanded="false" signature="10228:10704" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
@@ -176,7 +151,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MySystem/DeleteUser_ChangePasswd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-920">
+            <state relative-caret-position="220">
               <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
@@ -190,7 +165,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3312">
+            <state relative-caret-position="3380">
               <caret line="178" column="92" selection-start-line="178" selection-start-column="92" selection-end-line="178" selection-end-column="92" />
               <folding>
                 <marker date="1542892656677" expanded="false" signature="9340:15400" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -203,8 +178,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BasicData/SelectAndModifyData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2680">
-              <caret line="142" column="91" selection-start-line="142" selection-start-column="91" selection-end-line="142" selection-end-column="91" />
+            <state relative-caret-position="565">
+              <caret line="118" column="45" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
               <folding>
                 <marker date="1542892656980" expanded="false" signature="6001:11141" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
                 <marker date="1542892656980" expanded="false" signature="11153:11630" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
@@ -581,6 +556,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -613,8 +590,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -630,7 +605,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/JTattoo-1.6.11.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -853,6 +828,7 @@
       <workItem from="1542813737377" duration="206000" />
       <workItem from="1542845307255" duration="781000" />
       <workItem from="1542890124503" duration="2546000" />
+      <workItem from="1542892716993" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1538035711958</created>
@@ -987,11 +963,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542801776438</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="commit">
+      <created>1542892740295</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1542892740295</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276974000" />
+    <option name="totallyTimeSpent" value="277000000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1010,7 +993,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.4082774" side_tool="true" weight="0.15831557" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.5917226" visible="true" weight="0.1988273" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.5917226" visible="true" weight="0.20095949" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32887402" />
       <window_info anchor="bottom" id="Inspection Results" order="1" weight="0.1935123" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.6359275" weight="0.27740493" />
@@ -1412,30 +1395,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MySystem/DeleteUser_ChangePasswd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-920">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1929">
-          <caret line="151" column="9" lean-forward="true" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
-          <folding>
-            <marker date="1542892527867" expanded="true" signature="5176:10216" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1542892527867" expanded="false" signature="10228:10704" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NationalCtf/SelectAndModifyData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2980">
+        <state relative-caret-position="2960">
           <caret line="157" column="87" selection-start-line="157" selection-start-column="87" selection-end-line="157" selection-end-column="87" />
           <folding>
             <marker date="1542892657007" expanded="false" signature="8247:14321" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -1444,9 +1406,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Waterage/SelectAndModifyData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2840">
+          <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
+          <folding>
+            <marker date="1542892527867" expanded="true" signature="5176:10216" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542892527867" expanded="false" signature="10228:10704" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySystem/DeleteUser_ChangePasswd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/InspectionCtf/SelectAndModifyData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
+        <state relative-caret-position="3380">
           <caret line="178" column="92" selection-start-line="178" selection-start-column="92" selection-end-line="178" selection-end-column="92" />
           <folding>
             <marker date="1542892656677" expanded="false" signature="9340:15400" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
@@ -1457,8 +1440,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BasicData/SelectAndModifyData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2680">
-          <caret line="142" column="91" selection-start-line="142" selection-start-column="91" selection-end-line="142" selection-end-column="91" />
+        <state relative-caret-position="565">
+          <caret line="118" column="45" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
           <folding>
             <marker date="1542892656980" expanded="false" signature="6001:11141" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
             <marker date="1542892656980" expanded="false" signature="11153:11630" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
