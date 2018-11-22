@@ -118,28 +118,29 @@ public class SelectAndModifyData extends JFrame
                 "总长=?,型宽=?,型深=?,总吨=?,净吨=?," +
                 "功率=?,载重吨=?,航行区域=? where 序号=?";
         db.pre();
+        int i=0;
         try
         {
-            db.preparedStatement.setString(1,table1.getValueAt(0,1).toString());
-            db.preparedStatement.setString(2,table1.getValueAt(0,2).toString());
-            db.preparedStatement.setString(3,table1.getValueAt(0,3).toString());
-            db.preparedStatement.setString(4,table1.getValueAt(0,4).toString());
-            db.preparedStatement.setString(5,table1.getValueAt(0,5).toString());
-            db.preparedStatement.setString(6,table1.getValueAt(0,6).toString());
-            db.preparedStatement.setString(7,table1.getValueAt(0,7).toString());
-            db.preparedStatement.setString(8,table1.getValueAt(0,8).toString());
-            db.preparedStatement.setString(9,table1.getValueAt(0,9).toString());
-            db.preparedStatement.setString(10,table1.getValueAt(0,10).toString());
-            db.preparedStatement.setString(11,table1.getValueAt(0,11).toString());
-            db.preparedStatement.setString(12,table1.getValueAt(0,12).toString());
-            db.preparedStatement.setString(13,table1.getValueAt(0,13).toString());
-            db.preparedStatement.setString(14,table1.getValueAt(0,14).toString());
-            db.preparedStatement.setString(15,table1.getValueAt(0,15).toString());
-            db.preparedStatement.setString(16,table1.getValueAt(0,16).toString());
-            db.preparedStatement.setString(17,table1.getValueAt(0,17).toString());
-            db.preparedStatement.setString(18,table1.getValueAt(0,18).toString());
-            db.preparedStatement.setString(19,table1.getValueAt(0,19).toString());
-            db.preparedStatement.setString(20,table1.getValueAt(0,0).toString());
+                db.preparedStatement.setString(1,table1.getValueAt(table1.getSelectedRow(),1).toString());
+                db.preparedStatement.setString(2,table1.getValueAt(table1.getSelectedRow(),2).toString());
+                db.preparedStatement.setString(3,table1.getValueAt(table1.getSelectedRow(),3).toString());
+                db.preparedStatement.setString(4,table1.getValueAt(table1.getSelectedRow(),4).toString());
+                db.preparedStatement.setString(5,table1.getValueAt(table1.getSelectedRow(),5).toString());
+                db.preparedStatement.setString(6,table1.getValueAt(table1.getSelectedRow(),6).toString());
+                db.preparedStatement.setString(7,table1.getValueAt(table1.getSelectedRow(),7).toString());
+                db.preparedStatement.setString(8,table1.getValueAt(table1.getSelectedRow(),8).toString());
+                db.preparedStatement.setString(9,table1.getValueAt(table1.getSelectedRow(),9).toString());
+                db.preparedStatement.setString(10,table1.getValueAt(table1.getSelectedRow(),10).toString());
+                db.preparedStatement.setString(11,table1.getValueAt(table1.getSelectedRow(),11).toString());
+                db.preparedStatement.setString(12,table1.getValueAt(table1.getSelectedRow(),12).toString());
+                db.preparedStatement.setString(13,table1.getValueAt(table1.getSelectedRow(),13).toString());
+                db.preparedStatement.setString(14,table1.getValueAt(table1.getSelectedRow(),14).toString());
+                db.preparedStatement.setString(15,table1.getValueAt(table1.getSelectedRow(),15).toString());
+                db.preparedStatement.setString(16,table1.getValueAt(table1.getSelectedRow(),16).toString());
+                db.preparedStatement.setString(17,table1.getValueAt(table1.getSelectedRow(),17).toString());
+                db.preparedStatement.setString(18,table1.getValueAt(table1.getSelectedRow(),18).toString());
+                db.preparedStatement.setString(19,table1.getValueAt(table1.getSelectedRow(),19).toString());
+                db.preparedStatement.setString(20,table1.getValueAt(table1.getSelectedRow(),0).toString());
 
         } catch (SQLException e1)
         {

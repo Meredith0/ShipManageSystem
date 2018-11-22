@@ -79,9 +79,9 @@ public class SelectAndModifyData extends JFrame
             columnNames.add("签发日期");
             //二维容器
             Vector rowData = new Vector();
-            Vector row = new Vector();
             for (int i = 1; i < db.col; i++)//遍历列
             {
+                Vector row = new Vector();
                 for (int j = 1; j <= db.row; j++)//遍历行
                 {
                     row.add(db.result[j][i]);
@@ -128,11 +128,12 @@ public class SelectAndModifyData extends JFrame
             columnNames.add("签发日期");
             //二维容器
             Vector rowData = new Vector();
-            Vector row = new Vector();
             for (int i = 1; i < db.col; i++)//遍历列
             {
+                Vector row = new Vector();
                 for (int j = 1; j <= db.row; j++)//遍历行
                 {
+
                     row.add(db.result[j][i]);
                 }
                 rowData.add(row);//将行添加到Vector
@@ -154,16 +155,18 @@ public class SelectAndModifyData extends JFrame
         db.pre();
         try
         {
-            db.preparedStatement.setString(1, table1.getValueAt(0, 1).toString());
-            db.preparedStatement.setString(2, table1.getValueAt(0, 2).toString());
-            db.preparedStatement.setString(3, table1.getValueAt(0, 3).toString());
-            db.preparedStatement.setString(4, table1.getValueAt(0, 4).toString());
-            db.preparedStatement.setString(5, table1.getValueAt(0, 5).toString());
-            db.preparedStatement.setString(6, table1.getValueAt(0, 6).toString());
-            db.preparedStatement.setString(7, table1.getValueAt(0, 7).toString());
-            db.preparedStatement.setString(8, table1.getValueAt(0, 8).toString());
-            db.preparedStatement.setString(9, table1.getValueAt(0, 9).toString());
-            db.preparedStatement.setString(10, table1.getValueAt(0, 0).toString());
+            db.preparedStatement.setString(1, table1.getValueAt(table1.getSelectedRow(), 1).toString());
+            db.preparedStatement.setString(2, table1.getValueAt(table1.getSelectedRow(), 2).toString());
+            db.preparedStatement.setString(3, table1.getValueAt(table1.getSelectedRow(), 3).toString());
+            db.preparedStatement.setString(4, table1.getValueAt(table1.getSelectedRow(), 4).toString());
+            db.preparedStatement.setString(5, table1.getValueAt(table1.getSelectedRow(), 5).toString());
+            db.preparedStatement.setString(6, table1.getValueAt(table1.getSelectedRow(), 6).toString());
+            db.preparedStatement.setString(7, table1.getValueAt(table1.getSelectedRow(), 7).toString());
+            db.preparedStatement.setString(8, table1.getValueAt(table1.getSelectedRow(), 8).toString());
+            db.preparedStatement.setString(9, table1.getValueAt(table1.getSelectedRow(), 9).toString());
+            db.preparedStatement.setString(10, table1.getValueAt(table1.getSelectedRow(), 0).toString());
+            System.out.println(table1.getSelectedRow());
+
         } catch (SQLException e1)
         {
             e1.printStackTrace();
@@ -229,9 +232,10 @@ public class SelectAndModifyData extends JFrame
         columnNames.add("业务办理情况");
         //二维容器
         Vector rowData = new Vector();
-        Vector row = new Vector();
+
         for (int i = 1; i < db.col; i++)//遍历列
         {
+            Vector row = new Vector();
             for (int j = 1; j <= db.row; j++)//遍历行
             {
                 row.add(db.result[j][i]);
