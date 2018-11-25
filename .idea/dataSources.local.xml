@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="船只资料@localhost" uuid="5b4c657a-2878-4e33-a06c-3761aa5530b1">
-      <database-info product="Microsoft SQL Server" version="14.00.2002" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 7.0 for SQL Server" driver-version="7.0.0.0" family="MSSQL" exact-version="14.0.200">
+      <database-info product="Microsoft SQL Server" version="14.00.2002" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 7.0 for SQL Server" driver-version="7.0.0.0" dbms="MSSQL" exact-version="14.0.200">
         <extra-name-characters>$#@</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

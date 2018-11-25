@@ -36,35 +36,43 @@ public class SignIn extends JFrame
         {
             JOptionPane.showMessageDialog(null, "两次密码不相同,请重新输入", "错误", JOptionPane.ERROR_MESSAGE);
         }
-        String password = new String(passwordField1.getPassword());
-        //MD5加密
-        MD5 md5 = new MD5();
-        password = md5.MD5WithoutSalt(password);
-
-        db.sqlLines = "insert into 系统用户表(用户ID,密码,权限,员工姓名,联系电话) values(?,?,?,?,?)";
-        db.pre();
-        try
+        if (textField3.getText().trim().equals(""))
         {
-            db.preparedStatement.setString(1, textField3.getText());
-            db.preparedStatement.setString(2, password);
-            db.preparedStatement.setString(3, "0");//默认权限为0
-            db.preparedStatement.setString(4, textField1.getText());
-            db.preparedStatement.setString(5, textField2.getText());
-        } catch (SQLException e1)
-        {
-            e1.printStackTrace();
+            JOptionPane.showMessageDialog(null, "注册失败", "错误", JOptionPane.ERROR_MESSAGE);
         }
-        db.exeSql();//执行SQL语句
-        if (db.effectedLines > 0)
+        else
         {
-            JOptionPane.showMessageDialog(null, "注册成功", "", JOptionPane.INFORMATION_MESSAGE);
-            this.dispose();
-            new LoginPanel();
-        } else
-        {
-            JOptionPane.showMessageDialog(null, "注册失败", "", JOptionPane.ERROR_MESSAGE);
-            this.dispose();
-            new LoginPanel();
+            String password = new String(passwordField1.getPassword());
+            //MD5加密
+            MD5 md5 = new MD5();
+            password = md5.MD5WithoutSalt(password);
+
+            db.sqlLines = "insert into 系统用户表(用户ID,密码,权限,员工姓名,联系电话) values(?,?,?,?,?)";
+            db.pre();
+            try
+            {
+                db.preparedStatement.setString(1, textField3.getText());
+                db.preparedStatement.setString(2, password);
+                db.preparedStatement.setString(3, "0");//默认权限为0
+                db.preparedStatement.setString(4, textField1.getText());
+                db.preparedStatement.setString(5, textField2.getText());
+            } catch (SQLException e1)
+            {
+                e1.printStackTrace();
+            }
+            db.exeSql();//执行SQL语句
+            if (db.effectedLines > 0)
+            {
+                JOptionPane.showMessageDialog(null, "注册成功", "", JOptionPane.INFORMATION_MESSAGE);
+                this.dispose();
+                new LoginPanel();
+            } else
+            {
+                JOptionPane.showMessageDialog(null, "注册失败", "", JOptionPane.ERROR_MESSAGE);
+                this.dispose();
+                new LoginPanel();
+            }
+
         }
 
     }
