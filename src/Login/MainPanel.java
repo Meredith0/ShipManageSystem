@@ -9,14 +9,14 @@ import com.SQL;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import static Login.LoginPanel.Autho;
-import static Login.LoginPanel.UserID;
-import static Login.LoginPanel.UserName;
+import static Login.LoginPanel.*;
 
 /**
  * @author Meredith
@@ -264,6 +264,16 @@ public class MainPanel extends JFrame
         new Config();
     }
 
+    private void thisWindowClosing(WindowEvent e) {
+        int result = JOptionPane.showConfirmDialog(this,
+                "你确定要退出吗 ?", "",
+                JOptionPane.YES_NO_OPTION);
+        if (result == JOptionPane.YES_OPTION)
+            this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        else if (result == JOptionPane.NO_OPTION)
+            this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+    }
+
     private void initComponents()
     {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
@@ -299,6 +309,12 @@ public class MainPanel extends JFrame
         setVisible(true);
         setTitle("\u8239\u53ea\u8d44\u6599\u7ba1\u7406\u7cfb\u7edf");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                thisWindowClosing(e);
+            }
+        });
         Container contentPane = getContentPane();
         contentPane.setLayout(new GridBagLayout());
         ((GridBagLayout)contentPane.getLayout()).columnWidths = new int[] {43, 0, 55, 120, 57, 0, 0, 55, 55, 15, 15, 30, 55, 55, 35, 0};
@@ -343,10 +359,10 @@ public class MainPanel extends JFrame
 
             //======== menu2 ========
             {
-                menu2.setText("\u5173\u4e8e");
+                menu2.setText("\u5e2e\u52a9");
 
                 //---- menuItem4 ----
-                menuItem4.setText("\u5173\u4e8e\u6211\u4eec");
+                menuItem4.setText("\u5173\u4e8e");
                 menuItem4.addActionListener(e -> menuItem4ActionPerformed(e));
                 menu2.add(menuItem4);
             }

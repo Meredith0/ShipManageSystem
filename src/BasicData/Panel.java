@@ -9,6 +9,8 @@ import Login.MainPanel;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
  * @author Meredith
@@ -29,7 +31,6 @@ public class Panel extends JFrame
     private void button1ActionPerformed(ActionEvent e)
     {
         new AddData();
-
     }
 
     private void button3ActionPerformed(ActionEvent e)
@@ -51,6 +52,16 @@ public class Panel extends JFrame
         new MainPanel();
     }
 
+    private void thisWindowClosing(WindowEvent e) {
+        int result = JOptionPane.showConfirmDialog(this,
+                "你确定要退出吗 ?", "",
+                JOptionPane.YES_NO_OPTION);
+        if (result == JOptionPane.YES_OPTION)
+            this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        else if (result == JOptionPane.NO_OPTION)
+            this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+    }
+
     private void initComponents()
     {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
@@ -63,6 +74,12 @@ public class Panel extends JFrame
         //======== this ========
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                thisWindowClosing(e);
+            }
+        });
         Container contentPane = getContentPane();
         contentPane.setLayout(new GridBagLayout());
         ((GridBagLayout)contentPane.getLayout()).columnWidths = new int[] {83, 84, 80, 83, 83, 76, 0};
