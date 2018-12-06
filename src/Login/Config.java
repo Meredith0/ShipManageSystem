@@ -14,7 +14,6 @@ public class Config extends JFrame
 {
     public Config()
     {
-
         initComponents();
         setConfig();
     }
