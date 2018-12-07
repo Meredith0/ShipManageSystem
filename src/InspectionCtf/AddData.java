@@ -14,48 +14,26 @@ import java.sql.SQLException;
 /**
  * @author Meredith
  */
-public class AddData extends JFrame
-{
+public class AddData extends JFrame {
+
     SQL db = new SQL();
 
-    public AddData()
-    {
+    public AddData() {
         initComponents();
     }
 
-    private void button1ActionPerformed(ActionEvent e)
-    {
+    private void button1ActionPerformed(ActionEvent e) {
         /**
          * @description: 录入数据到表 [船舶所有权登记证书]
          * @param [e]
          * @return void
          * @date: 2018/11/15 22:43
          */
-        //判断船名,船舶所有人,船舶登记号是否合法
-        db.sqlLines = "select * from 船舶所有权登记证书 where 船名=? and 船舶所有人=? and 船舶登记号=?";
-        db.pre();
-        try
-        {
-            db.preparedStatement.setString(1, textField11.getText());
-            db.preparedStatement.setString(2, textField5.getText());
-            db.preparedStatement.setString(3, textField6.getText());
-        } catch (SQLException e1)
-        {
-            e1.printStackTrace();
-        }
-        db.exeSelect();
-        //不合法则报错
-        if (db.result[1][1] == null)
-        {
-            JOptionPane.showMessageDialog(null, "船舶所有人 和 船舶登记号 与[船舶所有权登记证书]中的值不匹配,请重新输入", "",
-                    JOptionPane.ERROR_MESSAGE);
-        }
         //将船只的检验证书基本信息录入到表 [船只检验证书]
         db.sqlLines = "insert into 船只检验证书(船名,船检登记号,检验证编号,船舶所有人,船舶登记号,船舶检验类型,下次检验时间,通知时间,检验机关,检验证使用有效期至,发证日期) " +
                 "values(?,?,?,?,?,?,?,?,?,?,?,?)";
         db.pre();
-        try
-        {
+        try {
             db.preparedStatement.setString(1, textField11.getText());
             db.preparedStatement.setString(2, textField12.getText());
             db.preparedStatement.setString(3, textField1.getText());
@@ -67,37 +45,29 @@ public class AddData extends JFrame
             db.preparedStatement.setString(9, textField3.getText());
             db.preparedStatement.setString(10, textField4.getText());
             db.preparedStatement.setString(11, textField9.getText());
-        } catch (SQLException e1)
-        {
+        } catch (SQLException e1) {
             e1.printStackTrace();
         }
         db.exeSql();
         //将证书有效期录入到表 [各证书有效期]
         db.sqlLines = "insert into 各证书有效期(船名,证书名,证书有效期至) values(?,?,?)";
         db.pre();
-        try
-        {
+        try {
             db.preparedStatement.setString(1, textField11.getText());
             db.preparedStatement.setString(2, "船只检验证书");
             db.preparedStatement.setString(3, textField4.getText());
-        } catch (SQLException e1)
-        {
+        } catch (SQLException e1) {
             e1.printStackTrace();
         }
         db.exeSql();
-        if (db.effectedLines > 0)
-        {
+        if (db.effectedLines > 0) {
             JOptionPane.showMessageDialog(null, "录入数据成功", "", JOptionPane.INFORMATION_MESSAGE);
-        } else
-        {
+        } else {
             JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
         }
-
-
     }
 
     private void button2ActionPerformed(ActionEvent e) {
-
         /**
          * @description: 录入数据到表 [年度检验处理历史表]
          * @param [e]
@@ -106,30 +76,25 @@ public class AddData extends JFrame
          */
         db.sqlLines = "insert into 年度检验处理历史表(船名,证书编号,办理日期,办理人,证书有效期至,业务办理情况) values(?,?,?,?,?,?)";
         db.pre();
-        try
-        {
+        try {
             db.preparedStatement.setString(1, textField11.getText());
             db.preparedStatement.setString(2, textField17.getText());
             db.preparedStatement.setString(3, textField13.getText());
             db.preparedStatement.setString(4, textField14.getText());
             db.preparedStatement.setString(5, textField15.getText());
             db.preparedStatement.setString(6, textField16.getText());
-        } catch (SQLException e1)
-        {
+        } catch (SQLException e1) {
             e1.printStackTrace();
         }
         db.exeSql();
-        if (db.effectedLines > 0)
-        {
+        if (db.effectedLines > 0) {
             JOptionPane.showMessageDialog(null, "录入数据成功", "", JOptionPane.INFORMATION_MESSAGE);
-        } else
-        {
+        } else {
             JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
         }
     }
 
-    private void initComponents()
-    {
+    private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         label2 = new JLabel();
         label15 = new JLabel();
@@ -155,8 +120,9 @@ public class AddData extends JFrame
         textField9 = new JTextField();
         label7 = new JLabel();
         textField8 = new JTextField();
-        label20 = new JLabel();
         button1 = new JButton();
+        separator1 = new JSeparator();
+        label20 = new JLabel();
         label1 = new JLabel();
         textField13 = new JTextField();
         label8 = new JLabel();
@@ -168,212 +134,195 @@ public class AddData extends JFrame
         label18 = new JLabel();
         textField16 = new JTextField();
         button2 = new JButton();
-
         //======== this ========
         setVisible(true);
         Container contentPane = getContentPane();
         contentPane.setLayout(new GridBagLayout());
-        ((GridBagLayout)contentPane.getLayout()).columnWidths = new int[] {66, 116, 157, 71, 115, 171, 41, 0};
-        ((GridBagLayout)contentPane.getLayout()).rowHeights = new int[] {0, 38, 37, 35, 13, 35, 35, 35, 35, 35, 35, 41, 35, 35, 36, 35, 46, 0};
-        ((GridBagLayout)contentPane.getLayout()).columnWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
-        ((GridBagLayout)contentPane.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
-
+        ((GridBagLayout) contentPane.getLayout()).columnWidths = new int[]{66, 116, 157, 71, 115, 171, 41, 0};
+        ((GridBagLayout) contentPane.getLayout()).rowHeights = new int[]{0, 38, 37, 35, 13, 35, 35, 35, 35, 35, 35, 0, 41, 35, 35, 36, 35, 46, 0};
+        ((GridBagLayout) contentPane.getLayout()).columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
+        ((GridBagLayout) contentPane.getLayout()).rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
         //---- label2 ----
-        label2.setText("             \u68c0\u9a8c\u8bc1\u4e66\u57fa\u672c\u8d44\u6599");
+        label2.setText("\u68c0\u9a8c\u8bc1\u4e66\u57fa\u672c\u8d44\u6599");
         label2.setFont(label2.getFont().deriveFont(label2.getFont().getSize() + 13f));
-        contentPane.add(label2, new GridBagConstraints(2, 0, 3, 2, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+        label2.setHorizontalAlignment(SwingConstants.CENTER);
+        contentPane.add(label2, new GridBagConstraints(1, 0, 5, 2, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label15 ----
         label15.setText("\u8239\u53ea\u540d\u79f0");
         label15.setFont(label15.getFont().deriveFont(label15.getFont().getSize() + 4f));
         contentPane.add(label15, new GridBagConstraints(1, 3, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField11, new GridBagConstraints(2, 3, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label17 ----
         label17.setText("\u2190\u5173\u8054\u2192");
         label17.setFont(label17.getFont().deriveFont(label17.getFont().getSize() + 6f));
         contentPane.add(label17, new GridBagConstraints(3, 3, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label16 ----
         label16.setText("\u8239\u68c0\u767b\u8bb0\u53f7");
         label16.setFont(label16.getFont().deriveFont(label16.getFont().getSize() + 4f));
         contentPane.add(label16, new GridBagConstraints(4, 3, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField12, new GridBagConstraints(5, 3, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label3 ----
         label3.setText("\u68c0\u9a8c\u8bc1\u7f16\u53f7");
         label3.setFont(label3.getFont().deriveFont(label3.getFont().getSize() + 4f));
         contentPane.add(label3, new GridBagConstraints(1, 5, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField1, new GridBagConstraints(2, 5, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label9 ----
         label9.setText("\u901a\u77e5\u65f6\u95f4");
         label9.setFont(label9.getFont().deriveFont(label9.getFont().getSize() + 4f));
         contentPane.add(label9, new GridBagConstraints(4, 5, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField2, new GridBagConstraints(5, 5, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label4 ----
         label4.setText("\u8239\u8236\u6240\u6709\u4eba");
         label4.setFont(label4.getFont().deriveFont(label4.getFont().getSize() + 4f));
         contentPane.add(label4, new GridBagConstraints(1, 6, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField5, new GridBagConstraints(2, 6, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label10 ----
         label10.setText("\u68c0\u9a8c\u673a\u5173");
         label10.setFont(label10.getFont().deriveFont(label10.getFont().getSize() + 4f));
         contentPane.add(label10, new GridBagConstraints(4, 6, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField3, new GridBagConstraints(5, 6, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label5 ----
         label5.setText("\u8239\u8236\u767b\u8bb0\u53f7");
         label5.setFont(label5.getFont().deriveFont(label5.getFont().getSize() + 4f));
         contentPane.add(label5, new GridBagConstraints(1, 7, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField6, new GridBagConstraints(2, 7, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label11 ----
         label11.setText("\u68c0\u9a8c\u8bc1\u4f7f\u7528\u6709\u6548\u671f\u81f3");
         label11.setFont(label11.getFont().deriveFont(label11.getFont().getSize() + 4f));
         contentPane.add(label11, new GridBagConstraints(4, 7, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField4, new GridBagConstraints(5, 7, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label6 ----
         label6.setText("\u8239\u8236\u68c0\u9a8c\u7c7b\u578b");
         label6.setFont(label6.getFont().deriveFont(label6.getFont().getSize() + 4f));
         contentPane.add(label6, new GridBagConstraints(1, 8, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField7, new GridBagConstraints(2, 8, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label12 ----
         label12.setText("\u53d1\u8bc1\u65e5\u671f");
         label12.setFont(label12.getFont().deriveFont(label12.getFont().getSize() + 4f));
         contentPane.add(label12, new GridBagConstraints(4, 8, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField9, new GridBagConstraints(5, 8, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label7 ----
         label7.setText("\u4e0b\u6b21\u68c0\u9a8c\u65f6\u95f4");
         label7.setFont(label7.getFont().deriveFont(label7.getFont().getSize() + 4f));
         contentPane.add(label7, new GridBagConstraints(1, 9, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         contentPane.add(textField8, new GridBagConstraints(2, 9, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
-        //---- label20 ----
-        label20.setText("        \u8239\u53ea\u68c0\u9a8c\u60c5\u51b5\u8bb0\u5f55");
-        label20.setFont(label20.getFont().deriveFont(label20.getFont().getSize() + 7f));
-        contentPane.add(label20, new GridBagConstraints(1, 11, 2, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- button1 ----
         button1.setText("\u786e\u5b9a");
         button1.setFont(button1.getFont().deriveFont(button1.getFont().getSize() + 5f));
         button1.addActionListener(e -> button1ActionPerformed(e));
-        contentPane.add(button1, new GridBagConstraints(5, 11, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+        contentPane.add(button1, new GridBagConstraints(5, 10, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
+        contentPane.add(separator1, new GridBagConstraints(0, 11, 7, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 0), 0, 0));
+        //---- label20 ----
+        label20.setText("\u8239\u53ea\u68c0\u9a8c\u60c5\u51b5\u8bb0\u5f55");
+        label20.setFont(label20.getFont().deriveFont(label20.getFont().getSize() + 11f));
+        label20.setHorizontalAlignment(SwingConstants.CENTER);
+        contentPane.add(label20, new GridBagConstraints(1, 12, 5, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label1 ----
         label1.setText("\u529e\u7406\u65e5\u671f");
         label1.setFont(label1.getFont().deriveFont(label1.getFont().getSize() + 4f));
-        contentPane.add(label1, new GridBagConstraints(1, 12, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-        contentPane.add(textField13, new GridBagConstraints(2, 12, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+        contentPane.add(label1, new GridBagConstraints(1, 13, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
+        contentPane.add(textField13, new GridBagConstraints(2, 13, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label8 ----
         label8.setText("\u529e\u7406\u4eba");
         label8.setFont(label8.getFont().deriveFont(label8.getFont().getSize() + 4f));
-        contentPane.add(label8, new GridBagConstraints(1, 13, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-        contentPane.add(textField14, new GridBagConstraints(2, 13, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+        contentPane.add(label8, new GridBagConstraints(1, 14, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
+        contentPane.add(textField14, new GridBagConstraints(2, 14, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label19 ----
         label19.setText("\u8bc1\u4e66\u7f16\u53f7");
         label19.setFont(label19.getFont().deriveFont(label19.getFont().getSize() + 4f));
-        contentPane.add(label19, new GridBagConstraints(4, 13, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-        contentPane.add(textField17, new GridBagConstraints(5, 13, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+        contentPane.add(label19, new GridBagConstraints(4, 14, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
+        contentPane.add(textField17, new GridBagConstraints(5, 14, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label14 ----
         label14.setText("\u8bc1\u4e66\u6709\u6548\u671f\u81f3");
         label14.setFont(label14.getFont().deriveFont(label14.getFont().getSize() + 4f));
-        contentPane.add(label14, new GridBagConstraints(1, 14, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-        contentPane.add(textField15, new GridBagConstraints(2, 14, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+        contentPane.add(label14, new GridBagConstraints(1, 15, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
+        contentPane.add(textField15, new GridBagConstraints(2, 15, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- label18 ----
         label18.setText("\u4e1a\u52a1\u529e\u7406\u60c5\u51b5");
         label18.setFont(label18.getFont().deriveFont(label18.getFont().getSize() + 4f));
-        contentPane.add(label18, new GridBagConstraints(1, 15, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-        contentPane.add(textField16, new GridBagConstraints(2, 15, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
-
+        contentPane.add(label18, new GridBagConstraints(1, 16, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
+        contentPane.add(textField16, new GridBagConstraints(2, 16, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         //---- button2 ----
         button2.setText("\u6dfb\u52a0\u8bb0\u5f55");
         button2.setFont(button2.getFont().deriveFont(button2.getFont().getSize() + 5f));
         button2.addActionListener(e -> button2ActionPerformed(e));
-        contentPane.add(button2, new GridBagConstraints(5, 15, 1, 1, 0.0, 0.0,
-            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-            new Insets(0, 0, 5, 5), 0, 0));
+        contentPane.add(button2, new GridBagConstraints(5, 16, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
         pack();
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
@@ -404,8 +353,9 @@ public class AddData extends JFrame
     private JTextField textField9;
     private JLabel label7;
     private JTextField textField8;
-    private JLabel label20;
     private JButton button1;
+    private JSeparator separator1;
+    private JLabel label20;
     private JLabel label1;
     private JTextField textField13;
     private JLabel label8;

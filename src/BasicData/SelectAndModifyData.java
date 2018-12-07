@@ -10,6 +10,11 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -50,6 +55,35 @@ public class SelectAndModifyData extends JFrame {
         }
         db.exeSelect();
         db.toTable(db, table1);
+
+        db.sqlLines="select 船舶相片 from 船舶相片 where 船名=?";
+        db.pre();
+        byte [] b=new byte[10240*10];
+        try {
+            db.preparedStatement.setString(1, textField1.getText());
+            ResultSet rs=db.preparedStatement.executeQuery();
+            while (rs.next()) {
+                //获取图片数据
+                InputStream in=rs.getBinaryStream(1);
+                //将数据存储在字节数组b中
+                try {
+                    in.read(b);
+                    //从数据库获取图片保存的位置
+                    File f=new File("D:/temp.jpg ");
+                    FileOutputStream out=new FileOutputStream(f);
+                    out.write(b, 0, b.length);
+                    out.close();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+            //显示图片
+            ImageIcon imageIcon = new ImageIcon("D:/temp.jpg");
+            label4.setIcon(imageIcon);
+        } catch (SQLException e1) {
+            e1.printStackTrace();
+        }
+
     }
 
     private void button2ActionPerformed(ActionEvent e) {
@@ -93,73 +127,89 @@ public class SelectAndModifyData extends JFrame {
         table1 = new JTable();
         label3 = new JLabel();
         button2 = new JButton();
+        label4 = new JLabel();
+
         //======== frame1 ========
         {
             frame1.setVisible(true);
             Container frame1ContentPane = frame1.getContentPane();
             frame1ContentPane.setLayout(null);
+
             //======== panel1 ========
             {
                 panel1.setLayout(new GridBagLayout());
-                ((GridBagLayout) panel1.getLayout()).columnWidths = new int[]{0, 83, 99, 0, 0};
-                ((GridBagLayout) panel1.getLayout()).rowHeights = new int[]{28, 47, 45, 34, 41, 0, 0, 36, 0};
-                ((GridBagLayout) panel1.getLayout()).columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 1.0E-4};
-                ((GridBagLayout) panel1.getLayout()).rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
+                ((GridBagLayout)panel1.getLayout()).columnWidths = new int[] {0, 83, 99, 0, 0};
+                ((GridBagLayout)panel1.getLayout()).rowHeights = new int[] {28, 47, 45, 34, 41, 0, 0, 36, 0};
+                ((GridBagLayout)panel1.getLayout()).columnWeights = new double[] {0.0, 0.0, 0.0, 0.0, 1.0E-4};
+                ((GridBagLayout)panel1.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
+
                 //---- label1 ----
                 label1.setText("\u67e5\u8be2\u8239\u53ea\u8d44\u6599");
                 label1.setFont(label1.getFont().deriveFont(label1.getFont().getSize() + 5f));
                 panel1.add(label1, new GridBagConstraints(2, 1, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+
                 //---- label2 ----
                 label2.setText("    \u67e5\u8be2\u65b9\u5f0f");
                 label2.setFont(label2.getFont().deriveFont(label2.getFont().getSize() + 3f));
                 panel1.add(label2, new GridBagConstraints(1, 2, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
                 panel1.add(comboBox1, new GridBagConstraints(2, 2, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
                 panel1.add(textField1, new GridBagConstraints(2, 3, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+
                 //---- button1 ----
                 button1.setText("\u786e\u5b9a");
                 button1.addActionListener(e -> button1ActionPerformed(e));
                 panel1.add(button1, new GridBagConstraints(2, 4, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
             }
             frame1ContentPane.add(panel1);
             panel1.setBounds(5, 5, 245, 450);
+
             //======== scrollPane1 ========
             {
+
                 //---- table1 ----
                 table1.setModel(new DefaultTableModel(
-                        new Object[][]{
-                        },
-                        new String[]{
-                                null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
-                        }
+                    new Object[][] {
+                    },
+                    new String[] {
+                        null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+                    }
                 ));
                 scrollPane1.setViewportView(table1);
             }
             frame1ContentPane.add(scrollPane1);
             scrollPane1.setBounds(250, 0, 1305, 190);
+
             //---- label3 ----
             label3.setText("\u67e5\u8be2\u8d44\u6599\u540e\u53ef\u5bf9\u5176\u8fdb\u884c\u4fee\u6539");
             label3.setFont(label3.getFont().deriveFont(label3.getFont().getSize() + 5f));
             frame1ContentPane.add(label3);
             label3.setBounds(1095, 265, 219, 40);
+
             //---- button2 ----
             button2.setText("\u786e\u8ba4\u4fee\u6539");
             button2.setFont(button2.getFont().deriveFont(button2.getFont().getSize() + 3f));
             button2.addActionListener(e -> button2ActionPerformed(e));
             frame1ContentPane.add(button2);
             button2.setBounds(1190, 310, 105, 40);
+
+            //---- label4 ----
+            label4.setText(" ");
+            frame1ContentPane.add(label4);
+            label4.setBounds(250, 205, 525, 275);
+
             { // compute preferred size
                 Dimension preferredSize = new Dimension();
-                for (int i = 0; i < frame1ContentPane.getComponentCount(); i++) {
+                for(int i = 0; i < frame1ContentPane.getComponentCount(); i++) {
                     Rectangle bounds = frame1ContentPane.getComponent(i).getBounds();
                     preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
                     preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
@@ -188,5 +238,6 @@ public class SelectAndModifyData extends JFrame {
     private JTable table1;
     private JLabel label3;
     private JButton button2;
+    private JLabel label4;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

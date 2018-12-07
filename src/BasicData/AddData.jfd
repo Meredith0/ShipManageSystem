@@ -355,13 +355,23 @@ new FormModel {
 					"gridwidth": 2
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "上传船只照片"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+					"gridy": 12
+					"gridwidth": 2
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "button1"
 					"text": "确定"
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 					"gridx": 10
 					"gridy": 12
-					"gridwidth": 3
+					"gridwidth": 2
 				} )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 				"x": 0
@@ -370,8 +380,8 @@ new FormModel {
 				"height": 480
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 795, 510 )
+			"location": new java.awt.Point( 40, 10 )
+			"size": new java.awt.Dimension( 890, 570 )
 		} )
 	}
 }

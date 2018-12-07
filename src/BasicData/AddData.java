@@ -9,16 +9,19 @@ import com.SQL;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.sql.SQLException;
 
 /**
  * @author Meredith
  */
-public class AddData extends JFrame
-{
+public class AddData extends JFrame {
+
     SQL db = new SQL();
-    public AddData()
-    {
+
+    public AddData() {
         initComponents();
     }
 
@@ -33,8 +36,7 @@ public class AddData extends JFrame
                 "型深,总吨,净吨,功率,载重吨,航行区域,备注,船舶所有人,身份证,船舶所有人地址,联系电话) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?," +
                 "?,?,?)");
         db.pre();
-        try
-        {
+        try {
             db.preparedStatement.setString(1, textField6.getText());
             db.preparedStatement.setString(2, textField7.getText());
             db.preparedStatement.setString(3, textField8.getText());
@@ -59,22 +61,56 @@ public class AddData extends JFrame
             db.preparedStatement.setString(22, textField3.getText());
             db.preparedStatement.setString(23, textField4.getText());
             db.preparedStatement.setString(24, textField5.getText());
-        } catch (SQLException e1)
-        {
+        } catch (SQLException e1) {
             e1.printStackTrace();
         }
         db.exeSql();
-        if (db.effectedLines > 0)
-        {
-            JOptionPane.showMessageDialog(null, "录入数据成功", "", JOptionPane.INFORMATION_MESSAGE);
-        } else
-        {
-            JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
+        if (db.effectedLines > 0) {
+            JOptionPane.showMessageDialog(null, "录入数据成功", "OK", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "录入数据失败", "ERROR", JOptionPane.ERROR_MESSAGE);
         }
     }
 
-    private void initComponents()
-    {
+    private void button2ActionPerformed(ActionEvent e) {
+        /**
+         * @description: 上传照片
+         */
+        String path=null;
+        try {
+
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setFileSelectionMode(fileChooser.FILES_ONLY);
+            int n = fileChooser.showOpenDialog(this.getContentPane());
+            if (n == fileChooser.APPROVE_OPTION) {
+
+                path=fileChooser.getSelectedFile().getPath();
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        db.sqlLines = "insert into 船舶相片(船名,船舶相片) values(?,?)";
+        db.pre();
+        File f=new File(path);
+        try {
+            FileInputStream input= new FileInputStream(f);
+            db.preparedStatement.setString(1,textField6.getText());
+            db.preparedStatement.setBinaryStream(2,input,(int)f.length());
+        } catch (FileNotFoundException e1) {
+            e1.printStackTrace();
+        } catch (SQLException e1) {
+            e1.printStackTrace();
+        }
+        db.exeSql();
+        if (db.effectedLines == 1) {
+            JOptionPane.showMessageDialog(null, "上传照片成功", "OK", JOptionPane.INFORMATION_MESSAGE);
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "上传照片失败", "ERROR", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         frame1 = new JFrame();
         addData = new JPanel();
@@ -128,6 +164,7 @@ public class AddData extends JFrame
         textField15 = new JTextField();
         label25 = new JLabel();
         textField25 = new JTextField();
+        button2 = new JButton();
         button1 = new JButton();
 
         //======== frame1 ========
@@ -375,12 +412,20 @@ public class AddData extends JFrame
                     GridBagConstraints.CENTER, GridBagConstraints.BOTH,
                     new Insets(0, 0, 5, 5), 0, 0));
 
+                //---- button2 ----
+                button2.setText("\u4e0a\u4f20\u8239\u53ea\u7167\u7247");
+                button2.setFont(button2.getFont().deriveFont(button2.getFont().getSize() + 4f));
+                button2.addActionListener(e -> button2ActionPerformed(e));
+                addData.add(button2, new GridBagConstraints(7, 12, 2, 1, 0.0, 0.0,
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+
                 //---- button1 ----
                 button1.setText("\u786e\u5b9a");
                 button1.addActionListener(e -> button1ActionPerformed(e));
-                addData.add(button1, new GridBagConstraints(10, 12, 3, 1, 0.0, 0.0,
+                addData.add(button1, new GridBagConstraints(10, 12, 2, 1, 0.0, 0.0,
                     GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                    new Insets(0, 0, 5, 0), 0, 0));
+                    new Insets(0, 0, 5, 5), 0, 0));
             }
             frame1ContentPane.add(addData);
             addData.setBounds(0, 0, 790, 480);
@@ -457,6 +502,7 @@ public class AddData extends JFrame
     private JTextField textField15;
     private JLabel label25;
     private JTextField textField25;
+    private JButton button2;
     private JButton button1;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

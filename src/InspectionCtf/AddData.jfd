@@ -5,7 +5,7 @@ new FormModel {
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
 			"$columnSpecs": "61, 111, 152, 66, 110, 166, 41"
-			"$rowSpecs": "0, 33, 32, 30, 8, 30, 30, 30, 30, 30, 30, 36, 30, 30, 31, 30, 46"
+			"$rowSpecs": "0, 33, 32, 30, 8, 30, 30, 30, 30, 30, 30, 0, 36, 30, 30, 31, 30, 46"
 			"$hGap": 5
 			"$vGap": 5
 			"$alignLeft": true
@@ -15,11 +15,12 @@ new FormModel {
 			"visible": true
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label2"
-				"text": "             检验证书基本资料"
+				"text": "检验证书基本资料"
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 13, false )
+				"horizontalAlignment": 0
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-				"gridx": 2
-				"gridwidth": 3
+				"gridx": 1
+				"gridwidth": 5
 				"gridheight": 2
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
@@ -184,15 +185,6 @@ new FormModel {
 				"gridx": 2
 				"gridy": 9
 			} )
-			add( new FormComponent( "javax.swing.JLabel" ) {
-				name: "label20"
-				"text": "        船只检验情况记录"
-				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 7, false )
-			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
-				"gridx": 1
-				"gridy": 11
-				"gridwidth": 2
-			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button1"
 				"text": "确定"
@@ -200,7 +192,23 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 5
+				"gridy": 10
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridy": 11
+				"gridwidth": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label20"
+				"text": "船只检验情况记录"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 12
+				"gridwidth": 5
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
@@ -208,13 +216,13 @@ new FormModel {
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 1
-				"gridy": 12
+				"gridy": 13
 			} )
 			add( new FormComponent( "javax.swing.JTextField" ) {
 				name: "textField13"
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 2
-				"gridy": 12
+				"gridy": 13
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label8"
@@ -222,13 +230,13 @@ new FormModel {
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 1
-				"gridy": 13
+				"gridy": 14
 			} )
 			add( new FormComponent( "javax.swing.JTextField" ) {
 				name: "textField14"
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 2
-				"gridy": 13
+				"gridy": 14
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label19"
@@ -236,13 +244,13 @@ new FormModel {
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 4
-				"gridy": 13
+				"gridy": 14
 			} )
 			add( new FormComponent( "javax.swing.JTextField" ) {
 				name: "textField17"
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 5
-				"gridy": 13
+				"gridy": 14
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label14"
@@ -250,13 +258,13 @@ new FormModel {
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 1
-				"gridy": 14
+				"gridy": 15
 			} )
 			add( new FormComponent( "javax.swing.JTextField" ) {
 				name: "textField15"
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 2
-				"gridy": 14
+				"gridy": 15
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label18"
@@ -264,13 +272,13 @@ new FormModel {
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 1
-				"gridy": 15
+				"gridy": 16
 			} )
 			add( new FormComponent( "javax.swing.JTextField" ) {
 				name: "textField16"
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 2
-				"gridy": 15
+				"gridy": 16
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button2"
@@ -279,11 +287,11 @@ new FormModel {
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 5
-				"gridy": 15
+				"gridy": 16
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 5 )
-			"size": new java.awt.Dimension( 860, 665 )
+			"size": new java.awt.Dimension( 800, 660 )
 		} )
 	}
 }
