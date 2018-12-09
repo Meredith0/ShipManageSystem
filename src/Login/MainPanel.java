@@ -12,6 +12,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -38,6 +39,7 @@ public class MainPanel extends JFrame {
     private void button2ActionPerformed(ActionEvent e) {
         // 系统管理模块
         MySystem.SystemGUI.run();
+
     }
 
     private void button8ActionPerformed(ActionEvent e) {
@@ -104,6 +106,16 @@ public class MainPanel extends JFrame {
          * @return void
          * @date: 2018/11/21 16:02
          */
+        SQL db = new SQL();
+        db.sqlLines = "select 权限 from 系统用户表 where 用户ID=?";
+        db.pre();
+        try {
+            db.preparedStatement.setString(1, UserID);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        db.exeSelect();
+        Autho = db.result[1][1];
         textPane3.setText(UserName);
         textPane4.setText(UserID);
         String MyAutho = "无权限";

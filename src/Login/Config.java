@@ -10,26 +10,22 @@ import java.awt.*;
 /**
  * @author Meredith
  */
-public class Config extends JFrame
-{
-    public Config()
-    {
+public class Config extends JFrame {
+
+    public Config() {
         initComponents();
         setConfig();
     }
 
-    private void setConfig()
-    {
+    private void setConfig() {
         textField2.setText("127.0.0.1");
     }
 
-    private void initComponents()
-    {
+    private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         label5 = new JLabel();
         label2 = new JLabel();
         textField2 = new JTextField();
-
         //======== this ========
         setVisible(true);
         Container contentPane = getContentPane();
@@ -38,7 +34,6 @@ public class Config extends JFrame
         ((GridBagLayout) contentPane.getLayout()).rowHeights = new int[]{0, 0, 0, 0, 55, 0, 0, 0};
         ((GridBagLayout) contentPane.getLayout()).columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
         ((GridBagLayout) contentPane.getLayout()).rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
-
         //---- label5 ----
         label5.setText("\u914d\u7f6e\u670d\u52a1\u5668\u4fe1\u606f");
         label5.setFont(label5.getFont().deriveFont(label5.getFont().getSize() + 6f));
@@ -46,7 +41,6 @@ public class Config extends JFrame
         contentPane.add(label5, new GridBagConstraints(0, 1, 9, 1, 0.0, 0.0,
                 GridBagConstraints.CENTER, GridBagConstraints.BOTH,
                 new Insets(0, 0, 5, 0), 0, 0));
-
         //---- label2 ----
         label2.setText("IP");
         label2.setFont(label2.getFont().deriveFont(label2.getFont().getSize() + 4f));

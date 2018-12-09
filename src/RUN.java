@@ -9,16 +9,13 @@ import javax.swing.*;
  * @Package: src
  * @Description: 主函数入口
  **/
-public class RUN
-{
-    public static void main(String[] args)
-    {
+public class RUN {
+
+    public static void main(String[] args) {
         String lookAndFeel = UIManager.getSystemLookAndFeelClassName();
-        try
-        {
+        try {
             UIManager.setLookAndFeel(lookAndFeel);
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e)
-        {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
             e.printStackTrace();
         }
         //登陆入口
