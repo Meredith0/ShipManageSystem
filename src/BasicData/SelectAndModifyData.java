@@ -10,6 +10,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.print.PrinterException;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -114,6 +115,15 @@ public class SelectAndModifyData extends JFrame {
         }
     }
 
+    private void button3ActionPerformed(ActionEvent e) {
+        // 打印
+        try {
+            table1.print();
+        } catch (PrinterException e1) {
+            e1.printStackTrace();
+        }
+    }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         frame1 = new JFrame();
@@ -128,6 +138,7 @@ public class SelectAndModifyData extends JFrame {
         label3 = new JLabel();
         button2 = new JButton();
         label4 = new JLabel();
+        button3 = new JButton();
 
         //======== frame1 ========
         {
@@ -207,6 +218,12 @@ public class SelectAndModifyData extends JFrame {
             frame1ContentPane.add(label4);
             label4.setBounds(250, 205, 525, 275);
 
+            //---- button3 ----
+            button3.setText("\u6253\u5370");
+            button3.addActionListener(e -> button3ActionPerformed(e));
+            frame1ContentPane.add(button3);
+            button3.setBounds(new Rectangle(new Point(1220, 385), button3.getPreferredSize()));
+
             { // compute preferred size
                 Dimension preferredSize = new Dimension();
                 for(int i = 0; i < frame1ContentPane.getComponentCount(); i++) {
@@ -239,5 +256,6 @@ public class SelectAndModifyData extends JFrame {
     private JLabel label3;
     private JButton button2;
     private JLabel label4;
+    private JButton button3;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

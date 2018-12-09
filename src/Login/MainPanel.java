@@ -153,7 +153,7 @@ public class MainPanel extends JFrame {
         nowCal.getTime();
         String now = sdf.format(nowCal.getTime());
         Date date = null;
-        String text = "         Warning\n";
+        String text = "            警告! \n";
         {
             for (int j = 1; j < db.row; j++)//遍历行
             {
