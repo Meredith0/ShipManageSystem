@@ -15,7 +15,7 @@ new FormModel {
 			"visible": true
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label2"
-				"text": "缴纳水运费的基本情况"
+				"text": "缴纳航道费的基本情况"
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 13, false )
 				"horizontalAlignment": 0
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
@@ -76,7 +76,7 @@ new FormModel {
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label9"
-				"text": "水运费合计"
+				"text": "航道费合计"
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
 				"gridx": 4
@@ -126,8 +126,8 @@ new FormModel {
 				"gridy": 9
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"size": new java.awt.Dimension( 790, 470 )
-			"location": new java.awt.Point( 25, 0 )
+			"size": new java.awt.Dimension( 765, 470 )
+			"location": new java.awt.Point( 0, 0 )
 		} )
 	}
 }

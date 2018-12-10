@@ -2,7 +2,7 @@
  * Created by JFormDesigner on Fri Nov 16 16:50:15 CST 2018
  */
 
-package NationalCtf;
+package OperationCtf;
 
 import Login.MainPanel;
 
@@ -81,14 +81,14 @@ public class Panel extends JFrame
             ((GridBagLayout)this2ContentPane.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
 
             //---- label1 ----
-            label1.setText("     \u8239\u53ea\u56fd\u7c4d\u914d\u5458\u8bc1\u4e66\u7ba1\u7406\u6a21\u5757");
+            label1.setText("     \u8239\u53ea\u8425\u8fd0\u8bc1\u4e66\u7ba1\u7406\u6a21\u5757");
             label1.setFont(label1.getFont().deriveFont(label1.getFont().getSize() + 10f));
             this2ContentPane.add(label1, new GridBagConstraints(1, 0, 4, 1, 0.0, 0.0,
                 GridBagConstraints.CENTER, GridBagConstraints.BOTH,
                 new Insets(0, 0, 5, 5), 0, 0));
 
             //---- button1 ----
-            button1.setText("\u65b0\u589e\u56fd\u7c4d\u914d\u5458\u8bc1\u4e66");
+            button1.setText("\u65b0\u589e\u8239\u53ea\u8425\u8fd0\u8bc1\u4e66");
             button1.setFont(button1.getFont().deriveFont(button1.getFont().getSize() + 5f));
             button1.addActionListener(e -> button1ActionPerformed(e));
             this2ContentPane.add(button1, new GridBagConstraints(1, 2, 2, 2, 0.0, 0.0,

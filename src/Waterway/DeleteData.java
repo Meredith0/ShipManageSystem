@@ -1,8 +1,8 @@
 /*
- * Created by JFormDesigner on Sat Nov 17 11:00:26 CST 2018
+ * Created by JFormDesigner on Mon Dec 10 17:06:00 CST 2018
  */
 
-package Waterage;
+package Waterway;
 
 import com.SQL;
 
@@ -14,23 +14,20 @@ import java.sql.SQLException;
 /**
  * @author Meredith
  */
-public class DeleteData extends JFrame
-{
-    SQL db = new SQL();
-    public DeleteData()
-    {
+public class DeleteData extends JFrame {
+    public DeleteData() {
         initComponents();
     }
 
-    private void button1ActionPerformed(ActionEvent e)
-    {
+    SQL db = new SQL();
+    private void button1ActionPerformed(ActionEvent e) {
         /**
          * @description: 删除[水运费纪录表]
          * @param [e]
          * @return void
          * @date: 2018/11/17 11:01
          */
-        db.sqlLines = "delete from 水运费纪录表 where 船名=? and 船检登记号=?";
+        db.sqlLines = "delete from 航道费纪录表 where 船名=? and 船检登记号=?";
         db.pre();
         try
         {
@@ -50,8 +47,7 @@ public class DeleteData extends JFrame
         }
     }
 
-    private void initComponents()
-    {
+    private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         this2 = new JFrame();
         label1 = new JLabel();
@@ -72,7 +68,7 @@ public class DeleteData extends JFrame
             ((GridBagLayout)this2ContentPane.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
 
             //---- label1 ----
-            label1.setText("     \u5220\u9664\u6574\u8258\u8239\u7684\u7f34\u7eb3\u6c34\u8fd0\u8d39\u8bb0\u5f55");
+            label1.setText("     \u5220\u9664\u6574\u8258\u8239\u7684\u7f34\u7eb3\u822a\u9053\u8d39\u8bb0\u5f55");
             label1.setFont(label1.getFont().deriveFont(label1.getFont().getSize() + 10f));
             this2ContentPane.add(label1, new GridBagConstraints(1, 1, 3, 1, 0.0, 0.0,
                 GridBagConstraints.CENTER, GridBagConstraints.BOTH,

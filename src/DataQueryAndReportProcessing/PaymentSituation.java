@@ -7,6 +7,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.print.PrinterException;
 import java.sql.SQLException;
 //import java.util.Vector;
 
@@ -135,7 +136,22 @@ public class PaymentSituation extends JFrame {
 			}
 		});
 		button.setFont(new Font("宋体", Font.PLAIN, 15));
-		button.setBounds(49, 210, 135, 23);
+		button.setBounds(49, 200, 135, 23);
 		getContentPane().add(button);
+
+		JButton btnNewButton_1 = new JButton("打印");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					table.print();
+				} catch (PrinterException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		btnNewButton_1.setFont(new Font("宋体", Font.PLAIN, 15));
+		btnNewButton_1.setBounds(49, 233, 135, 23);
+		getContentPane().add(btnNewButton_1);
 	}
 }

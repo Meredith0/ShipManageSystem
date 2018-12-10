@@ -3,6 +3,7 @@ package DataQueryAndReportProcessing;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
+import java.awt.print.PrinterException;
 import java.sql.SQLException;
 import java.util.Vector;
 import java.awt.*;
@@ -82,5 +83,20 @@ public class VesselRelatedInformation extends JFrame {
 		textField_1.setColumns(10);
 		textField_1.setBounds(73, 98, 125, 21);
 		getContentPane().add(textField_1);
+		
+		JButton button = new JButton("打印");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					table.print();
+				} catch (PrinterException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		button.setFont(new Font("宋体", Font.PLAIN, 15));
+		button.setBounds(59, 175, 93, 23);
+		getContentPane().add(button);
 	}
 }

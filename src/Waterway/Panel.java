@@ -2,9 +2,10 @@
  * Created by JFormDesigner on Sat Nov 17 11:03:00 CST 2018
  */
 
-package Waterage;
+package Waterway;
 
 import Login.MainPanel;
+import Waterage.DeleteData;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,22 +17,21 @@ import java.awt.event.WindowEvent;
  * @author Meredith
  */
 public class Panel extends JFrame {
+
     public Panel() {
         initComponents();
     }
 
     private void button1ActionPerformed(ActionEvent e) {
-        new AddData();
-
+        new Waterway.AddData();
     }
 
     private void button3ActionPerformed(ActionEvent e) {
-
-        new SelectAndModifyData();
+        new Waterway.SelectAndModifyData();
     }
 
     private void button2ActionPerformed(ActionEvent e) {
-        new DeleteData();
+        new Waterway.DeleteData();
     }
 
     private void returnUpperPanelHandler(ActionEvent e) {
@@ -74,14 +74,14 @@ public class Panel extends JFrame {
         ((GridBagLayout)contentPane.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
 
         //---- label1 ----
-        label1.setText("     \u8239\u53ea\u6c34\u8fd0\u8d39\u7f34\u7eb3\u60c5\u51b5\u7ba1\u7406\u6a21\u5757");
+        label1.setText("     \u8239\u53ea\u822a\u9053\u8d39\u7f34\u7eb3\u60c5\u51b5\u7ba1\u7406\u6a21\u5757");
         label1.setFont(label1.getFont().deriveFont(label1.getFont().getSize() + 10f));
         contentPane.add(label1, new GridBagConstraints(1, 0, 4, 1, 0.0, 0.0,
             GridBagConstraints.CENTER, GridBagConstraints.BOTH,
             new Insets(0, 0, 5, 5), 0, 0));
 
         //---- button1 ----
-        button1.setText("\u65b0\u589e\u6c34\u8fd0\u8d39\u7f34\u7eb3\u8bb0\u5f55");
+        button1.setText("\u65b0\u589e\u822a\u9053\u8d39\u7f34\u7eb3\u8bb0\u5f55");
         button1.setFont(button1.getFont().deriveFont(button1.getFont().getSize() + 5f));
         button1.addActionListener(e -> button1ActionPerformed(e));
         contentPane.add(button1, new GridBagConstraints(1, 2, 2, 2, 0.0, 0.0,

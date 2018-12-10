@@ -1,23 +1,23 @@
 package DataQueryAndReportProcessing;
 
-import com.SQL;
-
-import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
+import java.awt.print.PrinterException;
 import java.sql.SQLException;
 import java.util.Vector;
+import java.awt.*;
+import javax.swing.*;
+import com.SQL;
 
-/**
-*
-* 项目名称：Ship
-* 类名称：CertificateValidityPeriod
+/**   
+*    
+* 项目名称：Ship   
+* 类名称：CertificateValidityPeriod   
 * 类描述：   证书有效期查询
-* 创建人：月明星稀
-* 创建时间：2018年12月4日 下午4:39:20
-* @version
+* 创建人：月明星稀   
+* 创建时间：2018年12月4日 下午4:39:20   
+* @version        
 */
 public class CertificateValidityPeriod extends JFrame {
 	private JTable table = new JTable();
@@ -94,5 +94,20 @@ public class CertificateValidityPeriod extends JFrame {
 		textField_2.setColumns(10);
 		textField_2.setBounds(73, 131, 125, 21);
 		getContentPane().add(textField_2);
+		
+		JButton button = new JButton("打印");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					table.print();
+				} catch (PrinterException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		button.setFont(new Font("宋体", Font.PLAIN, 15));
+		button.setBounds(73, 207, 93, 23);
+		getContentPane().add(button);
 	}
 }

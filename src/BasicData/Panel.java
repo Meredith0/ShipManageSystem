@@ -42,7 +42,6 @@ public class Panel extends JFrame
     private void button2ActionPerformed(ActionEvent e)
     {
         new DeleteData();
-
     }
 
     private void returnUpperPanelHandler(ActionEvent e)

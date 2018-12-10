@@ -1,4 +1,4 @@
-package MySystem;
+package AdminManage;
 
 import com.MD5;
 

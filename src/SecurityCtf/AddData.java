@@ -2,7 +2,7 @@
  * Created by JFormDesigner on Fri Nov 16 15:49:25 CST 2018
  */
 
-package NationalCtf;
+package SecurityCtf;
 
 import com.SQL;
 
@@ -14,51 +14,43 @@ import java.sql.SQLException;
 /**
  * @author Meredith
  */
-public class AddData extends JFrame
-{
+public class AddData extends JFrame {
+
     SQL db = new SQL();
 
-    public AddData()
-    {
+    public AddData() {
         initComponents();
     }
 
-    private void button1ActionPerformed(ActionEvent e)
-    {
+    private void button1ActionPerformed(ActionEvent e) {
         // TODO add your code here
         /**
-         * @description: 录入数据到表 [船舶国籍证书]
+         * @description: 录入数据到表 [船只安检证书]
          * @param [e]
          * @return void
          * @date: 2018/11/16 16:46
          */
         //判断船名,船舶所有人,船舶登记号是否合法
-        db.sqlLines = "select * from 船舶所有权登记证书 where 船名=? and 船舶所有人=? and 船舶登记号=?";
+        db.sqlLines = "select * from 船舶所有权登记证书 where 船名=? and 船检登记号=?";
         db.pre();
-        try
-        {
+        try {
             db.preparedStatement.setString(1, textField11.getText());
-            db.preparedStatement.setString(2, textField5.getText());
-            db.preparedStatement.setString(3, textField6.getText());
-        } catch (SQLException e1)
-        {
+            db.preparedStatement.setString(2, textField12.getText());
+        } catch (SQLException e1) {
             e1.printStackTrace();
         }
         db.exeSelect();
         //不合法则报错
-        if (db.result[1][1]==null)
-        {
+        if (db.result[1][1] == null) {
             JOptionPane.showMessageDialog(null, "此船只未在[船只基本资料]中登记", "ERROR",
                     JOptionPane.ERROR_MESSAGE);
         }
-        //合法则将船只的检验证书基本信息录入到表 [船舶国籍证书]
-        else
-        {
-            db.sqlLines = "insert into 船舶国籍证书(船名,船检登记号,证书编号,船舶所有人,船舶登记号,下次换证时间,换证通知时间,证书有效期至,签发日期) " +
-                    "values(?,?,?,?,?,?,?,?,?)";
+        //合法则将船只的检验证书基本信息录入到表 [船只安检证书]
+        else {
+            db.sqlLines = "insert into 船只安检证书(船名,船检登记号,安检证书编号,船舶所有人,船舶登记号,检查机关,下次检查时间,通知时间,安检证书使用有效期至,发证日期) " +
+                    "values(?,?,?,?,?,?,?,?,?,?)";
             db.pre();
-            try
-            {
+            try {
                 db.preparedStatement.setString(1, textField11.getText());
                 db.preparedStatement.setString(2, textField12.getText());
                 db.preparedStatement.setString(3, textField1.getText());
@@ -68,69 +60,58 @@ public class AddData extends JFrame
                 db.preparedStatement.setString(7, textField2.getText());
                 db.preparedStatement.setString(8, textField3.getText());
                 db.preparedStatement.setString(9, textField4.getText());
-            } catch (SQLException e1)
-            {
+                db.preparedStatement.setString(10, textField15.getText());
+            } catch (SQLException e1) {
                 e1.printStackTrace();
             }
             db.exeSql();
             //将证书有效期录入到表 [各证书有效期]
             db.sqlLines = "insert into 各证书有效期(船名,证书名,证书有效期至) values(?,?,?)";
             db.pre();
-            try
-            {
-                db.preparedStatement.setString(1,textField11.getText());
-                db.preparedStatement.setString(2, "船舶国籍证书");
+            try {
+                db.preparedStatement.setString(1, textField11.getText());
+                db.preparedStatement.setString(2, "船只安检证书");
                 db.preparedStatement.setString(3, textField3.getText());
-            } catch (SQLException e1)
-            {
+            } catch (SQLException e1) {
                 e1.printStackTrace();
             }
             db.exeSql();
-            if (db.effectedLines > 0)
-            {
+            if (db.effectedLines > 0) {
                 JOptionPane.showMessageDialog(null, "录入数据成功", "", JOptionPane.INFORMATION_MESSAGE);
-            } else
-            {
+            } else {
                 JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
             }
-
         }
-
     }
 
     private void button2ActionPerformed(ActionEvent e) {
         /**
-         * @description: 录入数据到表 [国籍证书处理历史表]
+         * @description: 录入数据到表 [船只安检证书处理历史表]
          * @param [e]
          * @return void
          * @date: 2018/11/16 20:31
          */
-        db.sqlLines = "insert into 国籍证书处理历史表(船名,证书编号,办理日期,办理人,证书有效期至,业务办理情况) values(?,?,?,?,?,?)";
+        db.sqlLines = "insert into 船只安检证书历史表(船名,证书编号,办理日期,办理人,证书有效期至,业务办理情况) values(?,?,?,?,?,?)";
         db.pre();
-        try
-        {
+        try {
             db.preparedStatement.setString(1, textField11.getText());
             db.preparedStatement.setString(2, textField9.getText());
             db.preparedStatement.setString(3, textField10.getText());
             db.preparedStatement.setString(4, textField8.getText());
             db.preparedStatement.setString(5, textField14.getText());
             db.preparedStatement.setString(6, textField13.getText());
-        } catch (SQLException e1)
-        {
+        } catch (SQLException e1) {
             e1.printStackTrace();
         }
         db.exeSql();
-        if (db.effectedLines > 0)
-        {
+        if (db.effectedLines > 0) {
             JOptionPane.showMessageDialog(null, "录入数据成功", "", JOptionPane.INFORMATION_MESSAGE);
-        } else
-        {
+        } else {
             JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
         }
     }
 
-    private void initComponents()
-    {
+    private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         label2 = new JLabel();
         label15 = new JLabel();
@@ -152,6 +133,8 @@ public class AddData extends JFrame
         textField4 = new JTextField();
         label6 = new JLabel();
         textField7 = new JTextField();
+        label18 = new JLabel();
+        textField15 = new JTextField();
         label13 = new JLabel();
         button1 = new JButton();
         separator1 = new JSeparator();
@@ -177,7 +160,7 @@ public class AddData extends JFrame
         ((GridBagLayout)contentPane.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
 
         //---- label2 ----
-        label2.setText("\u56fd\u7c4d\u914d\u5458\u8bc1\u4e66\u57fa\u672c\u8d44\u6599");
+        label2.setText("\u8239\u53ea\u5b89\u68c0\u8bc1\u4e66\u57fa\u672c\u8d44\u6599");
         label2.setFont(label2.getFont().deriveFont(label2.getFont().getSize() + 13f));
         label2.setHorizontalAlignment(SwingConstants.CENTER);
         contentPane.add(label2, new GridBagConstraints(1, 0, 5, 2, 0.0, 0.0,
@@ -222,7 +205,7 @@ public class AddData extends JFrame
             new Insets(0, 0, 5, 5), 0, 0));
 
         //---- label9 ----
-        label9.setText("\u6362\u8bc1\u901a\u77e5\u65f6\u95f4");
+        label9.setText("\u4e0b\u6b21\u68c0\u67e5\u65f6\u95f4");
         label9.setFont(label9.getFont().deriveFont(label9.getFont().getSize() + 4f));
         contentPane.add(label9, new GridBagConstraints(4, 5, 1, 1, 0.0, 0.0,
             GridBagConstraints.CENTER, GridBagConstraints.BOTH,
@@ -242,7 +225,7 @@ public class AddData extends JFrame
             new Insets(0, 0, 5, 5), 0, 0));
 
         //---- label10 ----
-        label10.setText("\u6709\u6548\u671f\u81f3");
+        label10.setText("\u901a\u77e5\u65f6\u95f4");
         label10.setFont(label10.getFont().deriveFont(label10.getFont().getSize() + 4f));
         contentPane.add(label10, new GridBagConstraints(4, 6, 1, 1, 0.0, 0.0,
             GridBagConstraints.CENTER, GridBagConstraints.BOTH,
@@ -262,7 +245,7 @@ public class AddData extends JFrame
             new Insets(0, 0, 5, 5), 0, 0));
 
         //---- label11 ----
-        label11.setText("\u53d1\u8bc1\u65e5\u671f");
+        label11.setText("\u6709\u6548\u671f\u81f3");
         label11.setFont(label11.getFont().deriveFont(label11.getFont().getSize() + 4f));
         contentPane.add(label11, new GridBagConstraints(4, 7, 1, 1, 0.0, 0.0,
             GridBagConstraints.CENTER, GridBagConstraints.BOTH,
@@ -272,7 +255,7 @@ public class AddData extends JFrame
             new Insets(0, 0, 5, 5), 0, 0));
 
         //---- label6 ----
-        label6.setText("\u4e0b\u6b21\u6362\u8bc1\u65f6\u95f4");
+        label6.setText("\u68c0\u67e5\u673a\u5173");
         label6.setFont(label6.getFont().deriveFont(label6.getFont().getSize() + 4f));
         contentPane.add(label6, new GridBagConstraints(1, 8, 1, 1, 0.0, 0.0,
             GridBagConstraints.CENTER, GridBagConstraints.BOTH,
@@ -281,8 +264,18 @@ public class AddData extends JFrame
             GridBagConstraints.CENTER, GridBagConstraints.BOTH,
             new Insets(0, 0, 5, 5), 0, 0));
 
+        //---- label18 ----
+        label18.setText("\u53d1\u8bc1\u65e5\u671f");
+        label18.setFont(label18.getFont().deriveFont(label18.getFont().getSize() + 4f));
+        contentPane.add(label18, new GridBagConstraints(4, 8, 1, 1, 0.0, 0.0,
+            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+            new Insets(0, 0, 5, 5), 0, 0));
+        contentPane.add(textField15, new GridBagConstraints(5, 8, 1, 1, 0.0, 0.0,
+            GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+            new Insets(0, 0, 5, 5), 0, 0));
+
         //---- label13 ----
-        label13.setText("\u56fd\u7c4d\u914d\u5458\u8bc1\u4e66\u6362\u8bc1\u65f6\u95f4\u8bb0\u5f55");
+        label13.setText("\u8239\u53ea\u5b89\u68c0\u8bc1\u4e66\u6362\u8bc1\u65f6\u95f4\u8bb0\u5f55");
         label13.setFont(label13.getFont().deriveFont(label13.getFont().getSize() + 9f));
         label13.setHorizontalAlignment(SwingConstants.CENTER);
         contentPane.add(label13, new GridBagConstraints(1, 11, 5, 1, 0.0, 0.0,
@@ -383,6 +376,8 @@ public class AddData extends JFrame
     private JTextField textField4;
     private JLabel label6;
     private JTextField textField7;
+    private JLabel label18;
+    private JTextField textField15;
     private JLabel label13;
     private JButton button1;
     private JSeparator separator1;

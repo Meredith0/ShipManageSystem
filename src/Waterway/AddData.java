@@ -1,8 +1,8 @@
 /*
- * Created by JFormDesigner on Sat Nov 17 10:30:08 CST 2018
+ * Created by JFormDesigner on Mon Dec 10 16:58:49 CST 2018
  */
 
-package Waterage;
+package Waterway;
 
 import com.SQL;
 
@@ -15,6 +15,7 @@ import java.sql.SQLException;
  * @author Meredith
  */
 public class AddData extends JFrame {
+
     SQL db = new SQL();
     public AddData() {
         initComponents();
@@ -27,7 +28,7 @@ public class AddData extends JFrame {
          * @return void
          * @date: 2018/11/17 10:42
          */
-        db.sqlLines = "insert into 水运费纪录表(船名,船检登记号,航道费用,水运费合计,填表日期,签注记录) values(?,?,?,?,?,?)";
+        db.sqlLines = "insert into 航道费纪录表(船名,船检登记号,航道费用,航道费合计,填表日期,签注记录) values(?,?,?,?,?,?)";
         db.pre();
         try
         {
@@ -49,10 +50,6 @@ public class AddData extends JFrame {
         {
             JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
         }
-    }
-
-    private void button2ActionPerformed(ActionEvent e) {
-        // TODO add your code here
     }
 
     private void initComponents() {
@@ -85,7 +82,7 @@ public class AddData extends JFrame {
             ((GridBagLayout)this2ContentPane.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
 
             //---- label2 ----
-            label2.setText("\u7f34\u7eb3\u6c34\u8fd0\u8d39\u7684\u57fa\u672c\u60c5\u51b5");
+            label2.setText("\u7f34\u7eb3\u822a\u9053\u8d39\u7684\u57fa\u672c\u60c5\u51b5");
             label2.setFont(label2.getFont().deriveFont(label2.getFont().getSize() + 13f));
             label2.setHorizontalAlignment(SwingConstants.CENTER);
             this2ContentPane.add(label2, new GridBagConstraints(1, 1, 5, 2, 0.0, 0.0,
@@ -130,7 +127,7 @@ public class AddData extends JFrame {
                 new Insets(0, 0, 5, 5), 0, 0));
 
             //---- label9 ----
-            label9.setText("\u6c34\u8fd0\u8d39\u5408\u8ba1");
+            label9.setText("\u822a\u9053\u8d39\u5408\u8ba1");
             label9.setFont(label9.getFont().deriveFont(label9.getFont().getSize() + 4f));
             this2ContentPane.add(label9, new GridBagConstraints(4, 6, 1, 1, 0.0, 0.0,
                 GridBagConstraints.CENTER, GridBagConstraints.BOTH,
