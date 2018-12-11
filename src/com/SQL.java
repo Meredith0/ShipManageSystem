@@ -10,7 +10,7 @@ import java.util.Vector;
  * @Date 2018/9/7 23:20
  * @Param
  * @Return
- * @Description:
+ * @Description:  工具类, 包括sql的连接,执行,返回结果以及通用方法等
  **/
 public class SQL {
 
@@ -39,6 +39,28 @@ public class SQL {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void exe(int num) {
+        /**
+         * @description: 用于执行事务
+         * @param []
+         * @return void
+         * @date: 2018/12/2 23:34
+         */
+        try {
+            //执行sql语句
+            preparedStatement.execute();
+            //获取4个结果集的影响行数和
+            for (int i = 0; i < num; i++) {
+                effectedLines += preparedStatement.getUpdateCount();
+                preparedStatement.getMoreResults();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            closeStatAndConnAndResultSet(preparedStatement, connection, rs);
         }
     }
 
@@ -90,6 +112,34 @@ public class SQL {
         }
     }
 
+    public boolean islegal(String name,String num) {
+        /**
+         * @description:  检查船名,船舶登记号是否合法
+         * @param [name, num] name为船名, num为船舶登记号
+         * @return boolean
+         * @date: 2018/12/7 22:51
+         */
+        SQL db = new SQL();
+        db.sqlLines = "select * from 船舶所有权登记证书 where 船名=? and 船检登记号=?";
+        db.pre();
+        try
+        {
+            db.preparedStatement.setString(1, name);
+            db.preparedStatement.setString(2, num);
+        } catch (SQLException e1)
+        {
+            e1.printStackTrace();
+        }
+        db.exeSelect();
+        if (db.result[1][1] == null)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
     public void toTable(SQL db,JTable table) {
         /**
          * @description:  打表方法

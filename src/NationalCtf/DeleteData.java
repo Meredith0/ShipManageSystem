@@ -15,7 +15,9 @@ import java.sql.SQLException;
  * @author Meredith
  */
 public class DeleteData extends JFrame {
+
     SQL db = new SQL();
+
     public DeleteData() {
         initComponents();
     }
@@ -29,31 +31,34 @@ public class DeleteData extends JFrame {
          */
         db.sqlLines = "delete from 船舶国籍证书 where 船名=? and 船检登记号=?";
         db.pre();
-        try
-        {
+        try {
             db.preparedStatement.setString(1, textField1.getText());
             db.preparedStatement.setString(2, textField2.getText());
-        } catch (SQLException e1)
-        {
+        } catch (SQLException e1) {
             e1.printStackTrace();
         }
         db.exeSql();
-        if (db.effectedLines > 0)
-        {
+        if (db.effectedLines > 0) {
             JOptionPane.showMessageDialog(null, "删除成功", "", JOptionPane.INFORMATION_MESSAGE);
-        } else
-        {
+        } else {
             JOptionPane.showMessageDialog(null, "删除失败", "", JOptionPane.ERROR_MESSAGE);
         }
         //同时删除 [各证书有效期]中的值
         db.sqlLines = "delete from 各证书有效期 where 船名=? and 证书名=?";
         db.pre();
-        try
-        {
+        try {
             db.preparedStatement.setString(1, textField1.getText());
             db.preparedStatement.setString(2, "船舶国籍证书");
-        } catch (SQLException e1)
-        {
+        } catch (SQLException e1) {
+            e1.printStackTrace();
+        }
+        db.exeSql();
+        //删除历史表
+        db.sqlLines = "delete from 国籍证书处理历史表 where 船名=?";
+        db.pre();
+        try {
+            db.preparedStatement.setString(1, textField1.getText());
+        } catch (SQLException e1) {
             e1.printStackTrace();
         }
         db.exeSql();
@@ -68,50 +73,45 @@ public class DeleteData extends JFrame {
         label2 = new JLabel();
         textField2 = new JTextField();
         button1 = new JButton();
-
         //======== this2 ========
         {
             this2.setVisible(true);
             Container this2ContentPane = this2.getContentPane();
             this2ContentPane.setLayout(new GridBagLayout());
-            ((GridBagLayout)this2ContentPane.getLayout()).columnWidths = new int[] {55, 141, 76, 86, 68, 0};
-            ((GridBagLayout)this2ContentPane.getLayout()).rowHeights = new int[] {0, 93, 0, 36, 36, 38, 38, 40, 0};
-            ((GridBagLayout)this2ContentPane.getLayout()).columnWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
-            ((GridBagLayout)this2ContentPane.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
-
+            ((GridBagLayout) this2ContentPane.getLayout()).columnWidths = new int[]{55, 141, 76, 86, 68, 0};
+            ((GridBagLayout) this2ContentPane.getLayout()).rowHeights = new int[]{0, 93, 0, 36, 36, 38, 38, 40, 0};
+            ((GridBagLayout) this2ContentPane.getLayout()).columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
+            ((GridBagLayout) this2ContentPane.getLayout()).rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
             //---- label1 ----
             label1.setText("             \u5220\u9664\u8239\u53ea\u68c0\u9a8c\u8bc1\u4fe1\u606f");
             label1.setFont(label1.getFont().deriveFont(label1.getFont().getSize() + 10f));
             this2ContentPane.add(label1, new GridBagConstraints(1, 1, 3, 1, 0.0, 0.0,
-                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                new Insets(0, 0, 5, 5), 0, 0));
-
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
             //---- label3 ----
             label3.setText("        \u8239\u53ea\u540d\u79f0");
             label3.setFont(label3.getFont().deriveFont(label3.getFont().getSize() + 2f));
             this2ContentPane.add(label3, new GridBagConstraints(1, 3, 1, 1, 0.0, 0.0,
-                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
             this2ContentPane.add(textField1, new GridBagConstraints(2, 3, 2, 1, 0.0, 0.0,
-                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                new Insets(0, 0, 5, 5), 0, 0));
-
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
             //---- label2 ----
             label2.setText("    \u8239\u68c0\u767b\u8bb0\u53f7");
             label2.setFont(label2.getFont().deriveFont(label2.getFont().getSize() + 2f));
             this2ContentPane.add(label2, new GridBagConstraints(1, 4, 1, 1, 0.0, 0.0,
-                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
             this2ContentPane.add(textField2, new GridBagConstraints(2, 4, 2, 1, 0.0, 0.0,
-                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                new Insets(0, 0, 5, 5), 0, 0));
-
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
             //---- button1 ----
             button1.setText("\u786e\u5b9a");
             button1.addActionListener(e -> button1ActionPerformed(e));
             this2ContentPane.add(button1, new GridBagConstraints(3, 6, 1, 1, 0.0, 0.0,
-                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
             this2.pack();
             this2.setLocationRelativeTo(null);
         }

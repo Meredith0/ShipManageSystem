@@ -33,23 +33,8 @@ public class AddData extends JFrame
          * @date: 2018/11/16 16:46
          */
         //判断船名,船舶所有人,船舶登记号是否合法
-        db.sqlLines = "select * from 船舶所有权登记证书 where 船名=? and 船舶所有人=? and 船舶登记号=?";
-        db.pre();
-        try
-        {
-            db.preparedStatement.setString(1, textField11.getText());
-            db.preparedStatement.setString(2, textField5.getText());
-            db.preparedStatement.setString(3, textField6.getText());
-        } catch (SQLException e1)
-        {
-            e1.printStackTrace();
-        }
-        db.exeSelect();
-        //不合法则报错
-        if (db.result[1][1]==null)
-        {
-            JOptionPane.showMessageDialog(null, "此船只未在[船只基本资料]中登记", "ERROR",
-                    JOptionPane.ERROR_MESSAGE);
+        if (!db.islegal(textField11.getText(), textField12.getText())) {
+            JOptionPane.showMessageDialog(null, "此船只未在[船只基本资料]中登记", "", JOptionPane.ERROR_MESSAGE);
         }
         //合法则将船只的检验证书基本信息录入到表 [船舶国籍证书]
         else

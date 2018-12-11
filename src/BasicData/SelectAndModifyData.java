@@ -32,7 +32,7 @@ public class SelectAndModifyData extends JFrame {
 
     public void addCheckBoxItems() {
         comboBox1.addItem("船只名称");
-        comboBox1.addItem("船舶登记号");
+        comboBox1.addItem("船检登记号");
         comboBox1.addItem("船舶类型");
         comboBox1.addItem("船舶营运证号");
     }
@@ -44,7 +44,7 @@ public class SelectAndModifyData extends JFrame {
          * @return void
          * @date: 2018/11/15 20:21
          */
-        db.sqlLines = "select * from 船舶所有权登记证书 where 船名=? or 船舶种类=? or 船舶登记号=? or 营运证号=?";
+        db.sqlLines = "select * from 船舶所有权登记证书 where 船名=? or 船舶种类=? or 船检登记号=? or 营运证号=?";
         db.pre();
         try {
             db.preparedStatement.setString(1, textField1.getText());

@@ -225,7 +225,7 @@ public class SelectAndModifyData extends JFrame {
             scrollPane1.setViewportView(table1);
         }
         contentPane.add(scrollPane1);
-        scrollPane1.setBounds(240, 0, 891, 200);
+        scrollPane1.setBounds(240, 0, 995, 200);
 
         //---- button2 ----
         button2.setText("\u786e\u8ba4\u4fee\u6539");

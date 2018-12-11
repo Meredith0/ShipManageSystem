@@ -57,6 +57,17 @@ public class DeleteData extends JFrame {
             e1.printStackTrace();
         }
         db.exeSql();
+        //删除历史表
+        db.sqlLines = "delete from 营运证处理历史表 where 船名=?";
+        db.pre();
+        try
+        {
+            db.preparedStatement.setString(1, textField1.getText());
+        } catch (SQLException e1)
+        {
+            e1.printStackTrace();
+        }
+        db.exeSql();
     }
 
     private void initComponents() {

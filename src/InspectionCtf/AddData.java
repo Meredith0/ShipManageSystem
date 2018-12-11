@@ -24,46 +24,51 @@ public class AddData extends JFrame {
 
     private void button1ActionPerformed(ActionEvent e) {
         /**
-         * @description: 录入数据到表 [船舶所有权登记证书]
+         * @description: 录入数据到表 [船只检验证书]
          * @param [e]
          * @return void
          * @date: 2018/11/15 22:43
          */
         //将船只的检验证书基本信息录入到表 [船只检验证书]
-        db.sqlLines = "insert into 船只检验证书(船名,船检登记号,检验证编号,船舶所有人,船舶登记号,船舶检验类型,下次检验时间,通知时间,检验机关,检验证使用有效期至,发证日期) " +
-                "values(?,?,?,?,?,?,?,?,?,?,?,?)";
-        db.pre();
-        try {
-            db.preparedStatement.setString(1, textField11.getText());
-            db.preparedStatement.setString(2, textField12.getText());
-            db.preparedStatement.setString(3, textField1.getText());
-            db.preparedStatement.setString(4, textField5.getText());
-            db.preparedStatement.setString(5, textField6.getText());
-            db.preparedStatement.setString(6, textField7.getText());
-            db.preparedStatement.setString(7, textField8.getText());
-            db.preparedStatement.setString(8, textField2.getText());
-            db.preparedStatement.setString(9, textField3.getText());
-            db.preparedStatement.setString(10, textField4.getText());
-            db.preparedStatement.setString(11, textField9.getText());
-        } catch (SQLException e1) {
-            e1.printStackTrace();
-        }
-        db.exeSql();
-        //将证书有效期录入到表 [各证书有效期]
-        db.sqlLines = "insert into 各证书有效期(船名,证书名,证书有效期至) values(?,?,?)";
-        db.pre();
-        try {
-            db.preparedStatement.setString(1, textField11.getText());
-            db.preparedStatement.setString(2, "船只检验证书");
-            db.preparedStatement.setString(3, textField4.getText());
-        } catch (SQLException e1) {
-            e1.printStackTrace();
-        }
-        db.exeSql();
-        if (db.effectedLines > 0) {
-            JOptionPane.showMessageDialog(null, "录入数据成功", "", JOptionPane.INFORMATION_MESSAGE);
+        if (!db.islegal(textField11.getText(), textField12.getText())) {
+            JOptionPane.showMessageDialog(null, "此船只未在[船只基本资料]中登记", "", JOptionPane.ERROR_MESSAGE);
         } else {
-            JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
+            db.sqlLines = "insert into 船只检验证书(船名,船检登记号,检验证编号,船舶所有人,船舶登记号,船舶检验类型,下次检验时间,通知时间,检验机关,检验证使用有效期至,发证日期) " +
+                    "values(?,?,?,?,?,?,?,?,?,?,?,?)";
+            db.pre();
+            try {
+                db.preparedStatement.setString(1, textField11.getText());
+                db.preparedStatement.setString(2, textField12.getText());
+                db.preparedStatement.setString(3, textField1.getText());
+                db.preparedStatement.setString(4, textField5.getText());
+                db.preparedStatement.setString(5, textField6.getText());
+                db.preparedStatement.setString(6, textField7.getText());
+                db.preparedStatement.setString(7, textField8.getText());
+                db.preparedStatement.setString(8, textField2.getText());
+                db.preparedStatement.setString(9, textField3.getText());
+                db.preparedStatement.setString(10, textField4.getText());
+                db.preparedStatement.setString(11, textField9.getText());
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+            db.exeSql();
+            if (db.effectedLines > 0) {
+                //将证书有效期录入到表 [各证书有效期]
+                db.sqlLines = "insert into 各证书有效期(船名,证书名,证书有效期至) values(?,?,?)";
+                db.pre();
+                try {
+                    db.preparedStatement.setString(1, textField11.getText());
+                    db.preparedStatement.setString(2, "船只检验证书");
+                    db.preparedStatement.setString(3, textField4.getText());
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+                db.exeSql();
+                JOptionPane.showMessageDialog(null, "录入数据成功", "", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
+            }
+
         }
     }
 
