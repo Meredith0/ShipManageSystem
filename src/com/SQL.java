@@ -10,7 +10,7 @@ import java.util.Vector;
  * @Date 2018/9/7 23:20
  * @Param
  * @Return
- * @Description:  工具类, 包括sql的连接,执行,返回结果以及通用方法等
+ * @Description: 工具类, 包括sql的连接,执行,返回结果以及通用方法等
  **/
 public class SQL {
 
@@ -92,7 +92,7 @@ public class SQL {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-             // closeStatAndConnAndResultSet(preparedStatement, connection, rs);
+            // closeStatAndConnAndResultSet(preparedStatement, connection, rs);
         }
     }
 
@@ -112,9 +112,9 @@ public class SQL {
         }
     }
 
-    public boolean islegal(String name,String num) {
+    public boolean islegal(String name, String num) {
         /**
-         * @description:  检查船名,船舶登记号是否合法
+         * @description: 检查船名, 船舶登记号是否合法
          * @param [name, num] name为船名, num为船舶登记号
          * @return boolean
          * @date: 2018/12/7 22:51
@@ -122,27 +122,23 @@ public class SQL {
         SQL db = new SQL();
         db.sqlLines = "select * from 船舶所有权登记证书 where 船名=? and 船检登记号=?";
         db.pre();
-        try
-        {
+        try {
             db.preparedStatement.setString(1, name);
             db.preparedStatement.setString(2, num);
-        } catch (SQLException e1)
-        {
+        } catch (SQLException e1) {
             e1.printStackTrace();
         }
         db.exeSelect();
-        if (db.result[1][1] == null)
-        {
+        if (db.result[1][1] == null) {
             return false;
-        }
-        else
-        {
+        } else {
             return true;
         }
     }
-    public void toTable(SQL db,JTable table) {
+
+    public void toTable(SQL db, JTable table) {
         /**
-         * @description:  打表方法
+         * @description: 打表方法
          * @param [db, table]  db为传入的SQL对象  table为传入的表
          * @return void
          * @date: 2018/11/29 20:33
@@ -152,7 +148,7 @@ public class SQL {
         columnNames = new Vector();
         //获取列名
         try {
-            for (int i = 1; i < db.rs.getMetaData().getColumnCount() +1; i++) {
+            for (int i = 1; i < db.rs.getMetaData().getColumnCount() + 1; i++) {
                 columnNames.add(db.rs.getMetaData().getColumnName(i));
             }
         } catch (SQLException e1) {
