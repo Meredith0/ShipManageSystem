@@ -23,7 +23,6 @@ public class AddData extends JFrame {
     }
 
     private void button1ActionPerformed(ActionEvent e) {
-        // TODO add your code here
         /**
          * @description: 录入数据到表 [船只安检证书]
          * @param [e]

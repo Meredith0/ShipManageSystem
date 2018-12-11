@@ -53,10 +53,6 @@ public class AddData extends JFrame {
         }
     }
 
-    private void button2ActionPerformed(ActionEvent e) {
-        // TODO add your code here
-    }
-
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         this2 = new JFrame();
