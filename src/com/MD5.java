@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class MD5
 {
+    //加密方法
     //MD5WithSalt(input, type)
     //input是输入的明文;type是处理类型，0表示注册存hash值到库时，1表示登录验证时
 
