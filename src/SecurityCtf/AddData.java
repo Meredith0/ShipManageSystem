@@ -53,18 +53,19 @@ public class AddData extends JFrame {
                 e1.printStackTrace();
             }
             db.exeSql();
-            //将证书有效期录入到表 [各证书有效期]
-            db.sqlLines = "insert into 各证书有效期(船名,证书名,证书有效期至) values(?,?,?)";
-            db.pre();
-            try {
-                db.preparedStatement.setString(1, textField11.getText());
-                db.preparedStatement.setString(2, "船只安检证书");
-                db.preparedStatement.setString(3, textField3.getText());
-            } catch (SQLException e1) {
-                e1.printStackTrace();
-            }
-            db.exeSql();
+
             if (db.effectedLines > 0) {
+                //将证书有效期录入到表 [各证书有效期]
+                db.sqlLines = "insert into 各证书有效期(船名,证书名,证书有效期至) values(?,?,?)";
+                db.pre();
+                try {
+                    db.preparedStatement.setString(1, textField11.getText());
+                    db.preparedStatement.setString(2, "船只安检证书");
+                    db.preparedStatement.setString(3, textField3.getText());
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+                db.exeSql();
                 JOptionPane.showMessageDialog(null, "录入数据成功", "", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 JOptionPane.showMessageDialog(null, "录入数据失败", "", JOptionPane.ERROR_MESSAGE);
