@@ -104,40 +104,40 @@ public class PaymentSituation extends JFrame {
 		getContentPane().add(scrollPane1);
 		scrollPane1.setBounds(231, 0, 966, 233);
 
-		JButton button = new JButton("查询历史情况");
-		button.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String tablename = null;
-				SQL db = new SQL();
-				// Vector columnNames = new Vector();
-				/**
-				 * @description: 船只缴费情况历史表
-				 * @param [e]
-				 * @return void
-				 * @date: 2018/11/15 20:21
-				 */
-				if (((String) comboBox.getSelectedItem()).equals("航道费用")) {
-					tablename = "航道费历史表";
-				} else {
-					tablename = "水运费历史表";
-				}
-				db.sqlLines = "declare @tablename varchar(20)\r\n" + "declare @sql nvarchar(2000)\r\n"
-						+ "declare @fname NVARCHAR(20)\r\n" + "set @tablename=?\r\n" + "set @fname = ?\r\n"
-						+ "set @sql=N'select * from ' +@tablename+ ' where 船名=' +@fname\r\n" + "EXEC (@sql)";
-				db.pre();
-				try {
-					db.preparedStatement.setString(1, tablename);
-					db.preparedStatement.setString(2, textField.getText());
-				} catch (SQLException e1) {
-					e1.printStackTrace();
-				}
-				db.exeSelect();
-				db.toTable(db, table);
-			}
-		});
-		button.setFont(new Font("宋体", Font.PLAIN, 15));
-		button.setBounds(49, 200, 135, 23);
-		getContentPane().add(button);
+		//JButton button = new JButton("查询历史情况");
+		//button.addActionListener(new ActionListener() {
+		//	public void actionPerformed(ActionEvent e) {
+		//		String tablename = null;
+		//		SQL db = new SQL();
+		//		// Vector columnNames = new Vector();
+		//		/**
+		//		 * @description: 船只缴费情况历史表
+		//		 * @param [e]
+		//		 * @return void
+		//		 * @date: 2018/11/15 20:21
+		//		 */
+		//		if (((String) comboBox.getSelectedItem()).equals("航道费用")) {
+		//			tablename = "航道费记录表";
+		//		} else {
+		//			tablename = "水运费记录表";
+		//		}
+		//		db.sqlLines = "declare @tablename varchar(20)\r\n" + "declare @sql nvarchar(2000)\r\n"
+		//				+ "declare @fname NVARCHAR(20)\r\n" + "set @tablename=?\r\n" + "set @fname = ?\r\n"
+		//				+ "set @sql=N'select * from ' +@tablename+ ' where 船名=' +@fname\r\n" + "EXEC (@sql)";
+		//		db.pre();
+		//		try {
+		//			db.preparedStatement.setString(1, tablename);
+		//			db.preparedStatement.setString(2, textField.getText());
+		//		} catch (SQLException e1) {
+		//			e1.printStackTrace();
+		//		}
+		//		db.exeSelect();
+		//		db.toTable(db, table);
+		//	}
+		//});
+		//button.setFont(new Font("宋体", Font.PLAIN, 15));
+		//button.setBounds(49, 200, 135, 23);
+		//getContentPane().add(button);
 
 		JButton btnNewButton_1 = new JButton("打印");
 		btnNewButton_1.addActionListener(new ActionListener() {

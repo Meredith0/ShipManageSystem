@@ -34,7 +34,7 @@ public class AddData extends JFrame {
             JOptionPane.showMessageDialog(null, "此船只未在[船只基本资料]中登记", "", JOptionPane.ERROR_MESSAGE);
         } else {
             db.sqlLines = "insert into 船只检验证书(船名,船检登记号,检验证编号,船舶所有人,船舶登记号,船舶检验类型,下次检验时间,通知时间,检验机关,检验证使用有效期至,发证日期) " +
-                    "values(?,?,?,?,?,?,?,?,?,?,?,?)";
+                    "values(?,?,?,?,?,?,?,?,?,?,?)";
             db.pre();
             try {
                 db.preparedStatement.setString(1, textField11.getText());

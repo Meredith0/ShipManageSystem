@@ -35,8 +35,8 @@ public class AddData extends JFrame {
         }
         //合法则将船只的检验证书基本信息录入到表 [船舶国籍证书]
         else {
-            db.sqlLines = "insert into 船只营运证书(船名,船检登记号,营运证编号,船舶所有人,船舶登记号,经营人许可证号码,管理人许可证号码,发证机关,营运证使用有效期至,发证日期) "
-                    + "values(?,?,?,?,?,?,?,?,?,?)";
+            db.sqlLines = "insert into 船只营运证书(船名,船检登记号,营运证编号,船舶所有人,船舶登记号,管理人许可证号码,发证机关,营运证使用有效期至,发证日期,经营人许可证号码) " +
+                    "values(?,?,?,?,?,?,?,?,?,?)";
             db.pre();
             try {
                 db.preparedStatement.setString(1, textField11.getText());
@@ -44,11 +44,11 @@ public class AddData extends JFrame {
                 db.preparedStatement.setString(3, textField1.getText());
                 db.preparedStatement.setString(4, textField5.getText());
                 db.preparedStatement.setString(5, textField6.getText());
-                db.preparedStatement.setString(6, textField8.getText());
+                db.preparedStatement.setString(6, textField7.getText());
                 db.preparedStatement.setString(7, textField2.getText());
                 db.preparedStatement.setString(8, textField3.getText());
                 db.preparedStatement.setString(9, textField4.getText());
-                db.preparedStatement.setString(10, textField9.getText());
+                db.preparedStatement.setString(10, textField15.getText());
             } catch (SQLException e1) {
                 e1.printStackTrace();
             }
@@ -61,8 +61,8 @@ public class AddData extends JFrame {
                 try {
                     db.preparedStatement.setString(1, textField11.getText());
                     db.preparedStatement.setString(2, "船只营运证书");
-                    db.preparedStatement.setString(3, textField4.getText());
-                    db.preparedStatement.setString(4, textField9.getText());
+                    db.preparedStatement.setString(3, textField3.getText());
+                    db.preparedStatement.setString(4, textField4.getText());
                 } catch (SQLException e1) {
                     e1.printStackTrace();
                 }
@@ -122,6 +122,8 @@ public class AddData extends JFrame {
             textField4 = new JTextField();
             label6 = new JLabel();
             textField7 = new JTextField();
+            label18 = new JLabel();
+            textField15 = new JTextField();
             label13 = new JLabel();
             button1 = new JButton();
             separator1 = new JSeparator();
@@ -192,7 +194,7 @@ public class AddData extends JFrame {
                 new Insets(0, 0, 5, 5), 0, 0));
 
             //---- label9 ----
-            label9.setText("\u6362\u8bc1\u901a\u77e5\u65f6\u95f4");
+            label9.setText("\u53d1\u8bc1\u673a\u5173");
             label9.setFont(label9.getFont().deriveFont(label9.getFont().getSize() + 4f));
             contentPane.add(label9, new GridBagConstraints(4, 5, 1, 1, 0.0, 0.0,
                 GridBagConstraints.CENTER, GridBagConstraints.BOTH,
@@ -242,12 +244,22 @@ public class AddData extends JFrame {
                 new Insets(0, 0, 5, 5), 0, 0));
 
             //---- label6 ----
-            label6.setText("\u4e0b\u6b21\u6362\u8bc1\u65f6\u95f4");
+            label6.setText("\u7ba1\u7406\u4eba\u8bb8\u53ef\u8bc1\u53f7\u7801");
             label6.setFont(label6.getFont().deriveFont(label6.getFont().getSize() + 4f));
             contentPane.add(label6, new GridBagConstraints(1, 8, 1, 1, 0.0, 0.0,
                 GridBagConstraints.CENTER, GridBagConstraints.BOTH,
                 new Insets(0, 0, 5, 5), 0, 0));
             contentPane.add(textField7, new GridBagConstraints(2, 8, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
+
+            //---- label18 ----
+            label18.setText("\u7ecf\u8425\u4eba\u8bb8\u53ef\u8bc1\u53f7\u7801");
+            label18.setFont(label18.getFont().deriveFont(label18.getFont().getSize() + 4f));
+            contentPane.add(label18, new GridBagConstraints(4, 8, 1, 1, 0.0, 0.0,
+                GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                new Insets(0, 0, 5, 5), 0, 0));
+            contentPane.add(textField15, new GridBagConstraints(5, 8, 1, 1, 0.0, 0.0,
                 GridBagConstraints.CENTER, GridBagConstraints.BOTH,
                 new Insets(0, 0, 5, 5), 0, 0));
 
@@ -352,6 +364,8 @@ public class AddData extends JFrame {
         private JTextField textField4;
         private JLabel label6;
         private JTextField textField7;
+        private JLabel label18;
+        private JTextField textField15;
         private JLabel label13;
         private JButton button1;
         private JSeparator separator1;
