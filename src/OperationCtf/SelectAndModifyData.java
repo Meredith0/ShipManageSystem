@@ -30,7 +30,7 @@ public class SelectAndModifyData extends JFrame {
     }
 
     public void addCheckBoxItems() {
-        comboBox1.addItem("船只名称");
+        comboBox1.addItem("船名");
         comboBox1.addItem("船检登记号");
         comboBox1.addItem("营运证编号");
     }
@@ -42,12 +42,11 @@ public class SelectAndModifyData extends JFrame {
          * @return void
          * @date: 2018/11/16 15:12
          */
-        db.sqlLines = "select * from 船只营运证书 where 船名=? or 船检登记号=? or 营运证编号=?";
+        String colname = comboBox1.getSelectedItem().toString();
+        db.sqlLines = "select * from 船只营运证书 where " + colname + "=?";
         db.pre();
         try {
             db.preparedStatement.setString(1, textField1.getText());
-            db.preparedStatement.setString(2, textField1.getText());
-            db.preparedStatement.setString(3, textField1.getText());
         } catch (SQLException e1) {
             e1.printStackTrace();
         }
@@ -137,92 +136,105 @@ public class SelectAndModifyData extends JFrame {
         button2 = new JButton();
         label3 = new JLabel();
         button4 = new JButton();
+
         //======== this2 ========
         {
             this2.setVisible(true);
             Container this2ContentPane = this2.getContentPane();
             this2ContentPane.setLayout(null);
+
             //======== panel1 ========
             {
                 panel1.setLayout(new GridBagLayout());
-                ((GridBagLayout) panel1.getLayout()).columnWidths = new int[]{0, 83, 99, 0, 0};
-                ((GridBagLayout) panel1.getLayout()).rowHeights = new int[]{28, 47, 45, 34, 41, 0, 40, 41, 37, 0};
-                ((GridBagLayout) panel1.getLayout()).columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 1.0E-4};
-                ((GridBagLayout) panel1.getLayout()).rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
+                ((GridBagLayout)panel1.getLayout()).columnWidths = new int[] {0, 83, 99, 0, 0};
+                ((GridBagLayout)panel1.getLayout()).rowHeights = new int[] {28, 47, 45, 34, 41, 0, 40, 41, 37, 0};
+                ((GridBagLayout)panel1.getLayout()).columnWeights = new double[] {0.0, 0.0, 0.0, 0.0, 1.0E-4};
+                ((GridBagLayout)panel1.getLayout()).rowWeights = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0E-4};
+
                 //---- label1 ----
                 label1.setText("    \u67e5\u8be2\u56fd\u7c4d\u914d\u5458\u8bc1\u4e66");
                 label1.setFont(label1.getFont().deriveFont(label1.getFont().getSize() + 5f));
                 panel1.add(label1, new GridBagConstraints(1, 1, 2, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+
                 //---- label2 ----
                 label2.setText("    \u67e5\u8be2\u65b9\u5f0f");
                 label2.setFont(label2.getFont().deriveFont(label2.getFont().getSize() + 3f));
                 panel1.add(label2, new GridBagConstraints(1, 2, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
                 panel1.add(comboBox1, new GridBagConstraints(2, 2, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
                 panel1.add(textField1, new GridBagConstraints(2, 3, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+
                 //---- button1 ----
                 button1.setText("\u786e\u5b9a");
                 button1.addActionListener(e -> button1ActionPerformed(e));
                 panel1.add(button1, new GridBagConstraints(2, 4, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+
                 //---- label4 ----
                 label4.setText("      \u8239\u540d");
                 label4.setFont(label4.getFont().deriveFont(label4.getFont().getSize() + 4f));
                 panel1.add(label4, new GridBagConstraints(1, 7, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
                 panel1.add(textField2, new GridBagConstraints(2, 7, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 5, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 5, 5), 0, 0));
+
                 //---- button3 ----
                 button3.setText("\u67e5\u8be2\u5386\u53f2\u8868");
                 button3.addActionListener(e -> button3ActionPerformed(e));
                 panel1.add(button3, new GridBagConstraints(2, 8, 1, 1, 0.0, 0.0,
-                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
-                        new Insets(0, 0, 0, 5), 0, 0));
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 0, 5), 0, 0));
             }
             this2ContentPane.add(panel1);
             panel1.setBounds(0, 0, 245, 385);
+
             //======== scrollPane1 ========
             {
+
                 //---- table1 ----
                 table1.setModel(new DefaultTableModel(
-                        new Object[][]{
-                        },
-                        new String[]{
-                                null, null, null, null, null, null, null, null, null, null, null, null, null
-                        }
+                    new Object[][] {
+                    },
+                    new String[] {
+                        null, null, null, null, null, null, null, null, null, null, null, null, null
+                    }
                 ));
                 scrollPane1.setViewportView(table1);
             }
             this2ContentPane.add(scrollPane1);
             scrollPane1.setBounds(240, 0, 891, 200);
+
             //---- button2 ----
             button2.setText("\u786e\u8ba4\u4fee\u6539");
             button2.addActionListener(e -> button2ActionPerformed(e));
             this2ContentPane.add(button2);
             button2.setBounds(870, 320, 98, 40);
+
             //---- label3 ----
             label3.setText("\u4fee\u6539\u56fd\u7c4d\u914d\u5458\u8bc1\u4e66");
             label3.setFont(label3.getFont().deriveFont(label3.getFont().getSize() + 5f));
             this2ContentPane.add(label3);
             label3.setBounds(835, 275, 145, 42);
+
             //---- button4 ----
             button4.setText("\u6253\u5370");
             button4.addActionListener(e -> button4ActionPerformed(e));
             this2ContentPane.add(button4);
             button4.setBounds(new Rectangle(new Point(890, 375), button4.getPreferredSize()));
+
             { // compute preferred size
                 Dimension preferredSize = new Dimension();
-                for (int i = 0; i < this2ContentPane.getComponentCount(); i++) {
+                for(int i = 0; i < this2ContentPane.getComponentCount(); i++) {
                     Rectangle bounds = this2ContentPane.getComponent(i).getBounds();
                     preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
                     preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);

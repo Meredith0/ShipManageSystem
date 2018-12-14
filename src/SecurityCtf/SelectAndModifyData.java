@@ -30,9 +30,9 @@ public class SelectAndModifyData extends JFrame {
     }
 
     public void addCheckBoxItems() {
-        comboBox1.addItem("船只名称");
+        comboBox1.addItem("船名");
         comboBox1.addItem("船检登记号");
-        comboBox1.addItem("船舶国籍配员证编号");
+        comboBox1.addItem("安检证书编号");
         comboBox1.addItem("下次换证时间");
         comboBox1.addItem("通知检验时间");
     }
@@ -45,33 +45,18 @@ public class SelectAndModifyData extends JFrame {
          * @date: 2018/11/16 18:34
          */
         //通过日期查询
-        if (comboBox1.getSelectedIndex() == 3 || comboBox1.getSelectedIndex() == 4) {
-            db.sqlLines = "select * from 船只安检证书 where 下次换证时间=? or 换证通知时间=?";
-            db.pre();
-            try {
-                db.preparedStatement.setString(1, textField1.getText());
-                db.preparedStatement.setString(2, textField1.getText());
-            } catch (SQLException e1) {
-                e1.printStackTrace();
-            }
-            db.exeSelect();
-            //打表
-            db.toTable(db, table1);
+        String colname = comboBox1.getSelectedItem().toString();
+        db.sqlLines = "select * from 船只安检证书 where" + colname + "=?";
+        db.pre();
+        try {
+            db.preparedStatement.setString(1, textField1.getText());
+            db.preparedStatement.setString(2, textField1.getText());
+        } catch (SQLException e1) {
+            e1.printStackTrace();
         }
-        //通过其他3种方式查询
-        else {
-            db.sqlLines = "select * from 船只安检证书 where 船名=? or 船检登记号=? or 安检证书编号=?";
-            db.pre();
-            try {
-                db.preparedStatement.setString(1, textField1.getText());
-                db.preparedStatement.setString(2, textField1.getText());
-                db.preparedStatement.setString(3, textField1.getText());
-            } catch (SQLException e1) {
-                e1.printStackTrace();
-            }
-            db.exeSelect();
-        }
+        db.exeSelect();
         //打表
+        db.toTable(db, table1);
         db.toTable(db, table1);
     }
 
